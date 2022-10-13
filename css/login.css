@@ -209,13 +209,19 @@ Codigo CSS para el DIV popup loading table
 
 .loadingTableContainer{
     max-width: 500px;
-    border-radius: 5px;
-    padding: 1rem 0.5rem;
-    background-color: #eee;
     margin: 0 auto;
+    padding: 2rem;
+    border: 3px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: var(--overlay-color);
     margin-top: 20vh; 
 }
 
+
+.loadingTableContainer p{
+text-align: center;
+}
 /* ************************************************
 Codigo CSS para el DIV confirmPaymentContainer
 ************************************************ */

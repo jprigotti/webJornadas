@@ -147,6 +147,7 @@ show the table
 load the table with data from SS
 ***********************************************************************/
 function loginSuccess() {
+    document.querySelector('#loginIngresar').textContent="Hola!"
     //clear the input form
     document.querySelector("#login").reset(); //clear all input form
     //hide the login form
