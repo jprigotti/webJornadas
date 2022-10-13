@@ -195,6 +195,28 @@ font-weight: 600;
 
 
 /* ************************************************
+Codigo CSS para el DIV popup loading table
+************************************************ */
+.loadingTableBackground{
+    z-index: 100;
+    background-color: var(--overlay-color);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+.loadingTableContainer{
+    max-width: 500px;
+    border-radius: 5px;
+    padding: 1rem 0.5rem;
+    background-color: #eee;
+    margin: 0 auto;
+    margin-top: 20vh; 
+}
+
+/* ************************************************
 Codigo CSS para el DIV confirmPaymentContainer
 ************************************************ */
 .confirmPaymentBackground {

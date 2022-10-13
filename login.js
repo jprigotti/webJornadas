@@ -153,6 +153,7 @@ function loginSuccess() {
     $('.loginBackground').css({ 'display': 'none' });
     //show the registered users table
     $('.tableBackground').css({ 'display': 'inline' })
+    $('.loadingTableBackground').css({ 'display': 'inline-block' })
     //initialize table
     initializeDataTable()
 
@@ -271,6 +272,9 @@ function initializeDataTable() {
                     { data: 'Estado' }
                 ],
             });
+
+            $('.loadingTableBackground').css({ 'display': 'none' })
+
         },
         error: (err) => console.log(err)
     });
@@ -341,16 +345,15 @@ This function has to:
 
 ***********************************************************************/
 function updateProgressBar() {
-    const progressBar = document.getElementsByClassName('progressBar')[0]
-    const loop = 3;
+    var progressBar = document.getElementsByClassName('progressBar')[0]
+    var loop = 3;
     progressBar.style.setProperty('--width', 0)
     myInterval = setInterval(() => {
-        const computedStyle = getComputedStyle(progressBar)
+        var computedStyle = getComputedStyle(progressBar)
         let width = parseFloat(computedStyle.getPropertyValue('--width')) || 0
         progressBar.style.setProperty('--width', width + 1)
         if (width == 95) {
             progressBar.style.setProperty('--width', 0)
-            // clearInterval(myInterval);
         }
         console.log(width);
     }, 30)
@@ -364,9 +367,8 @@ This function has to:
 ***********************************************************************/
 
 function confirmPurchase(data) {
-    clearInterval(myInterval); //Stop progress bar counter
-    reInitializeDataTable();
 
+    
     $.ajax({
         method: "post",
         redirect: "follow",
@@ -375,35 +377,35 @@ function confirmPurchase(data) {
         accepts: 'application/json',
         data,
         success: () => {
-
+            clearInterval(myInterval); //Stop progress bar counter
             $(".progressBar").css({ 'display': 'none' }); //hide progress bar
             $(".paymentSuccessfullMessage").css({ 'display': 'inline' });
-        
+
             setTimeout(function () {
                 document.querySelector("#confirmPayment").reset(); //clear all input form //clear all input form
                 $(".paymentSuccessfullMessage").css({ 'display': 'none' });
                 $(".btnArea").css({ 'display': 'flex' });
                 $('.confirmPaymentBackground').css({ 'display': 'none' });
-        
+
             }, 3000);
 
         },
         error: (err) => {
             $(".progressBar").css({ 'display': 'none' }); //hide progress bar
             $(".paymentSuccessfullNoMailMessage").css({ 'display': 'inline' });
-        
+
             setTimeout(function () {
                 document.querySelector("#confirmPayment").reset(); //clear all input form //clear all input form
                 $(".paymentSuccessfullNoMailMessage").css({ 'display': 'none' });
                 $(".btnArea").css({ 'display': 'flex' });
                 $('.confirmPaymentBackground').css({ 'display': 'none' });
-        
+
             }, 3000);
         }
     });
 
 
-
+    reInitializeDataTable();
 
 }
 
