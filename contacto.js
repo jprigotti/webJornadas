@@ -1,5 +1,6 @@
 const webApp_emailMessage = 'https://script.google.com/macros/s/AKfycbwIE1Q_VtCxh1SwqSCp4LjEFKDwx4qXDoirN1HsFYWrMvtE_MROPUsEW0ca126gLXa_/exec';
 
+
 $('#formContact').submit(function (evento) {
     evento.preventDefault();  // avoid to execute the actual submit of the form.
     if (inputValidate()) {
