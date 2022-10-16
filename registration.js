@@ -406,40 +406,33 @@ function validateInput(data) {
 
 
 $('#inputFirstName').on('change', function(e){
-    console.log("input first name changed");
-    // $('.enterFirstName').css({ 'visibility': 'hidden' });
     $('#inputFirstName').removeClass('inputError');
     document.querySelector('#firstNameAlert').textContent = "";
     $('.warningMessage').css({ 'display': 'none' });
 })
 
 $('#inputLastName').on('change', function(e){
-    console.log("input first name changed");
-    // $('.enterLastName').css({ 'visibility': 'hidden' });
     $('#inputLastName').removeClass('inputError');
     document.querySelector('#lastNameAlert').textContent = "";
     $('.warningMessage').css({ 'display': 'none' });
 })
 
-$('#inputCell').on('keypress', function(e){
-    console.log("input first name changed");
-    // $('.enterCell').css({ 'visibility': 'hidden' });
+$('#inputCell').on('change', function(e){
     $('#inputCell').removeClass('inputError');
     document.querySelector('#cellAlert').textContent = "";
     $('.warningMessage').css({ 'display': 'none' });
 })
 
-$('#inputEmail').on('keypress', function(e){
-    console.log("input first name changed");
-    // $('.enterEmail').css({ 'visibility': 'hidden' });
+$('#inputEmail').on('change', function(e){
+    let email = document.querySelector('#inputEmail').value.toString();
+    email = email.replace(' ', '')
+    document.querySelector('#inputEmail').value = email;
     $('#inputEmail').removeClass('inputError');
     document.querySelector('#emailAlert').textContent = "";
     $('.warningMessage').css({ 'display': 'none' });
 })
 
 $('#formSelect').on('change', function(e){
-    console.log("input first name changed");
-    // $('.enterServicio').css({ 'visibility': 'hidden' });
     $('#inputServicio').removeClass('inputError');
     document.querySelector('#servicioAlert').textContent = "";
     $('.warningMessage').css({ 'display': 'none' });

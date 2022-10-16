@@ -70,7 +70,8 @@ opacity: 0.5;
 }
 
 .menu-wrap .fa-user::after {
-    content: "Ingresar";
+    /* content: "Ingresar"; */
+    content: attr(data-content);
     padding-left: 0.5rem;
     font-family: "Poppins", sans-serif;
     font-weight: 200;

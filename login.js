@@ -1,8 +1,13 @@
-// const webApp_loginTable = 'https://script.google.com/macros/s/AKfycbwpD8oln9Q4jT4t1jh48vmcKjsYTPy1TQdESWRbJn-pSAhJ3zayAbqyiUoDVKefPz_WRg/exec'
-const webApp_retrieveMedicalList = 'https://script.google.com/macros/s/AKfycbzQeIrYwMdcPIgQb7wZ9kX5_4ztb5jUEESf9CnAnmYw1DRGWn3sXUYdJ4IZjLbJSTmnww/exec';
-const webApp_retrieveRegisteredUsers = 'https://script.google.com/macros/s/AKfycbyPm0Bzim5390Abv2SGkDQLupiMkJCFZdmrP2NbgGdxfFlmOgTeQTQ-KHgK6TAD2iA/exec';
-const webApp_purchaseUpdate = 'https://script.google.com/macros/s/AKfycbxaIdu3rkChkNrijcCCYJnRpctxt06uCfb0QnhtHxN3sLcBQntJx6HYPPwphBeTSlY/exec';
+// Esta const apunta a un Script en Dailu que devuelve in array de usuarios registrados
+const webApp_retrieveRegisteredUsers = 'https://script.google.com/macros/s/AKfycbxWym_MaRUWIzkQlmyhITmlPlD6mHgoxU0IfX9rNIFkg-fXGZ1q_H16X_B1KUCuZSDnkg/exec';
+
+// Esta const apunta a un Script en Dailu recibe el email del usuario y actualiza el campo pago con SI
+const webApp_purchaseUpdate = 'https://script.google.com/macros/s/AKfycbxAE898-jj4hLEOJW2N4QXxMSS4zc0hA6XfHJSzp1u6YKTbjbkAdy7FhVQFE9uKITEN/exec';
+
+// Esta const apunta a un Script en JornadasSantojanni2022 recibe el email del usuario y le envía un correo de confirmación de pago
 const webAppJS2022_sendPayConfEmail = 'https://script.google.com/macros/s/AKfycbzpD4EFh-k8cX1aDuWVynZxZfPsPaXjupzWFnMvdqEJhtR0HNsyExSYNpgjLjGM5Bg/exec';
+
+
 
 /***********************************************************************
         EVENTS
@@ -15,10 +20,10 @@ When I click on the input submit we need to clear out the
 invalida credentials sign
 ***********************************************************************/
 
-$('#username').on('keypress', function (e) {
+$('#username').on('change', function (e) {
     $('.invalidCredentials').css({ 'display': 'none' });
 })
-$('#password').on('keypress', function (e) {
+$('#password').on('change', function (e) {
     $('.invalidCredentials').css({ 'display': 'none' });
 })
 
@@ -147,7 +152,7 @@ show the table
 load the table with data from SS
 ***********************************************************************/
 function loginSuccess() {
-    document.querySelector('#loginIngresar').textContent="Hola!"
+    $('.fa-user').attr('data-content','Hola!');
     //clear the input form
     document.querySelector("#login").reset(); //clear all input form
     //hide the login form
