@@ -400,6 +400,11 @@ div>span {
 ********************************************** */
 
 @media(max-width:778px) {
+
+    .showcase {
+        min-height: 100vh;
+    }
+
     .alertAranceles .alertContainer {
         width: 90%;
     }
