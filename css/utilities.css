@@ -21,6 +21,14 @@ body {
     line-height: 1.2;
 }
 
+.backgroundCredits {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: var(--primary-color);
+    padding-top: 2rem;
+}
 /* Form style */
 
 .contactBackground {
@@ -37,7 +45,7 @@ body {
     width: 70%;
     max-width: 600px;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 2rem;
     border-radius: 10px;
     box-shadow: 3px 3px 3px 2px rgba(24, 39, 51, 0.6);
     background-image: linear-gradient(rgba(13, 110, 139, 0.9), rgba(13, 110, 139, 0.7));
@@ -48,21 +56,47 @@ body {
     width: 100%;
     display: grid;
     grid-template-rows: 2;
-    grid-template-columns: 1fr 5fr 1fr;
-    gap: 1rem;
+    grid-template-columns: repeat(12, 1fr);
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
     /* padding: 1rem; */
     color: #f4f4f4;
 }
 
-.formHeader h2 {
+.formHeader .item1 {
     grid-row: 1;
-    grid-column: 2/6;
+    grid-column: 1;
+    justify-self: right;
+    align-self: center;
+    color: #f4f4f4;
+}
+
+.formHeader .item1 .material-symbols-outlined{
+    font-size: 2rem;
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-right: 0 !important;
+}
+
+.formHeader .item2 {
+    grid-row: 1;
+    grid-column: 2 / 12;
+    font-size: 1.5rem;
+    color: #f4f4f4;
+    font-weight: 600;
     text-align: center;
+}
+
+.formHeader .item2 h2{
     font-size: 2rem;
     color: #f4f4f4;
     font-weight: 600;
+}
+
+.formHeader .item3{
+    grid-column: 12 / 13;
+    justify-self: end;
+    align-self: center;
 }
 
 .formHeader a {
@@ -79,16 +113,17 @@ body {
 
 .formHeader h3 {
     grid-row: 2;
-    grid-column: 1/8;
+    grid-column: 1/13;
     font-size: 1.1rem;
     font-weight: 400;
     text-align: center;
+    margin-top: 1rem;
 }
 
 
 .formBody,
 .formFooter {
-    padding: 0 1rem;
+
     display: flex;
     flex-direction: column;
     align-items: center;

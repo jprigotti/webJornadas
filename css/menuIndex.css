@@ -307,11 +307,6 @@ opacity: 0.5;
         display: flex;
     }
 
-    .menu-wrap .fa-instagram,
-    .menu-wrap .fa-youtube {
-        display: inline-block;
-    }
-
     .menu-wrap .menuDesktop{
         display: none;
     }
@@ -322,7 +317,12 @@ opacity: 0.5;
 
 }
 
-@media(max-width:778px) {}
+@media(max-width:778px) {
+    .menu-wrap .fa-instagram,
+    .menu-wrap .fa-youtube {
+        display: inline-block;
+    }
+}
 
 @media(max-width:576px) {
     .menu-wrap .loginIcon a::after {
