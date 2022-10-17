@@ -209,7 +209,7 @@ body a{
 }
 
 
-.btnArea {
+.btnProgressArea .btnArea {
     width: 100%;
     position: absolute;
     top: 0.5rem;

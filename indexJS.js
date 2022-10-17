@@ -2,6 +2,35 @@
 //Set the date we are counting down to
 
 
+/***********************************************************************
+        EVENTS
+***********************************************************************/
+
+/***********************************************************************
+        Load form select options with data from SS
+************************************************************************
+When the page loads, this code sends a request to a specific Google
+WebApp to retrieve a list of "Servicios" that are appended to the
+form select options
+***********************************************************************/
+
+$('#verAranceles').click(function(e){
+    $('.alertAranceles').css({'visibility':'visible'})
+})
+
+$('#alertContainerCloseAranceles').click(function(e){
+    $('.alertAranceles').css({'visibility':'hidden'})
+})
+
+
+
+/***********************************************************************
+        COUNTDOWN
+************************************************************************
+When the page loads, this code sends a request to a specific Google
+WebApp to retrieve a list of "Servicios" that are appended to the
+form select options
+***********************************************************************/
 
 var countDownDate = new Date("Nov 7, 2022, 09:00:00").getTime();
 

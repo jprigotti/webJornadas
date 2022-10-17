@@ -130,6 +130,8 @@ div>span {
     padding: 0.75rem 1.5rem;
     border-radius: 5px;
     margin-top: 3rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     font-size: 1.2rem;
     font-weight: 400;
     background-color: rgba(255, 255, 255, 0.1);
@@ -178,6 +180,118 @@ div>span {
 }
 
 
+/* **********************************************
+                POPUP
+********************************************** */
+.alertAranceles {
+    background-color: var(--overlay-color);
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.alertContainer {
+    width: 50%;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 3px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: var(--overlay-color);
+}
+
+.alertContainerClose:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.alertContainerHeader {
+    display: grid;
+    grid-template-rows: 20px 1fr;
+    grid-template-columns: repeat(12, 1fr);
+    margin-bottom: 1rem;
+
+}
+
+#alertContainerCloseAranceles {
+    grid-row: 1;
+    grid-column: 12;
+    justify-self: end;
+    align-self: center;
+}
+
+.material-symbols-outlined {
+    grid-row: 2;
+    grid-column: 1;
+    align-self: center;
+    font-size: 2rem;
+}
+
+.alertContainerHeader h1 {
+    grid-row: 2;
+    grid-column: 2 / span 10;
+}
+
+.fa-user-doctor {
+    padding-right: 0.5rem;
+}
+
+.miniContainer {
+    padding: 1rem;
+}
+
+.deadline {
+    text-align: center;
+    font-weight: 700;
+}
+
+.sepLine {
+    margin: 2rem;
+    border: 0.1rem solid var(--overlay-color);
+}
+
+.alertContainer ul {
+    list-style: none;
+}
+
+.alertContainer ul li {
+    padding: 0.5rem;
+}
+
+.alertAranceles .btnArea {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.alertAranceles .btn {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid var(--overlay-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--overlay-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 0.5s ease;
+
+}
+
+.alertAranceles .btn:hover {
+    background-color: var(--overlay-color);
+    color: white;
+
+}
+
+
 /* ***************************************************
                         FOOTER
 *******************************************************/
@@ -214,12 +328,12 @@ div>span {
     padding-right: 1rem;
 }
 
-.item1 h4{
+.item1 h4 {
     font-weight: 400;
     font-size: 1.1rem;
 }
 
-.item1 p{
+.item1 p {
     font-weight: 200;
     font-size: 0.9rem;
 }
@@ -288,6 +402,12 @@ div>span {
                 MEDIA QUERIES
 ********************************************** */
 
+@media(max-width:778px) {
+    .alertAranceles .alertContainer {
+        width: 90%;
+    }
+}
+
 @media(max-width:576px) {
     .footerContainer {
         display: none;
@@ -298,5 +418,6 @@ div>span {
         margin-top: 3rem;
         display: inline-block;
     }
+
 
 }
