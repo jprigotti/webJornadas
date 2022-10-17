@@ -136,7 +136,6 @@ div>span {
     font-weight: 400;
     background-color: rgba(255, 255, 255, 0.1);
     transition: 0.5s ease;
-
 }
 
 .showcase .btn:hover {
@@ -406,6 +405,17 @@ div>span {
     .alertAranceles .alertContainer {
         width: 90%;
     }
+
+    .showcase .btnArea {
+        margin-top: 2rem;
+    }
+
+    .showcase .btn {
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
 }
 
 @media(max-width:576px) {
