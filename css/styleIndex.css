@@ -2,6 +2,8 @@
     --primary-color: rgba(13, 110, 139, 0.75);
     --overlay-color: rgba(24, 39, 51, 0.85);
     --menu-speed: 0.75s;
+    --footer-background: rgb(24, 40, 52);
+    --credits-background: rgba(24, 39, 51, 0.9);
 }
 
 * {
@@ -45,7 +47,7 @@ body {
 }
 
 .container {
-    max-width: 960px;
+    max-width: 900px;
     margin: auto;
     overflow: hidden;
     padding: 0 1rem;
@@ -64,13 +66,12 @@ body {
 
 }
 
-.countdownContainerBody{
+.countdownContainerBody {
     display: flex;
     flex-wrap: wrap;
 }
 
-.countdownBox
-{
+.countdownBox {
     /* border: 1px solid #f4f4f4; */
     margin: 0 0.5rem;
     padding: 0.2rem;
@@ -78,17 +79,17 @@ body {
 }
 
 
-.countdownBox h1{
-/* max-width: 4rem; */
-background: none;
-border: none;
-text-align: center;
-color: #f4f4f4;
-transition: 0.5 ease;
+.countdownBox h1 {
+    /* max-width: 4rem; */
+    background: none;
+    border: none;
+    text-align: center;
+    color: #f4f4f4;
+    transition: 0.5 ease;
 }
 
 
-div > span {
+div>span {
     display: block;
     font-size: 0.8rem;
     text-align: center;
@@ -109,7 +110,7 @@ div > span {
     font-size: calc(2rem + 1.5vw);
 }
 
-.showcase h3{
+.showcase h3 {
     font-weight: 400;
 }
 
@@ -142,7 +143,8 @@ div > span {
 }
 
 
-.eventDates, .eventLocation{
+.eventDates,
+.eventLocation {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -153,14 +155,14 @@ div > span {
 
 
 /* Showcase Social Media */
-.showcaseSocial{
+.showcaseSocial {
     width: 30vw;
     margin-top: 3rem;
     display: none;
 }
 
 .showcaseSocial .fa-youtube,
-.showcase .fa-instagram{
+.showcase .fa-instagram {
     color: #f4f4f4;
     padding: 0 0.5rem;
     font-size: 1.5rem;
@@ -168,11 +170,11 @@ div > span {
 
 .material-symbols-outlined {
     margin-right: 1rem;
-      font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
+    font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'48
 }
 
 
@@ -182,47 +184,100 @@ div > span {
 
 .footerContainer {
     width: 100%;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    background-color: var(--footer-background);
+    color: #f4f4f4;
+    padding: 1.5rem 1rem;
+}
+
+
+.footerInnerContainer {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 1fr 1fr;
+}
+
+.item1 {
+    grid-column: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.item1 img {
+    width: 100px;
+    padding-right: 1rem;
+}
+
+.item1 h4{
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.item1 p{
+    font-weight: 200;
+    font-size: 0.9rem;
+}
+
+.item2 {
+    grid-column: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.item2Container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #182733;
-    color: #f4f4f4;
-    padding: 1rem;
 }
 
-.footerContainer .icons {
+.item2Container .icons {
     width: 100px;
     display: flex;
     justify-content: space-between;
-    margin: 1rem;
+    margin: 0.5rem;
 }
 
-.footerContainer .icons a {
+.item2Container .icons a {
     text-decoration: none;
     font-size: 1.5rem;
     color: inherit;
     margin: 0 1rem;
 }
 
-.footerContainer .icons a:hover {
+.item2Container .icons a:hover {
     opacity: 0.5;
 }
 
-.footerContainer p{
-    font-size: 0.9rem;
+.item2Container p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8)
+}
+
+.credits {
+    background-color: var(--credits-background);
+    font-size: 0.8rem;
     font-weight: 200;
-    color: rgba(255,255, 255,0.8)
+    color: #f4f4f4;
+    text-align: center;
+    padding: 0.2rem;
 }
 
 /* MEDIA QUERIES SM 576*/
 @media(max-width: 576px) {
 
 
-.countdownContainer{
-    /* margin: 0 auto;
+    .countdownContainer {
+        /* margin: 0 auto;
     width: 90%; */
-}
+    }
 
 }
 
@@ -238,12 +293,10 @@ div > span {
         display: none;
     }
 
-    .showcaseSocial{
+    .showcaseSocial {
         width: 30vw;
         margin-top: 3rem;
         display: inline-block;
     }
 
 }
-
-

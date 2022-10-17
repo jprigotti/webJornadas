@@ -24,14 +24,14 @@
 
 .menu-wrap .menuDesktop .menuDesktopContainer{
     width: 70%;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
 .menu-wrap .menuDesktop ul{
     display: flex;
     height: 50px;
-    justify-content: space-around;
+    justify-content: space-between;
   align-items: center;
 }
 .menu-wrap .menuDesktop ul li{
