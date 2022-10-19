@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
 
+    <!-- Link Favicon -->
+    <link rel="icon" type="image/x-icon" href="./img/android-icon-72x72.png">
+
     <!-- FONTAWESOME -->
     <script src="https://kit.fontawesome.com/628afeffd4.js" crossorigin="anonymous"></script>
 
@@ -36,37 +39,52 @@
 
 <body>
 
-    <!-- HEADER SECTION     -->
+     <!-- HEADER SECTION     -->
 
-    <div class="menu-wrap">
+     <div class="menu-wrap">
         <div class="loginIcon">
+            <a href="https://www.instagram.com/jornadassantojanni/" target="_blank" rel="noopener">
+                <i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCl2b98kxT48N2pthV3djMtA" target="_blank" rel="noopener">
+                <i class="fa-brands fa-youtube"></i></a>
             <a href="login.html" target="_blank"><i class="fa-solid fa-user" data-content="Ingresar"></i></a>
         </div>
         <input type="checkbox" class="toggler">
         <div class="hamburguer">
             <div></div>
         </div>
+        
         <div class="menu">
-            <div>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="programa.html">Programa</a></li>
-                    <li><a href="registration.html">Inscripción</a></li>
-                    <li><a href="contacto.html">Consultas</a></li>
-                    <li><a href="#">Nosotros</a></li>
+            <div class="menuContainer">
+                <div class="ulContainer">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#">Programa <span><i class="fa-solid fa-caret-down"></i></span></a>
+                            <ul class="dropDownMenu">
+                                <li><a href="programa.html">Jornadas Cientificas</a></li>
+                                <li><a href="./img/muestraArtistica.pdf" download="Muestra Artistica.png">Muestra Artistica</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="registration.html">Inscripción</a></li>
+                        <li><a href="contacto.html">Consultas</a></li>
+                        <li><a href="#">Nosotros</a></li>
+    
+                    </ul>
+                </div>
 
-                </ul>
             </div>
         </div>
+
+        <!-- https://www.cevagraf.coop/blog/menu-desplegable-css/ -->
 
         <div class="menuDesktop">
             <div class="menuDesktopContainer">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#">Programa</a>
+                    <li><a href="#">Programa <span><i class="fa-solid fa-caret-down"></i></span></a>
                             <ul id="subMenuPrograma">
                                 <li><a href="programa.html">Jornadas Cientificas</a></li>
-                                <li><a href="#">Muestra Artistica</a></li>
+                                <li><a href="./img/muestraArtistica.pdf" download="Muestra Artistica.png">Muestra Artistica</a></li>
                             </ul>
                     </li>
                     <li><a href="registration.html">Inscripción</a></li>
@@ -75,7 +93,6 @@
                 </ul>
             </div>
         </div>
-
     </div>
 
 
