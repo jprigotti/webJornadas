@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jornadas Cientificas 2022</title>
 
+    <!-- Link Favicon -->
+    <link rel="icon" type="image/x-icon" href="./img/android-icon-72x72.png">
+
     <!-- Link CSS local -->
     <link rel="stylesheet" href="./css/styleIndex.css">
     <link rel="stylesheet" href="./css/menuIndex.css">
@@ -52,27 +55,41 @@
             <div></div>
         </div>
         <div class="menu">
-            <div>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="programa.html">Programa</a></li>
-                    <li><a href="registration.html">Inscripción</a></li>
-                    <li><a href="contacto.html">Consultas</a></li>
-                    <li><a href="#">Nosotros</a></li>
+            <div class="menuContainer">
+                <div class="ulContainer">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#">Programa <span><i class="fa-solid fa-caret-down"></i></span></a>
+                            <ul class="dropDownMenu">
+                                <li><a href="programa.html">Jornadas Cientificas</a></li>
+                                <li><a href="./img/muestraArtistica.pdf" download="Muestra Artistica.png">Muestra Artistica</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="registration.html">Inscripción</a></li>
+                        <li><a href="contacto.html">Consultas</a></li>
+                        <li><a href="#">Nosotros</a></li>
+    
+                    </ul>
+                </div>
 
-                </ul>
             </div>
         </div>
+
+        <!-- https://www.cevagraf.coop/blog/menu-desplegable-css/ -->
 
         <div class="menuDesktop">
             <div class="menuDesktopContainer">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="programa.html">Programa</a></li>
+                    <li><a href="#">Programa <span><i class="fa-solid fa-caret-down"></i></span></a>
+                            <ul id="subMenuPrograma">
+                                <li><a href="programa.html">Jornadas Cientificas</a></li>
+                                <li><a href="./img/muestraArtistica.pdf" download="Muestra Artistica.png">Muestra Artistica</a></li>
+                            </ul>
+                    </li>
                     <li><a href="registration.html">Inscripción</a></li>
                     <li><a href="contacto.html">Consultas</a></li>
                     <li><a href="#">Nosotros</a></li>
-
                 </ul>
             </div>
         </div>
