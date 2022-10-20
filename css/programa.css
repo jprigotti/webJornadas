@@ -18,7 +18,7 @@
     padding: 0px;
 }
 
-.item1 .material-symbols-outlined{
+.item1 .material-symbols-outlined {
     margin-right: 0 !important;
     font-size: 2rem;
 }
@@ -56,7 +56,7 @@ body {
 .agendaHeader {
     width: 100%;
     background-color: var(--primary-color);
-    margin-bottom: 0.5rem ;
+    margin-bottom: 0.5rem;
 }
 
 .agendaHeader .title {
@@ -66,7 +66,7 @@ body {
     grid-template-columns: repeat(12, 1fr);
 }
 
-.title .item1{
+.title .item1 {
     grid-row: 1;
     grid-column: 2 / 3;
     justify-self: center;
@@ -76,7 +76,7 @@ body {
     color: var(--form-background);
 }
 
-.agendaHeader .item2{
+.agendaHeader .item2 {
     grid-row: 1;
     grid-column: 3 / 11;
     width: 100%;
@@ -86,28 +86,28 @@ body {
     color: var(--form-background);
 }
 
-.agendaHeader .item2 h2{
+.agendaHeader .item2 h2 {
     font-size: 2rem;
     color: #f4f4f4;
     font-weight: 600;
 }
 
-.agendaHeader .item3{
+.agendaHeader .item3 {
     grid-row: 1;
     grid-column: 11 / 12;
     justify-self: end;
     align-self: center;
 }
 
-.agendaHeader .item4{
+.agendaHeader .item4 {
     grid-row: 2;
     grid-column: 1 / 13;
     justify-self: center;
-padding-top: 1rem;
+    padding-top: 1rem;
     color: #f4f4f4;
 }
 
-.agendaHeader .item3 a{
+.agendaHeader .item3 a {
     text-decoration: none;
     color: var(--form-background);
 }
@@ -163,7 +163,7 @@ padding-top: 1rem;
 
 
 .time {
-    width: 100%; 
+    width: 100%;
     background-color: var(--time-background);
     color: var(--overlay-color);
     padding: 0.5rem 1rem;
@@ -172,9 +172,9 @@ padding-top: 1rem;
 
 .time::before {
     content: '\f017';
-    font-family: "Font Awesome 5 Free"; 
-    font-weight: 400; 
-    padding-right: 0.5rem ;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    padding-right: 0.5rem;
 }
 
 .agendaBody .location {
@@ -184,9 +184,9 @@ padding-top: 1rem;
 
 .agendaBody .location::before {
     content: '\f279';
-    font-family: "Font Awesome 5 Free"; 
-    font-weight: 400; 
-    padding-right: 0.3rem ;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    padding-right: 0.3rem;
 }
 
 
@@ -208,7 +208,7 @@ padding-top: 1rem;
 
 .agendaBody .day7 div,
 .agendaBody .day9 div,
-.agendaBody .day10 div{
+.agendaBody .day10 div {
     padding-top: 1rem;
 }
 
@@ -225,7 +225,7 @@ padding-top: 1rem;
 }
 
 
-.pie{
+.pie {
     width: 100%;
     height: 20px;
     background-color: var(--primary-color);
