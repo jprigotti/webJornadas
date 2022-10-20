@@ -1,5 +1,5 @@
 :root {
-    --primary-color: rgba(13, 110, 139, 0.75);
+    --primary-color: rgba(13, 110, 139, 0.749);
     --overlay-color: rgba(24, 39, 51, 0.85);
     --warning-color: #F6E019;
     --btn-background-green: rgba(137, 190, 109, 1);
@@ -18,8 +18,9 @@
     padding: 0px;
 }
 
-.material-symbols-outlined{
+.item1 .material-symbols-outlined{
     margin-right: 0 !important;
+    font-size: 2rem;
 }
 
 body {
@@ -47,23 +48,26 @@ body {
     /* margin-top: 5rem; */
     /* margin-bottom: 100px; */
     border-radius: 10px;
-    background-image: linear-gradient(rgba(13, 110, 139, 0.9), rgba(13, 110, 139, 0.7));
+    /* background-image: linear-gradient(rgba(13, 110, 139, 0.9), rgba(13, 110, 139, 0.7)); */
     box-shadow: 3px 3px 3px 2px rgba(24, 39, 51, 0.6);
     /* background-image: linear-gradient(rgba(13, 110, 139, 0.9), rgba(13, 110, 139, 0.7)); */
 }
 
 .agendaHeader {
     width: 100%;
+    background-color: var(--primary-color);
+    margin-bottom: 0.5rem ;
 }
 
 .agendaHeader .title {
     padding: 1.5rem 0.5rem;
     display: grid;
-    grid-template-rows: 1;
+    grid-template-rows: 2;
     grid-template-columns: repeat(12, 1fr);
 }
 
 .title .item1{
+    grid-row: 1;
     grid-column: 2 / 3;
     justify-self: center;
     align-self: center;
@@ -73,6 +77,7 @@ body {
 }
 
 .agendaHeader .item2{
+    grid-row: 1;
     grid-column: 3 / 11;
     width: 100%;
     justify-self: center;
@@ -88,9 +93,18 @@ body {
 }
 
 .agendaHeader .item3{
+    grid-row: 1;
     grid-column: 11 / 12;
     justify-self: end;
     align-self: center;
+}
+
+.agendaHeader .item4{
+    grid-row: 2;
+    grid-column: 1 / 13;
+    justify-self: center;
+padding-top: 1rem;
+    color: #f4f4f4;
 }
 
 .agendaHeader .item3 a{
@@ -192,6 +206,12 @@ body {
     line-height: 1.2rem;
 }
 
+.agendaBody .day7 div,
+.agendaBody .day9 div,
+.agendaBody .day10 div{
+    padding-top: 1rem;
+}
+
 .agendaBody .day7 {
     display: block;
 }
@@ -211,6 +231,10 @@ body {
     background-color: var(--primary-color);
     margin-top: 2rem;
 }
+
+
+/* Bootstrap Classes */
+
 
 
 

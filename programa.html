@@ -34,14 +34,17 @@
     <link rel="stylesheet" href="./css/programa.css">
     <link rel="stylesheet" href="./css/menuIndex.css">
     <link rel="stylesheet" href="./css/styleIndex.css">
+    <link rel="stylesheet" href="./css/accordionBS.css">
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
 
 </head>
 
 <body>
 
-     <!-- HEADER SECTION     -->
+    <!-- HEADER SECTION     -->
 
-     <div class="menu-wrap">
+    <div class="menu-wrap">
         <div class="loginIcon">
             <a href="https://www.instagram.com/jornadassantojanni/" target="_blank" rel="noopener">
                 <i class="fa-brands fa-instagram"></i></a>
@@ -53,22 +56,24 @@
         <div class="hamburguer">
             <div></div>
         </div>
-        
+
         <div class="menu">
             <div class="menuContainer">
                 <div class="ulContainer">
                     <ul>
                         <li><a href="index.html">Inicio</a></li>
-                        <li><a href="#">Programa <span><i class="fa-solid fa-caret-down"></i></span></a>
+                        <li><a href="#">Programas
+                                <!-- <span><i class="fa-solid fa-caret-down"></i></span></a>
                             <ul class="dropDownMenu">
                                 <li><a href="programa.html">Jornadas Científicas</a></li>
-                                <li><a href="./img/muestraArtistica.pdf" download="Muestra Artistica.png">Muestra Artística</a></li>
-                            </ul>
+                                <li><a href="./img/muestraArtistica.pdf" download="Muestra Artistica.png">Muestra
+                                        Artística</a></li>
+                            </ul> -->
                         </li>
                         <li><a href="registration.html">Inscripción</a></li>
                         <li><a href="contacto.html">Consultas</a></li>
                         <li><a href="#">Nosotros</a></li>
-    
+
                     </ul>
                 </div>
 
@@ -81,11 +86,13 @@
             <div class="menuDesktopContainer">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#">Programa <span><i class="fa-solid fa-caret-down"></i></span></a>
-                            <ul id="subMenuPrograma">
-                                <li><a href="programa.html">Jornadas Científicas</a></li>
-                                <li><a href="./img/muestraArtistica.pdf" download="Muestra Artistica.png">Muestra Artística</a></li>
-                            </ul>
+                    <li><a href="programa.html">Programas </a>
+                        <!-- <span><i class="fa-solid fa-caret-down"></i></span></a>
+                        <ul id="subMenuPrograma">
+                            <li><a href="programa.html">Jornadas Científicas</a></li>
+                            <li><a href="./img/muestraArtistica.pdf" download="Muestra Artistica.png">Muestra
+                                    Artística</a></li>
+                        </ul> -->
                     </li>
                     <li><a href="registration.html">Inscripción</a></li>
                     <li><a href="contacto.html">Consultas</a></li>
@@ -93,12 +100,16 @@
                 </ul>
             </div>
         </div>
+
+
     </div>
+
 
 
     <!-- Main Section  -->
     <div class="agendaBackground">
         <div class="agendaContainer">
+
             <div class="agendaHeader">
                 <div class="title">
 
@@ -109,110 +120,179 @@
                     </div>
 
                     <div class="item2">
-                        <h2>Programa</h2>
+                        <h2>Programas</h2>
                     </div>
 
                     <div class="item3">
                         <a href="index.html"><i class="fa-solid fa-door-open fa-xl"></i></a>
                     </div>
-                </div>
-                <div class="selectDays">
-                    <div>
-                        <p id="day7" class="dayActive">Lunes</p>
-                        <button id="btnDay7" class="btn btnActive">7</button>
+
+                    <div class="item4">
+                        <p>Selecciones un evento para explorar el programa</p>
                     </div>
-                    <div>
-                        <p id="day9">Miercoles</p>
-                        <button id="btnDay9" class="btn">9</button>
-                    </div>
-                    <div>
-                        <p id="day10">Jueves</p>
-                        <button id="btnDay10" class="btn">10</button>
-                    </div>
+
                 </div>
             </div>
 
-            <div class="agendaBody">
-                <div class="day7">
-                    <div style="text-align: center;">
-                        <p style="font-weight: 300">Estará disponible la próxima semana</p>
+
+            <div class="accordion" id="accordionExample">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button accordion-button-1 collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                            aria-controls="collapseOne">
+                            <span class="material-symbols-outlined">
+                                <span class="material-symbols-outlined">
+                                    palette
+                                </span>
+                            </span>Muestra Artística
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <img class="flyerImage" src="./img/muestraArtistica.jpg" alt="">
+                        </div>
                     </div>
-                    
-
-                    <!-- <p class="time">8:30 am</p>
-                    <p class="location">Lugar</p>
-                    <h5>Apertura de Jornadas</h5>
-                    <h6>Palabras de inauguración</h6>
-                    <h6>Presentación</h6>
-
-                    <p class="time">10:30 am</p>
-                    <p class="location">Aulas 2do piso</p>
-                    <h5>Secuelas del covid en el área programática</h5>
-                    <h6>Detalle1</h6>
-                    <h6>Detalle2</h6>
-
-                    <p class="time"> 12:00 pm</p>
-                    <p class="location">Lugar</p>
-                    <h5>Vino de honor</h5>
-                    <h6>Detalle1</h6>
-                    <h6>Detalle2</h6> -->
                 </div>
 
-                <div class="day9">
-                    <div style="text-align: center;">
-                        <p style="font-weight: 300">Estará disponible la próxima semana</p>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button accordion-button-2 collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            <span class="material-symbols-outlined">
+                                cut
+                            </span>Jornadas IQ
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <img class="flyerImage" src="./img/jornadaIQ.jpg" alt="">
+                        </div>
                     </div>
-
-                    <!-- <p class="time">8:30 a 09:30 am</p>
-                    <p class="location">Lugar</p>
-                    <h5>Lectura de Temas Libres</h5>
-
-                    <p class="time">09:30 a 10:00 am</p>
-                    <p class="location">Lugar</p>
-                    <h5>A definir</h5>
-                    <h6>Detalle</h6>
-
-                    <p class="time">10:00 am</p>
-                    <p class="location">Lugar</p>
-                    <h5>Conferencia</h5>
-                    <h6>Detalle</h6> -->
-
                 </div>
 
-                <div class="day10">
-                    <div style="text-align: center;">
-                        <p style="font-weight: 300">Estará disponible la próxima semana</p>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button accordion-button-3" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <span class="material-symbols-outlined">
+                                biotech
+                            </span>Jornadas Científicas
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+
+                            <div class="agendaHeader">
+
+                                <div class="selectDays">
+                                    <div>
+                                        <p id="day7" class="dayActive">Lunes</p>
+                                        <button id="btnDay7" class="btn btnActive">7</button>
+                                    </div>
+                                    <div>
+                                        <p id="day9">Miercoles</p>
+                                        <button id="btnDay9" class="btn">9</button>
+                                    </div>
+                                    <div>
+                                        <p id="day10">Jueves</p>
+                                        <button id="btnDay10" class="btn">10</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="agendaBody">
+                                <div class="day7">
+                                    <div style="text-align: center;">
+                                        <p style="font-weight: 300">Estará disponible la próxima semana</p>
+                                    </div>
+
+
+                                    <!-- <p class="time">8:30 am</p>
+                                <p class="location">Lugar</p>
+                                <h5>Apertura de Jornadas</h5>
+                                <h6>Palabras de inauguración</h6>
+                                <h6>Presentación</h6>
+            
+                                <p class="time">10:30 am</p>
+                                <p class="location">Aulas 2do piso</p>
+                                <h5>Secuelas del covid en el área programática</h5>
+                                <h6>Detalle1</h6>
+                                <h6>Detalle2</h6>
+            
+                                <p class="time"> 12:00 pm</p>
+                                <p class="location">Lugar</p>
+                                <h5>Vino de honor</h5>
+                                <h6>Detalle1</h6>
+                                <h6>Detalle2</h6> -->
+                                </div>
+
+                                <div class="day9">
+                                    <div style="text-align: center;">
+                                        <p style="font-weight: 300">Estará disponible la próxima semana</p>
+                                    </div>
+
+                                    <!-- <p class="time">8:30 a 09:30 am</p>
+                                <p class="location">Lugar</p>
+                                <h5>Lectura de Temas Libres</h5>
+            
+                                <p class="time">09:30 a 10:00 am</p>
+                                <p class="location">Lugar</p>
+                                <h5>A definir</h5>
+                                <h6>Detalle</h6>
+            
+                                <p class="time">10:00 am</p>
+                                <p class="location">Lugar</p>
+                                <h5>Conferencia</h5>
+                                <h6>Detalle</h6> -->
+
+                                </div>
+
+                                <div class="day10">
+                                    <div style="text-align: center;">
+                                        <p style="font-weight: 300">Estará disponible la próxima semana</p>
+                                    </div>
+
+                                    <!-- <p class="time">8:30 a 9:30 am</p>
+                                <p class="location">Lugar</p>
+                                <h5>Presentación de Trabajos científicos</h5>
+                                <h6>Detalle1</h6>
+                                <h6>Detalle2</h6>
+            
+                                <p class="time">9:30 a 11:30 am</p>
+                                <p class="location">Mesas redondas</p>
+            
+                                <p class="time">9:30 a 10:30 am</p>
+                                <p class="location">Aula 2do piso, 3 d, 4e y 4f +  1er piso obstetricia</p>                   
+                                <h5>Detalle1</h5>
+                                <h6>Detalle2</h6>
+            
+                                <p class="time"> 10:30 a 11:30 am</p>
+                                <p class="location">aula 3d, 4e, 4f + 1 er piso obstetricia</p>
+                                <h5>Detalle1</h5>
+                                <h6>Detalle2</h6>
+            
+                                <p class="time"> 12:00 pm</p>
+                                <p class="location">Lugar</p>
+                                <h5>Cierre de las jornadas</h5>
+                                <h6>Detalle1</h6>                    -->
+                                </div>
+                                <div class="pie"></div>
+                            </div>
+
+                        </div>
                     </div>
-
-                    <!-- <p class="time">8:30 a 9:30 am</p>
-                    <p class="location">Lugar</p>
-                    <h5>Presentación de Trabajos científicos</h5>
-                    <h6>Detalle1</h6>
-                    <h6>Detalle2</h6>
-
-                    <p class="time">9:30 a 11:30 am</p>
-                    <p class="location">Mesas redondas</p>
-
-                    <p class="time">9:30 a 10:30 am</p>
-                    <p class="location">Aula 2do piso, 3 d, 4e y 4f +  1er piso obstetricia</p>                   
-                    <h5>Detalle1</h5>
-                    <h6>Detalle2</h6>
-
-                    <p class="time"> 10:30 a 11:30 am</p>
-                    <p class="location">aula 3d, 4e, 4f + 1 er piso obstetricia</p>
-                    <h5>Detalle1</h5>
-                    <h6>Detalle2</h6>
-
-                    <p class="time"> 12:00 pm</p>
-                    <p class="location">Lugar</p>
-                    <h5>Cierre de las jornadas</h5>
-                    <h6>Detalle1</h6>                    -->
                 </div>
-                <div class="pie"></div>
             </div>
         </div>
-
     </div>
+
+
 
     <!-- BOTTOM NAVBAR -->
     <nav class="bottomNav">
@@ -227,7 +307,7 @@
                 <a href="programa.html"><span class="material-symbols-outlined">
                         event_upcoming
                     </span></a>
-                <p>Programa</p>
+                <p>Programas</p>
             </div>
             <div class="navRegistration">
                 <a href="registration.html"><span class="material-symbols-outlined">
@@ -290,6 +370,11 @@
 
     <!-- Local JS -->
     <script src="programa.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 
 </body>
 
