@@ -256,16 +256,17 @@ body {
     margin: 0rem auto;
     padding: 0.5rem;
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-rows: 50px auto;
     grid-template-columns: 1;
 
 }
 
 .popupContainerHeader {
     grid-row: 1;
-    padding: 1rem 0.5rem;
+    padding: 1rem;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     background-color: white;
 }
 
