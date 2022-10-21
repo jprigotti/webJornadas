@@ -41,13 +41,13 @@ btnDay10.addEventListener('click', function () {
 
 
 $('.buttonMaximize').click(function (event) {
-    $('.popup').css({ 'display': 'block' });
-    $("body").css("overflow", "hidden");
+    $('body, html').scrollTop(0);
     if (event.target.parentElement.attributes[1].value == 'artistica')
         $('.flyerImageFullScreen').attr('src', './img/muestraArtistica.jpg');
     if (event.target.parentElement.attributes[1].value == 'quirurgica')
         $('.flyerImageFullScreen').attr('src', './img/jornadaIQ.jpg');
-
+        $('.popup').css({ 'display': 'block' });
+        $("body").css("overflow", "hidden");
 });
 
 $('.popupContainerClose').click(function (event) {
