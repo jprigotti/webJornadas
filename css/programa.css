@@ -8,8 +8,6 @@
     --form-background: #f4f4f4;
     --grey-out: #a0a0a0;
     --time-background: #e0e0e0;
-
-
 }
 
 * {
@@ -57,6 +55,8 @@ body {
     width: 100%;
     background-color: var(--primary-color);
     margin-bottom: 0.5rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .agendaHeader .title {
@@ -209,7 +209,7 @@ body {
 .agendaBody .day7 div,
 .agendaBody .day9 div,
 .agendaBody .day10 div {
-    padding-top: 1rem;
+    padding: 1rem;
 }
 
 .agendaBody .day7 {
@@ -229,13 +229,58 @@ body {
     width: 100%;
     height: 20px;
     background-color: var(--primary-color);
-    margin-top: 2rem;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 
-/* Bootstrap Classes */
+/* popup */
+.popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .8);
+    overflow-y: scroll;
+    display: none;
 
+}
 
+.popupContainer {
+    position: relative;
+    max-width: 800px;
+    height: 100vh;
+    margin: 0rem auto;
+    padding: 0.5rem;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1;
+
+}
+
+.popupContainerHeader {
+    grid-row: 1;
+    padding: 1rem 0.5rem;
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+}
+
+.popupContainerBody {
+    grid-row: 2;
+    padding-bottom: 2rem;
+}
+
+.popupContainerClose{
+    cursor: pointer;
+}
+
+.popupContainerClose:hover{
+    opacity: 0.5;
+}
 
 
 /* **********************************************
