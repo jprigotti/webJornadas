@@ -471,7 +471,8 @@ body a {
         overflow-y: scroll;
     } */
 
-    .alertContainer {
+    .alertNewUser .alertContainer,
+    .alertRegisteredUser .alertContainer{
         width: 90%;
         font-size: 0.9rem;
         padding: 1rem;
