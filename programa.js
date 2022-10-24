@@ -1,5 +1,5 @@
 const btnDay7 = document.querySelector('#btnDay7');
-btnDay7.addEventListener('click', function(){
+btnDay7.addEventListener('click', function () {
     document.querySelector('#btnDay7').classList.add('btnActive');
     document.querySelector('#btnDay9').classList.remove('btnActive');
     document.querySelector('#btnDay10').classList.remove('btnActive');
@@ -13,7 +13,7 @@ btnDay7.addEventListener('click', function(){
 });
 
 const btnDay9 = document.querySelector('#btnDay9');
-btnDay9.addEventListener('click', function(){
+btnDay9.addEventListener('click', function () {
     document.querySelector('#btnDay7').classList.remove('btnActive');
     document.querySelector('#btnDay9').classList.add('btnActive');
     document.querySelector('#btnDay10').classList.remove('btnActive');
@@ -27,7 +27,7 @@ btnDay9.addEventListener('click', function(){
 });
 
 const btnDay10 = document.querySelector('#btnDay10');
-btnDay10.addEventListener('click', function(){
+btnDay10.addEventListener('click', function () {
     document.querySelector('#btnDay7').classList.remove('btnActive');
     document.querySelector('#btnDay9').classList.remove('btnActive');
     document.querySelector('#btnDay10').classList.add('btnActive');
@@ -38,3 +38,21 @@ btnDay10.addEventListener('click', function(){
     $('.agendaBody .day9').css({ 'display': 'none' });
     $('.agendaBody .day10').css({ 'display': 'block' });
 });
+
+
+$('.buttonMaximize').click(function (event) {
+    $('body, html').scrollTop(0);
+    if (event.target.parentElement.attributes[1].value == 'artistica')
+        $('.flyerImageFullScreen').attr('src', './img/muestraArtistica.jpg');
+    if (event.target.parentElement.attributes[1].value == 'quirurgica')
+        $('.flyerImageFullScreen').attr('src', './img/jornadaIQ.jpg');
+        $('.popup').css({ 'display': 'block' });
+        $("body").css("overflow", "hidden");
+});
+
+$('.popupContainerClose').click(function (event) {
+    $('.popup').css({ 'display': 'none' });
+    $("body").css("overflow", "visible");
+});
+
+
