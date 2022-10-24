@@ -472,7 +472,8 @@ body a {
     } */
 
     .alertNewUser .alertContainer,
-    .alertRegisteredUser .alertContainer{
+    .alertRegisteredUser .alertContainer
+     {
         width: 90%;
         font-size: 0.9rem;
         padding: 1rem;
