@@ -44,10 +44,12 @@ $('.buttonMaximize').click(function (event) {
     $('body, html').scrollTop(0);
     if (event.target.parentElement.attributes[1].value == 'artistica')
         $('.flyerImageFullScreen').attr('src', './img/muestraArtistica.jpg');
+    if (event.target.parentElement.attributes[1].value == 'obstetricia')
+        $('.flyerImageFullScreen').attr('src', './img/jornadaObstetrica.jpeg');
     if (event.target.parentElement.attributes[1].value == 'quirurgica')
         $('.flyerImageFullScreen').attr('src', './img/jornadaIQ.jpg');
-        $('.popup').css({ 'display': 'block' });
-        $("body").css("overflow", "hidden");
+    $('.popup').css({ 'display': 'block' });
+    $("body").css("overflow", "hidden");
 });
 
 $('.popupContainerClose').click(function (event) {
