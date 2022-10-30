@@ -40,13 +40,19 @@ opacity: 0.5;
 
 
 .accordion .material-symbols-outlined {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-right: 0.5rem;
     font-variation-settings: 
     /* 'wght' 300,
     'GRAD' 100, */
     'opsz' 48,
 }
+
+.accordion .smallIcon {
+    font-size: 1.2rem;
+}
+
+
 
 .show {
     background-color: none !important;
