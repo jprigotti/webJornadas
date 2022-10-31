@@ -1,5 +1,6 @@
 :root {
     --primary-color: rgba(13, 110, 139, 0.75);
+    --seconday-color: rgba(13, 110, 139, 0.05);
     --overlay-color: rgba(24, 39, 51, 0.85);
     --menu-speed: 0.75s;
     --footer-background: rgb(24, 40, 52);
@@ -37,6 +38,16 @@ body {
     z-index: -1;
 }
 
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 1rem;
+    width: 95%;
+}
+
+
 .showcase .showcase-inner {
     display: flex;
     flex-direction: column;
@@ -46,13 +57,6 @@ body {
     height: 100%;
 }
 
-.container {
-    max-width: 900px;
-    margin: auto;
-    overflow: hidden;
-    padding: 0 1rem;
-    width: 95%;
-}
 
 .countdownContainer {
     /* border: 1px solid #f4f4f4; */
@@ -92,6 +96,38 @@ body {
 div>span {
     display: block;
     font-size: 0.8rem;
+    text-align: center;
+}
+
+
+.welcome{
+background-color: #f4f4f4;
+font-weight: 300;
+}
+
+.welcome-inner{
+    padding: 3rem 0.5rem;
+}
+
+
+.welcome-inner h2{
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.welcome-inner p{
+    text-indent: 2rem;
+    text-align: justify;
+    padding-bottom: 1.5rem;
+}
+
+.welcome-inner .welcomeSignature{
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.welcome-inner .welcomeSignature p{
+    padding: 0;
     text-align: center;
 }
 

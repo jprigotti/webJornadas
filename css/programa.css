@@ -142,7 +142,7 @@ body {
     background-color: transparent;
     color: var(--grey-out);
     font-size: 1.5rem;
-    font-weight: 100;
+    font-weight: 300;
     transition: 0.2s ease;
 }
 
@@ -168,6 +168,7 @@ body {
     color: var(--overlay-color);
     padding: 0.5rem 1rem;
     margin: 1.5rem 0;
+    text-align: left;
 }
 
 .time::before {
@@ -191,7 +192,8 @@ body {
 
 
 .agendaBody h5 {
-    padding-left: 2rem;
+    text-align: left;
+    padding-left: 3rem;
     color: #091A5E;
     font-size: 1rem;
     font-weight: 600;
@@ -207,6 +209,7 @@ body {
 }
 
 .agendaBody .day7 div,
+.agendaBody .day8 div,
 .agendaBody .day9 div,
 .agendaBody .day10 div {
     padding: 1rem;
@@ -214,6 +217,10 @@ body {
 
 .agendaBody .day7 {
     display: block;
+}
+
+.agendaBody .day8 {
+    display: none;
 }
 
 .agendaBody .day9 {
