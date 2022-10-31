@@ -122,6 +122,7 @@ font-weight: 300;
 }
 
 .welcome-inner .welcomeSignature{
+    margin: 0 auto;
     padding-top: 2rem;
     text-align: center;
 }
