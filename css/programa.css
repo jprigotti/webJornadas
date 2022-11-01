@@ -162,13 +162,15 @@ body {
 }
 
 
-.time {
+.agendaBody .time {
     width: 100%;
     background-color: var(--time-background);
     color: var(--overlay-color);
-    padding: 0.5rem 1rem;
-    margin: 1.5rem 0;
+    padding: 0.5rem 0.5rem;
+    margin: 1rem 0;
     text-align: left;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .time::before {
@@ -179,8 +181,13 @@ body {
 }
 
 .agendaBody .location {
+    font-size: 1rem;
     font-weight: 500;
-    padding-left: 2rem;
+    padding: 0.5rem 0.5rem;
+    margin: 0.5rem 0;
+    text-align: left;
+    border: 2px solid var(--time-background);
+
 }
 
 .agendaBody .location::before {
@@ -190,20 +197,36 @@ body {
     padding-right: 0.3rem;
 }
 
+.agendaBody h4 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 1rem
+}
 
 .agendaBody h5 {
     text-align: left;
-    padding-left: 3rem;
+    padding: 1rem 0 0.5rem 1rem;
     color: #091A5E;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 1.2rem;
 }
 
 .agendaBody h6 {
-    padding-left: 3rem;
+    text-align: left;
+    padding-left: 2rem;
     color: var(--overlay-color);
     font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.2rem;
+}
+
+.agendaBody p {
+    text-align: left;
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+    color: var(--overlay-color);
+    font-size: 0.8rem;
     font-weight: 300;
     line-height: 1.2rem;
 }
@@ -212,7 +235,7 @@ body {
 .agendaBody .day8 div,
 .agendaBody .day9 div,
 .agendaBody .day10 div {
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .agendaBody .day7 {
@@ -282,11 +305,11 @@ body {
     padding-bottom: 2rem;
 }
 
-.popupContainerClose{
+.popupContainerClose {
     cursor: pointer;
 }
 
-.popupContainerClose:hover{
+.popupContainerClose:hover {
     opacity: 0.5;
 }
 
@@ -306,11 +329,20 @@ body {
 @media(max-width:576px) {
 
     .agendaContainer {
-        width: 90%;
+        width: 100%;
+        padding: 0.5rem;
+        box-shadow: none;
+        margin-bottom: 100px;
     }
 
-    .agendaContainer {
-        margin-bottom: 100px;
+    #accordionExample {
+        padding-left: 0.25rem !important;
+        padding-right: 0.25rem !important;
+    }
+
+    .accordion-body {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 
 }
