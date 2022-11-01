@@ -133,6 +133,12 @@ opacity: 0.5;
     box-shadow: inset 0 0 5px #a945ac;
 }
 
+.accordion-button-5 {
+    margin-bottom: 0.5rem;
+    background-color: #f4f4f4;
+    border: 1px solid #b1be39;
+    box-shadow: inset 0 0 5px #a7b33f;
+}
 
 @media (prefers-reduced-motion: reduce) {
     .accordion-button {
@@ -167,6 +173,12 @@ opacity: 0.5;
 .accordion-button-4:not(.collapsed) {
     color: var(--bs-accordion-active-color);
     background-color: rgba(169, 69, 172, 0.8);
+    color: white;
+}
+
+.accordion-button-5:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: rgba(167, 179, 63, 0.8);
     color: white;
 }
 
