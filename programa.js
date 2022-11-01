@@ -85,25 +85,27 @@ $('.popupContainerClose').click(function (event) {
 
 
 $('.accordion-button-4').click(function(event){
-    window.scrollTo(0, 150);
+    ($(window).width()>576) ? window.scrollTo(0, 150) : window.scrollTo(0, 189);
 });
 $('.accordion-button-2').click(function(event){
-    window.scrollTo(0, 230);
+    ($(window).width()>576) ? window.scrollTo(0, 230) : window.scrollTo(0, 280);
 });
 $('.accordion-button-1').click(function(event){
-    window.scrollTo(0, 300);
+    ($(window).width()>576) ? window.scrollTo(0, 300) : window.scrollTo(0, 350);
 });
 $('.accordion-button-5').click(function(event){
-    window.scrollTo(0, 365);
+    ($(window).width()>576) ? window.scrollTo(0, 365) : window.scrollTo(0, 440);
+
 });
 $('.accordion-button-3').click(function(event){
-    window.scrollTo(0, 430);
+    ($(window).width()>576) ? window.scrollTo(0, 430) : window.scrollTo(0, 505);
+
 });
 
 
-// $(window).scroll(example);
+$(window).scroll(example);
 
-// function example() {
-//   var tempScrollTop = $(window).scrollTop();
-//   console.log("Scroll from Top: " + tempScrollTop.toString());
-// };
+function example() {
+  var tempScrollTop = $(window).scrollTop();
+  console.log("Scroll from Top: " + tempScrollTop.toString());
+};
