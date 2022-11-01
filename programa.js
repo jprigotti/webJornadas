@@ -84,3 +84,26 @@ $('.popupContainerClose').click(function (event) {
 });
 
 
+$('.accordion-button-4').click(function(event){
+    window.scrollTo(0, 150);
+});
+$('.accordion-button-2').click(function(event){
+    window.scrollTo(0, 230);
+});
+$('.accordion-button-1').click(function(event){
+    window.scrollTo(0, 300);
+});
+$('.accordion-button-5').click(function(event){
+    window.scrollTo(0, 365);
+});
+$('.accordion-button-3').click(function(event){
+    window.scrollTo(0, 430);
+});
+
+
+// $(window).scroll(example);
+
+// function example() {
+//   var tempScrollTop = $(window).scrollTop();
+//   console.log("Scroll from Top: " + tempScrollTop.toString());
+// };
