@@ -1,0 +1,118 @@
+:root {
+    --primary-color: rgba(13, 110, 139, 0.75);
+    --overlay-color: rgba(24, 39, 51, 0.85);
+    --warning-color: #F6E019;
+    --btn-background-green: rgba(137, 190, 109, 1);
+    --form-background: #f4f4f4;
+    --btn-background-green: rgba(137, 190, 109, 1);
+    --btn-background-green--hover: rgb(102, 145, 79);
+
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Poppins", sans-serif !important;
+    line-height: 1.2;
+}
+
+
+.comisionesBackground {
+    background-image: linear-gradient(rgba(13, 110, 139, 0.2), rgba(13, 110, 139, 0.2)), url("../img/backgroundRegistration.jpg");
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    width: 95%;
+    background-color: #f4f4f4;
+    color: #303030;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+.comisiones-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    font-weight: 300;
+    padding: 1rem 3rem 5rem 3rem;
+}
+
+.comisiones-inner h2 {
+    font-weight: 600;
+    padding-top: 3rem;
+}
+
+.comisiones-inner h3 {
+    font-weight: 600;
+    padding-top: 2rem;
+    font-size: 1.2rem;
+}
+
+.comisiones-inner h4 {
+    font-weight: 500;
+    padding-top: 2rem;
+    font-size: 1.2rem;
+}
+
+.comisiones-inner p {
+    padding-top: 0.5rem;
+}
+
+
+
+
+/* **********************************************
+                MEDIA QUERIES
+********************************************** */
+
+@media(max-width:1024px) {}
+
+@media(max-width:778px) {
+
+    .comisiones-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+        font-weight: 300;
+        padding: 1rem 1rem 3rem 1rem;
+    }
+
+    .comisiones-inner h2 {
+        font-size: 1.3rem;
+    }
+
+    .comisiones-inner h3 {
+
+        font-size: 1.1rem;
+    }
+
+    .comisiones-inner h4 {
+
+        font-size: 1rem;
+    }
+
+    .comisiones-inner p {
+        font-size: 0.9rem;
+    }
+}

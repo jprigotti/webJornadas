@@ -84,36 +84,36 @@ $('.popupContainerClose').click(function (event) {
 });
 
 
-$('#accordion-button-4').click(function(event){
-    setTimeout(function(){
-        ($(window).width()>576) ? window.scroll(0, 150) : window.scroll(0, 189);
+$('#accordion-button-4').click(function (event) {
+    setTimeout(function () {
+        ($(window).width() > 576) ? window.scroll(0, 150) : window.scroll(0, 189);
     }, 100);
-    
-});
-$('#accordion-button-2').click(function(event){
-    setTimeout(function(){
-        ($(window).width()>576) ? window.scroll(0, 230) : window.scroll(0, 280);
-    }, 100);
-    
-});
-$('#accordion-button-1').click(function(event){
-    setTimeout(function(){
-        ($(window).width()>576) ? window.scroll(0, 300) : window.scroll(0, 350);
-    }, 100);
-    
-});
-$('#accordion-button-5').click(function(event){
-setTimeout(function(){
-    ($(window).width()>576) ? window.scroll(0, 365) : window.scroll(0, 440);
-}, 100);
-    
 
 });
-$('#accordion-button-3').click(function(event){
-setTimeout(function(){
-    ($(window).width()>576) ? window.scroll(0, 430) : window.scroll(0, 505);
-}, 100);
-    
+$('#accordion-button-2').click(function (event) {
+    setTimeout(function () {
+        ($(window).width() > 576) ? window.scroll(0, 230) : window.scroll(0, 280);
+    }, 100);
+
+});
+$('#accordion-button-1').click(function (event) {
+    setTimeout(function () {
+        ($(window).width() > 576) ? window.scroll(0, 300) : window.scroll(0, 350);
+    }, 100);
+
+});
+$('#accordion-button-5').click(function (event) {
+    setTimeout(function () {
+        ($(window).width() > 576) ? window.scroll(0, 365) : window.scroll(0, 440);
+    }, 100);
+
+
+});
+$('#accordion-button-3').click(function (event) {
+    setTimeout(function () {
+        ($(window).width() > 576) ? window.scroll(0, 430) : window.scroll(0, 505);
+    }, 100);
+
 
 });
 
@@ -121,6 +121,6 @@ setTimeout(function(){
 $(window).scroll(example);
 
 function example() {
-  var tempScrollTop = $(window).scrollTop();
-  console.log("Scroll from Top: " + tempScrollTop.toString());
+    var tempScrollTop = $(window).scrollTop();
+    console.log("Scroll from Top: " + tempScrollTop.toString());
 };
