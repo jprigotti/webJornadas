@@ -13,6 +13,9 @@ btnDay7.addEventListener('click', function () {
     $('.agendaBody .day9').css({ 'display': 'none' });
     $('.agendaBody .day10').css({ 'display': 'none' });
 
+    setTimeout(function () {
+        ($(window).width() > 576) ? window.scroll(0, 430) : window.scroll(0, 505);
+    }, 100);
 });
 
 const btnDay8 = document.querySelector('#btnDay8');
@@ -30,6 +33,9 @@ btnDay8.addEventListener('click', function () {
     $('.agendaBody .day9').css({ 'display': 'none' });
     $('.agendaBody .day10').css({ 'display': 'none' });
 
+    setTimeout(function () {
+        ($(window).width() > 576) ? window.scroll(0, 430) : window.scroll(0, 505);
+    }, 100);
 });
 
 const btnDay9 = document.querySelector('#btnDay9');
@@ -47,6 +53,9 @@ btnDay9.addEventListener('click', function () {
     $('.agendaBody .day9').css({ 'display': 'block' });
     $('.agendaBody .day10').css({ 'display': 'none' });
 
+    setTimeout(function () {
+        ($(window).width() > 576) ? window.scroll(0, 430) : window.scroll(0, 505);
+    }, 100);
 });
 
 const btnDay10 = document.querySelector('#btnDay10');
@@ -63,6 +72,10 @@ btnDay10.addEventListener('click', function () {
     $('.agendaBody .day8').css({ 'display': 'none' });
     $('.agendaBody .day9').css({ 'display': 'none' });
     $('.agendaBody .day10').css({ 'display': 'block' });
+
+    setTimeout(function () {
+        ($(window).width() > 576) ? window.scroll(0, 430) : window.scroll(0, 505);
+    }, 100);
 });
 
 
