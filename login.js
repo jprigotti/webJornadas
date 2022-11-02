@@ -83,10 +83,19 @@ $('#confirmPayment').submit(function (evento) {
         var that = $(this),
             name = that.attr('name'),
             value = that.val();
-        data[name] = value;
-        console.log(data);
+
+        switch (name) {
+            case "email":
+                if (name == "email") data[name] = value;
+                break;
+            case "categoria":
+                if ($(`input[name=${name}][value=${value}]:checked`).length == 1) data[name] = value;
+                break
+        }
+
     });
 
+    console.log(data);
     processingPurchase();
 
     $.ajax({
@@ -152,7 +161,7 @@ show the table
 load the table with data from SS
 ***********************************************************************/
 function loginSuccess() {
-    $('.fa-user').attr('data-content','Hola!');
+    $('.fa-user').attr('data-content', 'Hola!');
     //clear the input form
     document.querySelector("#login").reset(); //clear all input form
     //hide the login form
@@ -374,7 +383,7 @@ This function has to:
 
 function confirmPurchase(data) {
 
-    
+
     $.ajax({
         method: "post",
         redirect: "follow",

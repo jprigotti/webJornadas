@@ -273,6 +273,24 @@ input {
     font-size: 1rem;
 }
 
+.radioButtonArea{
+    width: 80%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.radioButtonArea>div{
+display: flex;
+}
+
+.radioButtonArea>div>label{
+cursor: pointer;
+}
+
+
+
+
 .btnArea {
     width: 70%;
     margin: 1rem;
