@@ -21,6 +21,10 @@
     font-size: 2rem;
 }
 
+body, html{
+    scroll-behavior: smooth !important;
+}
+
 body {
     font-family: "Poppins", sans-serif;
     line-height: 1.2;
@@ -60,14 +64,35 @@ body {
 }
 
 .agendaHeader .title {
-    padding: 1.5rem 0.5rem;
+    padding: 0rem 0.5rem 1.5rem 0.5rem;
     display: grid;
-    grid-template-rows: 2;
+    grid-template-rows: 3;
     grid-template-columns: repeat(12, 1fr);
 }
 
-.title .item1 {
+.title .item5 {
     grid-row: 1;
+    grid-column: 1/13;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    border-bottom: 1px solid #f4f4f4;
+    color: #f4f4f4;
+}
+
+.title .item5 h1{
+    font-size: 2rem;
+    font-weight: 400;
+    padding-bottom: 0.5rem;
+}
+
+.title .item5 p{
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+
+
+.title .item1 {
+    grid-row: 2;
     grid-column: 2 / 3;
     justify-self: center;
     align-self: center;
@@ -77,34 +102,36 @@ body {
 }
 
 .agendaHeader .item2 {
-    grid-row: 1;
+    grid-row: 2;
     grid-column: 3 / 11;
     width: 100%;
     justify-self: center;
     align-self: center;
     text-align: center;
     color: var(--form-background);
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 .agendaHeader .item2 h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #f4f4f4;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .agendaHeader .item3 {
-    grid-row: 1;
+    grid-row: 2;
     grid-column: 11 / 12;
     justify-self: end;
     align-self: center;
 }
 
 .agendaHeader .item4 {
-    grid-row: 2;
+    grid-row: 3;
     grid-column: 1 / 13;
     justify-self: center;
-    padding-top: 1rem;
     color: #f4f4f4;
+    font-weight: 200;
 }
 
 .agendaHeader .item3 a {
@@ -246,7 +273,7 @@ body {
     display: none;
 }
 
-.agendaBody .day8 p{
+.agendaBody .day8 p {
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 40rem;

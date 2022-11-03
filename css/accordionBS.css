@@ -293,7 +293,8 @@ opacity: 0.5;
 .collapsing {
     height: 0;
     overflow: hidden;
-    transition: height 0.35s ease;
+    /* transition: height 0.35s ease; */
+    transition: height 0.75s ease;
 }
 
 @media (prefers-reduced-motion: reduce) {

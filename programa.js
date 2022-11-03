@@ -1,3 +1,17 @@
+const navScrollSM = 55;
+var btn1ScrollSM = document.querySelector("#accordion-item-1").offsetTop - navScrollSM;
+var btn2ScrollSM = document.querySelector("#accordion-item-2").offsetTop - navScrollSM;
+var btn3ScrollSM = document.querySelector("#accordion-item-3").offsetTop - navScrollSM;
+var btn4ScrollSM = document.querySelector("#accordion-item-4").offsetTop - navScrollSM;
+var btn5ScrollSM = document.querySelector("#accordion-item-5").offsetTop - navScrollSM;
+const navScrollLG = 57;
+var btn1ScrollLG = document.querySelector("#accordion-item-1").offsetTop - navScrollLG;
+var btn2ScrollLG = document.querySelector("#accordion-item-2").offsetTop - navScrollLG;
+var btn3ScrollLG = document.querySelector("#accordion-item-3").offsetTop - navScrollLG;
+var btn4ScrollLG = document.querySelector("#accordion-item-4").offsetTop - navScrollLG;
+var btn5ScrollLG = document.querySelector("#accordion-item-5").offsetTop - navScrollLG;
+
+
 const btnDay7 = document.querySelector('#btnDay7');
 btnDay7.addEventListener('click', function () {
     document.querySelector('#btnDay7').classList.add('btnActive');
@@ -14,8 +28,9 @@ btnDay7.addEventListener('click', function () {
     $('.agendaBody .day10').css({ 'display': 'none' });
 
     setTimeout(function () {
-        ($(window).width() > 576) ? window.scroll(0, 430) : window.scroll(0, 505);
-    }, 100);
+        ($(window).width() > 576) ? window.scroll(0, btn3ScrollLG) : window.scroll(0, btn3ScrollSM);
+    }, 300);
+
 });
 
 const btnDay8 = document.querySelector('#btnDay8');
@@ -34,8 +49,9 @@ btnDay8.addEventListener('click', function () {
     $('.agendaBody .day10').css({ 'display': 'none' });
 
     setTimeout(function () {
-        ($(window).width() > 576) ? window.scroll(0, 430) : window.scroll(0, 505);
-    }, 100);
+        ($(window).width() > 576) ? window.scroll(0, btn3ScrollLG) : window.scroll(0, btn3ScrollSM);
+    }, 300);
+
 });
 
 const btnDay9 = document.querySelector('#btnDay9');
@@ -54,8 +70,9 @@ btnDay9.addEventListener('click', function () {
     $('.agendaBody .day10').css({ 'display': 'none' });
 
     setTimeout(function () {
-        ($(window).width() > 576) ? window.scroll(0, 430) : window.scroll(0, 505);
-    }, 100);
+        ($(window).width() > 576) ? window.scroll(0, btn3ScrollLG) : window.scroll(0, btn3ScrollSM);
+    }, 300);
+
 });
 
 const btnDay10 = document.querySelector('#btnDay10');
@@ -74,8 +91,9 @@ btnDay10.addEventListener('click', function () {
     $('.agendaBody .day10').css({ 'display': 'block' });
 
     setTimeout(function () {
-        ($(window).width() > 576) ? window.scroll(0, 430) : window.scroll(0, 505);
-    }, 100);
+        ($(window).width() > 576) ? window.scroll(0, btn3ScrollLG) : window.scroll(0, btn3ScrollSM);
+    }, 300);
+    
 });
 
 
@@ -99,35 +117,33 @@ $('.popupContainerClose').click(function (event) {
 
 $('#accordion-button-4').click(function (event) {
     setTimeout(function () {
-        ($(window).width() > 576) ? window.scroll(0, 150) : window.scroll(0, 189);
-    }, 100);
 
+        ($(window).width() > 576) ? window.scroll(0, btn4ScrollLG) : window.scroll(0, btn4ScrollSM);
+    }, 300);
 });
+
 $('#accordion-button-2').click(function (event) {
     setTimeout(function () {
-        ($(window).width() > 576) ? window.scroll(0, 230) : window.scroll(0, 280);
-    }, 100);
-
+        ($(window).width() > 576) ? window.scroll(0, btn2ScrollLG) : window.scroll(0, btn2ScrollSM);
+    }, 300);
 });
+
 $('#accordion-button-1').click(function (event) {
     setTimeout(function () {
-        ($(window).width() > 576) ? window.scroll(0, 300) : window.scroll(0, 350);
-    }, 100);
-
+        ($(window).width() > 576) ? window.scroll(0, btn1ScrollLG) : window.scroll(0, btn1ScrollSM);
+    }, 300);
 });
+
 $('#accordion-button-5').click(function (event) {
     setTimeout(function () {
-        ($(window).width() > 576) ? window.scroll(0, 365) : window.scroll(0, 440);
-    }, 100);
-
-
+        ($(window).width() > 576) ? window.scroll(0, btn5ScrollLG) : window.scroll(0, btn5ScrollSM);
+    }, 300);
 });
+
 $('#accordion-button-3').click(function (event) {
     setTimeout(function () {
-        ($(window).width() > 576) ? window.scroll(0, 430) : window.scroll(0, 505);
-    }, 100);
-
-
+        ($(window).width() > 576) ? window.scroll(0, btn3ScrollLG) : window.scroll(0, btn3ScrollSM);
+    }, 300);
 });
 
 
