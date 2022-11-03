@@ -98,7 +98,7 @@ btnDay10.addEventListener('click', function () {
 
 
 $('.buttonMaximize').click(function (event) {
-    $('body, html').scrollTop(0);
+    window.scroll(0, 0);
     if (event.target.parentElement.attributes[1].value == 'artistica')
         $('.flyerImageFullScreen').attr('src', './img/muestraArtistica.jpg');
     if (event.target.parentElement.attributes[1].value == 'obstetricia')
@@ -147,9 +147,9 @@ $('#accordion-button-3').click(function (event) {
 });
 
 
-$(window).scroll(example);
+// $(window).scroll(example);
 
-function example() {
-    var tempScrollTop = $(window).scrollTop();
-    console.log("Scroll from Top: " + tempScrollTop.toString());
-};
+// function example() {
+//     var tempScrollTop = $(window).scrollTop();
+//     console.log("Scroll from Top: " + tempScrollTop.toString());
+// };

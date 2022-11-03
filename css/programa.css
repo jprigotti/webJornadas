@@ -21,9 +21,9 @@
     font-size: 2rem;
 }
 
-body, html{
+/* body, html{
     scroll-behavior: smooth !important;
-}
+} */
 
 body {
     font-family: "Poppins", sans-serif;
@@ -57,7 +57,8 @@ body {
 
 .agendaHeader {
     width: 100%;
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
+    background-image: linear-gradient(rgba(13, 110, 139, 0.9), rgba(13, 110, 139, 0.7));
     margin-bottom: 0.5rem;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;

@@ -1,0 +1,145 @@
+:root {
+    --primary-color: rgba(13, 110, 139, 0.75);
+    --overlay-color: rgba(24, 39, 51, 0.85);
+    --warning-color: #F6E019;
+    --btn-background-green: rgba(137, 190, 109, 1);
+    --form-background: #f4f4f4;
+    --btn-background-green: rgba(137, 190, 109, 1);
+    --btn-background-green--hover: rgb(102, 145, 79);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Poppins", sans-serif !important;
+    line-height: 1.2;
+}
+
+
+.galeriaBackground {
+    background-image: linear-gradient(rgba(13, 110, 139, 0.2), rgba(13, 110, 139, 0.2)), url("../img/backgroundRegistration.jpg");
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    width: 95%;
+    /* background-color: #f4f4f4; */
+    color: #303030;
+    height: 100%;
+    border-radius: 10px;
+    /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); */
+}
+
+
+.galeria-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    font-weight: 300;
+
+}
+
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url("../img/jornadaObstetricia/jornadaObstetricia_featureImage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.description {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+    z-index: 1;
+    transition: height 0.5s;
+}
+
+.description h1{
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'Raleway', Arial, sans-serif;
+    padding-bottom: 2rem ;
+}
+
+.viewGalery{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: #f4f4f4;
+    overflow: hidden;
+    transform: scale(1);
+    transition: height 0.5s;
+}
+
+.viewGalery p{
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #f4f4f4;
+    border-radius: 5px;
+}
+
+.viewGalery p:hover{
+background-color: #f4f4f4;
+cursor: pointer;
+color: var(--overlay-color);
+transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+/* **********************************************
+                MEDIA QUERIES
+********************************************** */
+
+@media(max-width:1024px) {}
+
+@media(max-width:778px) {
+
+    .galeria-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+        font-weight: 300;
+        padding: 1rem 1rem 3rem 1rem;
+    }
+
+}
