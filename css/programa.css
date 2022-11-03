@@ -21,8 +21,8 @@
     font-size: 2rem;
 }
 
-body, html{
-    scroll-behavior: smooth !important;
+html, body{
+    scroll-behavior: smooth;
 }
 
 body {

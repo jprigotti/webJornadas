@@ -93,25 +93,28 @@ btnDay10.addEventListener('click', function () {
     setTimeout(function () {
         ($(window).width() > 576) ? window.scroll(0, btn3ScrollLG) : window.scroll(0, btn3ScrollSM);
     }, 300);
-    
+
 });
 
 
 $('.buttonMaximize').click(function (event) {
-    window.scroll(0, 0);
+
+    $('.popup').css({ 'display': 'block' });
+
     if (event.target.parentElement.attributes[1].value == 'artistica')
         $('.flyerImageFullScreen').attr('src', './img/muestraArtistica.jpg');
     if (event.target.parentElement.attributes[1].value == 'obstetricia')
         $('.flyerImageFullScreen').attr('src', './img/jornadaObstetrica.jpeg');
     if (event.target.parentElement.attributes[1].value == 'quirurgica')
         $('.flyerImageFullScreen').attr('src', './img/jornadaIQ.jpg');
-    $('.popup').css({ 'display': 'block' });
-    $("body").css("overflow", "hidden");
+
+    window.scroll(0, 0);
+    document.body.style.position = 'fixed';
 });
 
 $('.popupContainerClose').click(function (event) {
     $('.popup').css({ 'display': 'none' });
-    $("body").css("overflow", "visible");
+    document.body.style.position = '';
 });
 
 
