@@ -53,6 +53,21 @@ body {
 
 }
 
+.titleContainer{
+    color: var(--overlay-color);
+    border: 1px solid var(--overlay-color);
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: inset 0px 0px 5px 3px rgba(7, 104, 88, 0.2);
+}
+
+.titleContainer h3{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
 
 .imageContainer {
     position: relative;
@@ -102,10 +117,11 @@ body {
 }
 
 .viewGalery p{
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 0.5rem 1rem;
     border: 1px solid #f4f4f4;
     border-radius: 5px;
+    margin: 0;
 }
 
 .viewGalery p:hover{
@@ -115,6 +131,9 @@ color: var(--overlay-color);
 transition: all 0.3s ease-in-out;
 }
 
+.popup img{
+    width: 100%;
+}
 
 
 
