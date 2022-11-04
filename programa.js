@@ -100,7 +100,7 @@ btnDay10.addEventListener('click', function () {
 $('.buttonMaximize').click(function (event) {
 
     $('.popup').css({ 'display': 'block' });
-    console.log(event);
+    console.log(event.target.attributes[1].value);
     if (event.target.attributes[1].value == 'obstetricia')
         $('.flyerImageFullScreen').attr('src', './img/jornadaObstetrica.jpeg');
     if (event.target.attributes[1].value == 'quirurgica')
