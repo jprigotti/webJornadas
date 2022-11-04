@@ -314,14 +314,16 @@ body {
     background-color: var(--overlay-color);
     overflow-y: scroll;
     display: none;
+    padding: 3rem;
+    height: 100vh;
 
 }
 
 .popupContainer {
     position: relative;
     max-width: 800px;
-    height: 100vh;
-    margin: 0rem auto;
+    /* height: 100vh; */
+    margin: 0 auto;
     padding: 0.5rem;
     display: grid;
     grid-template-rows: 50px auto;
@@ -340,7 +342,7 @@ body {
 
 .popupContainerBody {
     grid-row: 2;
-    padding-bottom: 2rem;
+    /* padding-bottom: 2rem; */
 }
 
 .popupContainerClose {

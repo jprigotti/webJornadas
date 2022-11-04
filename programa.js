@@ -100,13 +100,15 @@ btnDay10.addEventListener('click', function () {
 $('.buttonMaximize').click(function (event) {
 
     $('.popup').css({ 'display': 'block' });
-
-    if (event.target.parentElement.attributes[1].value == 'artistica')
-        $('.flyerImageFullScreen').attr('src', './img/muestraArtistica.jpg');
-    if (event.target.parentElement.attributes[1].value == 'obstetricia')
+    console.log(event);
+    if (event.target.attributes[1].value == 'obstetricia')
         $('.flyerImageFullScreen').attr('src', './img/jornadaObstetrica.jpeg');
-    if (event.target.parentElement.attributes[1].value == 'quirurgica')
+    if (event.target.attributes[1].value == 'quirurgica')
         $('.flyerImageFullScreen').attr('src', './img/jornadaIQ.jpg');
+    if (event.target.attributes[1].value == 'artistica')
+        $('.flyerImageFullScreen').attr('src', './img/muestraArtistica.jpg');
+
+
 
     window.scroll(0, 0);
     document.body.style.position = 'fixed';
