@@ -314,7 +314,7 @@ body {
     background-color: var(--overlay-color);
     overflow-y: scroll;
     display: none;
-    padding: 3rem;
+    padding: 3rem 0.5rem;
     height: 100vh;
 
 }
@@ -322,7 +322,6 @@ body {
 .popupContainer {
     position: relative;
     max-width: 800px;
-    /* height: 100vh; */
     margin: 0 auto;
     padding: 0.5rem;
     display: grid;
@@ -338,7 +337,9 @@ body {
     justify-content: flex-end;
     align-items: center;
     background-color: white;
+    height: 30px;
 }
+
 
 .popupContainerBody {
     grid-row: 2;
