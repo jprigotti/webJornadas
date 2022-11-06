@@ -1,0 +1,389 @@
+:root {
+    --primary-color: rgba(13, 110, 139, 0.749);
+    --overlay-color: rgba(24, 39, 51, 0.85);
+    --warning-color: #F6E019;
+    --btn-background-green: rgba(137, 190, 109, 1);
+    --btn-background-green--hover: rgb(102, 145, 79);
+    --btn-background-orange: rgb(223, 160, 14);
+    --form-background: #f4f4f4;
+    --grey-out: #a0a0a0;
+    --time-background: #e0e0e0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.item1 .material-symbols-outlined {
+    margin-right: 0 !important;
+    font-size: 2rem;
+}
+
+html, body{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.2;
+}
+
+
+.agendaBackground {
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    background-image: linear-gradient(rgba(13, 110, 139, 0.2), rgba(13, 110, 139, 0.2)), url("../img/backgroundRegistration.jpg");
+}
+
+
+.agendaContainer {
+    width: 70%;
+    max-width: 600px;
+    margin: 0 auto;
+    /* margin-top: 5rem; */
+    /* margin-bottom: 100px; */
+    border-radius: 10px;
+    /* background-image: linear-gradient(rgba(13, 110, 139, 0.9), rgba(13, 110, 139, 0.7)); */
+    box-shadow: 3px 3px 3px 2px rgba(24, 39, 51, 0.6);
+    /* background-image: linear-gradient(rgba(13, 110, 139, 0.9), rgba(13, 110, 139, 0.7)); */
+}
+
+.agendaHeader {
+    width: 100%;
+    /* background-color: var(--primary-color); */
+    background-image: linear-gradient(rgba(13, 110, 139, 0.9), rgba(13, 110, 139, 0.7));
+    margin-bottom: 0.5rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.agendaHeader .title {
+    padding: 0rem 0.5rem 0.5rem 0.5rem;
+    display: grid;
+    grid-template-rows: 3;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.title .item5 {
+    grid-row: 1;
+    grid-column: 1/13;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    /* border-bottom: 1px solid #f4f4f4; */
+    color: #f4f4f4;
+}
+
+.title .item5 h1{
+    font-size: 2rem;
+    font-weight: 400;
+    padding-bottom: 0.5rem;
+}
+
+.title .item5 p{
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+
+
+.title .item1 {
+    grid-row: 2;
+    grid-column: 2 / 3;
+    justify-self: center;
+    align-self: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--form-background);
+}
+
+.agendaHeader .item2 {
+    grid-row: 2;
+    grid-column: 3 / 11;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    color: var(--form-background);
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.agendaHeader .item2 h2 {
+    font-size: 1.5rem;
+    color: #f4f4f4;
+    font-weight: 400;
+}
+
+.agendaHeader .item3 {
+    grid-row: 2;
+    grid-column: 11 / 12;
+    justify-self: end;
+    align-self: center;
+}
+
+.agendaHeader .item4 {
+    grid-row: 3;
+    grid-column: 1 / 13;
+    justify-self: center;
+    color: #f4f4f4;
+    font-weight: 200;
+}
+
+.agendaHeader .item3 a {
+    text-decoration: none;
+    color: var(--form-background);
+}
+
+
+.selectDays {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #f4f4f4;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.selectDays p {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: var(--grey-out);
+    transition: 0.2s ease;
+}
+
+
+.btn {
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 100px;
+    border: 1px solid var(--grey-out);
+    background-color: transparent;
+    color: var(--grey-out);
+    font-size: 1.5rem;
+    font-weight: 300;
+    transition: 0.2s ease;
+}
+
+.btnActive {
+    border: none;
+    background-color: var(--btn-background-orange);
+    color: #f4f4f4;
+}
+
+.selectDays .dayActive {
+    font-weight: 500;
+    color: var(--overlay-color);
+}
+
+.agendaBody {
+    background-color: #f4f4f4;
+}
+
+
+.agendaBody .time {
+    width: 100%;
+    background-color: var(--time-background);
+    color: var(--overlay-color);
+    padding: 0.5rem 0.5rem;
+    margin: 1rem 0;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.time::before {
+    content: '\f017';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    padding-right: 0.5rem;
+}
+
+.agendaBody .location {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 0.5rem;
+    margin: 0.5rem 0;
+    text-align: left;
+    border: 2px solid var(--time-background);
+
+}
+
+.agendaBody .location::before {
+    content: '\f279';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    padding-right: 0.3rem;
+}
+
+.agendaBody h4 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 1rem
+}
+
+.agendaBody h5 {
+    text-align: left;
+    padding: 1rem 0 0.5rem 1rem;
+    color: #091A5E;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+}
+
+.agendaBody h6 {
+    text-align: left;
+    padding-left: 2rem;
+    color: var(--overlay-color);
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.2rem;
+}
+
+.agendaBody p {
+    text-align: left;
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+    color: var(--overlay-color);
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 1.2rem;
+}
+
+.agendaBody .day7 div,
+.agendaBody .day8 div,
+.agendaBody .day9 div,
+.agendaBody .day10 div {
+    padding: 0.5rem;
+}
+
+.agendaBody .day7 {
+    display: block;
+}
+
+.agendaBody .day8 {
+    display: none;
+}
+
+.agendaBody .day8 p {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 40rem;
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+.agendaBody .day9 {
+    display: none;
+}
+
+.agendaBody .day10 {
+    display: none;
+}
+
+
+.pie {
+    width: 100%;
+    height: 20px;
+    background-color: var(--primary-color);
+    margin-top: 0.5rem;
+    padding: 1rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+/* popup */
+.popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    /* background-color: rgba(255, 255, 255, .8); */
+    background-color: var(--overlay-color);
+    overflow-y: scroll;
+    display: none;
+    padding: 3rem 0.5rem;
+    height: 100vh;
+
+}
+
+.popupContainer {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0.5rem;
+    display: grid;
+    grid-template-rows: 50px auto;
+    grid-template-columns: 1;
+
+}
+
+.popupContainerHeader {
+    grid-row: 1;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
+    height: 30px;
+}
+
+
+.popupContainerBody {
+    grid-row: 2;
+    /* padding-bottom: 2rem; */
+}
+
+.popupContainerClose {
+    cursor: pointer;
+}
+
+.popupContainerClose:hover {
+    opacity: 0.5;
+}
+
+
+/* **********************************************
+                MEDIA QUERIES
+********************************************** */
+
+
+@media(max-width:778px) {
+
+    .agendaContainer {
+        width: 90%;
+    }
+}
+
+@media(max-width:576px) {
+
+    .agendaContainer {
+        width: 100%;
+        padding: 0.5rem;
+        box-shadow: none;
+        margin-bottom: 100px;
+    }
+
+    #accordionExample {
+        padding-left: 0.25rem !important;
+        padding-right: 0.25rem !important;
+    }
+
+    .accordion-body {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+}
