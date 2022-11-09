@@ -491,6 +491,9 @@ div>span {
         margin-right: 0.5rem;
     }
 
+    .eventQR img{
+        width: 100px;
+    }
 
     .footerContainer {
         /* margin-bottom: 4rem; */
