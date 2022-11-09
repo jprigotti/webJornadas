@@ -101,17 +101,17 @@ div>span {
 
 
 
-.eventQR{
+.eventQR {
     margin-top: 1rem;
     background-color: var(--primary-color);
     border-radius: 5px;
 }
 
-.eventQR img{
+.eventQR img {
     width: 200px;
 }
 
-.eventQR a{
+.eventQR a {
     text-decoration: none;
     color: #f4f4f4;
 }
@@ -157,18 +157,18 @@ div>span {
     padding-bottom: 0.5rem;
 }
 
-.verComisiones{
+.verComisiones {
     margin: 0 auto;
     padding-top: 2rem;
     text-align: center;
 }
 
-.verComisiones a{
+.verComisiones a {
     text-decoration: none;
     color: var(--overlay-color);
 }
 
-.verComisiones a:hover{
+.verComisiones a:hover {
     color: var(--primary-color)
 }
 
@@ -250,10 +250,10 @@ div>span {
 .material-symbols-outlined {
     margin-right: 1rem;
     font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 48
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'48
 }
 
 
@@ -492,7 +492,12 @@ div>span {
         margin-right: 0.5rem;
     }
 
-    .eventQR img{
+
+    .eventQR{
+        margin: 0;
+    }
+
+    .eventQR img {
         width: 100px;
     }
 
@@ -529,19 +534,19 @@ div>span {
         font-size: 1.3rem;
         font-weight: 600;
     }
-    
+
     .welcome-inner h4 {
         font-size: 1.1rem;
         font-weight: 600;
     }
-    
-    
+
+
     .welcome-inner p {
         font-size: 0.9rem;
         /* font-weight: 600; */
     }
 
-    .verComisiones a{
+    .verComisiones a {
         font-size: 0.9rem;
     }
 
