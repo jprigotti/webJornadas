@@ -472,6 +472,7 @@ div>span {
 @media(max-width:778px) {
 
     .showcase {
+        margin-top: 1rem;
         min-height: 100vh;
     }
 
@@ -480,7 +481,7 @@ div>span {
     }
 
     .showcase .btnArea {
-        margin-top: 2rem;
+        margin-top: 1rem;
         display: flex;
         flex-direction: column;
     }
