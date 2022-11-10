@@ -267,7 +267,7 @@ body {
 }
 
 .agendaBody .day7 {
-    display: block;
+    display: none;
 }
 
 .agendaBody .day8 {
@@ -288,7 +288,7 @@ body {
 }
 
 .agendaBody .day10 {
-    display: none;
+    display: block;
 }
 
 

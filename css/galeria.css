@@ -55,15 +55,32 @@ body {
 
 .videoInstitucional {
     width: 100%;
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
+    background-color: #161616;
     border-radius: 5px;
     margin-bottom: 3rem;
 }
 
 .videoInstitucional h3 {
-    padding: 0.5rem;
+    margin: 0;
+    padding: 0;
     color: #f4f4f4;
 }
+
+.videoInstitucional .videoFooter {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.videoInstitucional .footer video .container{
+    color: aqua !important;
+}
+
+
 
 /* .titleContainer{
     color: var(--overlay-color);
@@ -91,6 +108,11 @@ body {
     background-size: cover;
     background-position: center;
     margin-bottom: 2rem;
+}
+
+.jc_day2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("../img/jornadasCientificas_day2/jornadasCientificas_day2FeatureImage.jpeg");
+
 }
 
 .jc_day1 {

@@ -1,3 +1,4 @@
+
 $('.obstetricia').hover(function () {
     $('.obstetricia .description').css({ 'height': '80%' })
     $('.obstetricia .viewGalery').css({ 'height': '20%' })
@@ -22,6 +23,145 @@ $('.jc_day1').hover(function () {
     $('.jc_day1 .viewGalery').css({ 'height': '0%' })
 });
 
+$('.jc_day2').hover(function () {
+    $('.jc_day2 .description').css({ 'height': '80%' })
+    $('.jc_day2 .viewGalery').css({ 'height': '20%' })
+}, function () {
+    $('.jc_day2 .description').css({ 'height': '100%' })
+    $('.jc_day2 .viewGalery').css({ 'height': '0%' })
+});
+
+
+// Codigo boton viewGalery Jornadas Cientificas Dia2
+$('#jcDay2Galery').click(function () {
+    $('.popup').css({ 'display': 'block' })
+    window.scroll(0, 0);
+    document.body.style.position = 'fixed';
+    document.body.style.width = '100vw';
+
+    $('.popupContainerBody').html(`                
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+        class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+        aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+        aria-label="Slide 6"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+        aria-label="Slide 7"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+        aria-label="Slide 8"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
+        aria-label="Slide 9"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"
+        aria-label="Slide 10"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10"
+        aria-label="Slide 11"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11"
+        aria-label="Slide 12"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="12"
+        aria-label="Slide 13"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="13"
+        aria-label="Slide 14"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="14"
+        aria-label="Slide 15"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="15"
+        aria-label="Slide 16"></button>
+
+
+
+</div>
+<div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="./img/jornadasCientificas_day2/jornadasCientificas_day2_1.jpeg" class="d-block w-100"
+            alt="...">
+    </div>
+    <div class="carousel-item">
+        <img src="./img/jornadasCientificas_day2/jornadasCientificas_day2_2.jpeg" class="d-block w-100"
+            alt="...">
+    </div>
+    <div class="carousel-item">
+        <img src="./img/jornadasCientificas_day2/jornadasCientificas_day2_3.jpeg" class="d-block w-100"
+            alt="...">
+    </div>
+    <div class="carousel-item">
+        <img src="./img/jornadasCientificas_day2/jornadasCientificas_day2_4.jpeg" class="d-block w-100"
+            alt="...">
+    </div>
+    <div class="carousel-item">
+        <img src="./img/jornadasCientificas_day2/jornadasCientificas_day2_5.jpeg" class="d-block w-100"
+            alt="...">
+    </div>
+    <div class="carousel-item">
+        <img src="./img/jornadasCientificas_day2/jornadasCientificas_day2_5.jpeg" class="d-block w-100"
+            alt="...">
+    </div>
+    <div class="carousel-item">
+        <img src="./img/jornadasCientificas_day2/jornadasCientificas_day2_6.jpeg" class="d-block w-100"
+            alt="...">
+    </div>
+    <div class="carousel-item">
+        <img src="./img/jornadasCientificas_day2/jornadasCientificas_day2_7.jpeg" class="d-block w-100"
+            alt="...">
+    </div>
+    <div class="carousel-item">
+        <img src="./img/jornadasCientificas_day2/jornadasCientificas_day2_8.jpeg" class="d-block w-100"
+            alt="...">
+    </div>
+    <div class="carousel-item">
+        <img src="./img/jornadasCientificas_day2/jornadasCientificas_day2_9.jpeg" class="d-block w-100"
+            alt="...">
+    </div>
+    <div class="carousel-item">
+        <img src="./img/jornadasCientificas_day2/jornadasCientificas_day2_10.jpeg" class="d-block w-100"
+            alt="...">
+    </div>
+    <div class="carousel-item">
+        <img src="./img/jornadasCientificas_day2/jornadasCientificas_day2_11.jpeg" class="d-block w-100"
+            alt="...">
+    </div>
+    <div class="carousel-item">
+        <img src="./img/jornadasCientificas_day2/jornadasCientificas_day2_12.jpeg" class="d-block w-100"
+            alt="...">
+    </div>
+    <div class="carousel-item">
+        <img src="./img/jornadasCientificas_day2/jornadasCientificas_day2_13.jpeg" class="d-block w-100"
+            alt="...">
+    </div>
+    <div class="carousel-item">
+        <img src="./img/jornadasCientificas_day2/jornadasCientificas_day2_14.jpeg" class="d-block w-100"
+            alt="...">
+    </div>
+    <div class="carousel-item">
+        <img src="./img/jornadasCientificas_day2/jornadasCientificas_day2_15.jpeg" class="d-block w-100"
+            alt="...">
+    </div>
+    <div class="carousel-item">
+        <img src="./img/jornadasCientificas_day2/jornadasCientificas_day2_16.jpeg" class="d-block w-100"
+            alt="...">
+    </div>
+
+
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+    data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+    data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+</button>
+</div>`
+    );
+})
 
 // Codigo boton viewGalery Jornadas Cientificas Dia1
 $('#jcDay1Galery').click(function () {
