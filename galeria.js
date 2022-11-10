@@ -98,11 +98,7 @@ $('#jcDay2Galery').click(function () {
     <div class="carousel-item">
         <img src="./img/jornadasCientificas_day2/jornadasCientificas_day2_5.jpeg" class="d-block w-100"
             alt="...">
-    </div>
-    <div class="carousel-item">
-        <img src="./img/jornadasCientificas_day2/jornadasCientificas_day2_5.jpeg" class="d-block w-100"
-            alt="...">
-    </div>
+    </div>     
     <div class="carousel-item">
         <img src="./img/jornadasCientificas_day2/jornadasCientificas_day2_6.jpeg" class="d-block w-100"
             alt="...">

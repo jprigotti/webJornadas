@@ -61,9 +61,10 @@ body {
     margin-bottom: 3rem;
 }
 
-.videoInstitucional h3 {
+.videoInstitucional .videoFooter h3 {
     margin: 0;
-    padding: 0;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
     color: #f4f4f4;
 }
 
@@ -186,7 +187,7 @@ body {
 }
 
 .popup .popupContainer {
-    margin-top: 5rem;
+    margin-top: 3rem;
 
 }
 
