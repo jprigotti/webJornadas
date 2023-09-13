@@ -34,16 +34,16 @@
     <link rel="stylesheet" href="./css/registration.css">
     <link rel="stylesheet" href="./css/menuIndex.css">
     <link rel="stylesheet" href="./css/styleIndex.css">
-    
+
 
 </head>
 
 <body>
 
 
-     <!-- HEADER SECTION     -->
+    <!-- HEADER SECTION     -->
 
-     <div class="menu-wrap">
+    <div class="menu-wrap">
         <div class="loginIcon">
             <a href="https://www.instagram.com/jornadassantojanni/" target="_blank" rel="noopener">
                 <i class="fa-brands fa-instagram"></i></a>
@@ -55,14 +55,14 @@
         <div class="hamburguer">
             <div></div>
         </div>
-        
+
         <div class="menu">
             <div class="menuContainer">
                 <div class="ulContainer">
                     <ul>
                         <li><a href="index.html">Inicio</a></li>
-                        <li><a href="programa.html">Programas 
-                            <!-- <span><i class="fa-solid fa-caret-down"></i></span></a>
+                        <li><a href="programa.html">Programas
+                                <!-- <span><i class="fa-solid fa-caret-down"></i></span></a>
                             <ul class="dropDownMenu">
                                 <li><a href="programa.html">Jornadas Científicas</a></li>
                                 <li><a href="./img/muestraArtistica.pdf" download="Muestra Artistica.png">Muestra
@@ -112,53 +112,102 @@
                 <div class="formContainer">
                     <div class="formHeader">
 
-                            <div class="item1">
-                                <span class="material-symbols-outlined">
-                                    app_registration
-                                </span>
-                            </div>
-        
-                            <div class="item2">
-                                <h2>Inscripción</h2>
-                            </div>
-        
-                            <div class="item3">
-                                <a href="index.html"><i class="fa-solid fa-door-open fa-xl"></i></a>
-                            </div>
+                        <div class="item1">
+                            <span class="material-symbols-outlined">
+                                app_registration
+                            </span>
+                        </div>
 
-                            <h3 class="password">Por favor completá la siguiente información</h2>
+                        <div class="item2">
+                            <h2>Inscripción</h2>
+                        </div>
+
+                        <div class="item3">
+                            <a href="index.html"><i class="fa-solid fa-door-open fa-xl"></i></a>
+                        </div>
+
+                        <h3 class="password">Por favor completá la siguiente información</h2>
 
                     </div>
-                    <input id="inputFirstName" class="input w100" type="text" name="firstName" placeholder="Nombre">
-                    <!-- <span class="enterFirstName">Este campo es obligatorio</span> -->
-                    <span id="firstNameAlert" class="inputAlert"></span>
 
-                    <input id="inputLastName" class="input w100" type="text" name="lastName" placeholder="Apellido">
-                    <!-- <span class="enterLastName">Este campo es obligatorio</span> -->
-                    <span id="lastNameAlert" class="inputAlert"></span>
+                    <div id="form-view-1">
+                        <div class="w100 mb-2">
+                            <p>1. Te interesan las jornadas?</p>
+                            <input type="radio" id="q1-1" name="queston-1" value="si">
+                            <label for="q1-1">Si</label><br>
+                            <input type="radio" id="q1-2" name="queston-1" value="no">
+                            <label for="q1-2">No</label>
+                        </div>
 
-                    <input id="inputCell" class="input w100" type="text" name="cell" placeholder="Celular">
-                    <!-- <span class="enterCell">Este campo es obligatorio</span> -->
-                    <span id="cellAlert" class="inputAlert"></span>
+                        <div class="w100 mb-2">
+                            <p>2. Presentaste trabajos en las jornadas?</p>
+                            <input type="radio" id="q2-1" name="queston-2" value="si">
+                            <label for="q2-1">Si</label><br>
+                            <input type="radio" id="q2-2" name="queston-2" value="no">
+                            <label for="q2-2">No</label><br><br>
+                        </div>
 
-                    <input id="inputEmail" class="input w100" type="text" name="email" placeholder="E-mail">
-                    <span id="emailAlert" class="inputAlert"></span>
-                    <!-- <span class="enterEmail">Este campo es obligatorio</span> -->
-                    <!-- <span class="wrongEmail">Debe ingresar un correo valido</span> -->
+                        <div class="w100 mb-2">
+                            <p>3. Tus expectativas para las jornadas son?</p>
+                            <input type="radio" id="q3-1" name="queston-3" value="altas">
+                            <label for="q3-1">Altas</label><br>
+                            <input type="radio" id="q3-2" name="queston-3" value="medias">
+                            <label for="q3-2">Medias</label><br>
+                            <input type="radio" id="q3-3" name="queston-3" value="bajas">
+                            <label for="q3-3">Bajas</label><br>
+                            <input type="radio" id="q3-4" name="queston-3" value="indiferente">
+                            <label for="q3-4">Indiferente</label>
+                        </div>
 
-                    <select class="input w100" type="text" name="servicio" id="formSelect">
-                        <option value="Elegir" selected>Elegir Servicio...</option>
-                    </select>
-                    <!-- <span class="enterServicio">Este campo es obligatorio</span> -->
-                    <span id="servicioAlert" class="inputAlert"></span>
-                    <!-- <div class="passwordContainer">
-                        <input class="input w100" type="password" name="password" placeholder="Contraseña"
-                            id="passwordField">
-                        <i class="fa-solid fa-eye-slash" id="showPassword"></i>
-                    </div> -->
-                    <div class="warningMessage">
-                        <p>Hay errores que corregir</p>
+                        <div class="w100 mb-2">
+                            <p>4. Pensas que las jornadas te aportan nuevos conocimientos?</p>
+                            <input type="radio" id="q4-1" name="queston-4" value="si">
+                            <label for="q4-1">Si</label><br>
+                            <input type="radio" id="q4-2" name="queston-4" value="no">
+                            <label for="q4-2">No</label><br>
+
+                        </div>
+
+                        <div class="w100 mb-2">
+                            <button id="survey-submit" class="btn">Siguiente</button>
+                        </div>
                     </div>
+
+                    <div id="form-view-2" class="hidden">
+                        <input id="inputFirstName" class="input w100" type="text" name="firstName" placeholder="Nombre">
+                        <!-- <span class="enterFirstName">Este campo es obligatorio</span> -->
+                        <span id="firstNameAlert" class="inputAlert"></span>
+
+                        <input id="inputLastName" class="input w100" type="text" name="lastName" placeholder="Apellido">
+                        <!-- <span class="enterLastName">Este campo es obligatorio</span> -->
+                        <span id="lastNameAlert" class="inputAlert"></span>
+
+                        <input id="inputCell" class="input w100" type="text" name="cell" placeholder="Celular">
+                        <!-- <span class="enterCell">Este campo es obligatorio</span> -->
+                        <span id="cellAlert" class="inputAlert"></span>
+
+                        <input id="inputEmail" class="input w100" type="text" name="email" placeholder="E-mail">
+                        <span id="emailAlert" class="inputAlert"></span>
+                        <!-- <span class="enterEmail">Este campo es obligatorio</span> -->
+                        <!-- <span class="wrongEmail">Debe ingresar un correo valido</span> -->
+
+                        <select class="input w100" type="text" name="servicio" id="formSelect">
+                            <option value="Elegir" selected>Elegir Servicio...</option>
+                        </select>
+                        <!-- <span class="enterServicio">Este campo es obligatorio</span> -->
+                        <span id="servicioAlert" class="inputAlert"></span>
+                        <!-- <div class="passwordContainer">
+                            <input class="input w100" type="password" name="password" placeholder="Contraseña"
+                                id="passwordField">
+                            <i class="fa-solid fa-eye-slash" id="showPassword"></i>
+                        </div> -->
+                        <div class="warningMessage">
+                            <p>Hay errores que corregir</p>
+                        </div>
+                    </div>
+
+
+
                     <div class="btnProgressArea">
                         <div class="btnArea">
                             <input class="btnWidth btn" type="submit" value="Enviar" id="formSubmit">

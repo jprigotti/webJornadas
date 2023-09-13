@@ -77,7 +77,7 @@ $('form.ajax').submit(function (evento) {
 
     console.log(data);
     //check if user is registered or not, runnig a query using AJAX-GET passing data object
-    (validateInput(data)) ? insertUserSS(data) : console.log("complete los campos");
+    // (validateInput(data)) ? insertUserSS(data) : console.log("complete los campos");
 
 });
 
@@ -465,3 +465,14 @@ $('#formSelect').on('change', function(e){
 //         $(this).removeClass('highlight');
 //     }
 // );
+
+
+$("#survey-submit").click((e)=>{
+    e.preventDefault();
+console.log("survey submit");
+$("#form-view-1").toggleClass("hidden")
+$("#form-view-2").toggleClass("hidden")
+})
+
+
+
