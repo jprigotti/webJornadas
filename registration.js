@@ -58,7 +58,7 @@ true: then we call insertUsersSS(url, method, data)
 false: nothing
 ***********************************************************************/
 
-$('form.ajax').submit(function (evento) {
+$('#form-ajax').submit(function (evento) {
 
     evento.preventDefault();  // avoid to execute the actual submit of the form.
 
@@ -70,14 +70,26 @@ $('form.ajax').submit(function (evento) {
     //loop through all the "name" items in the Form to load the data object
     that.find('[name]').each(function (index, value) {
         var that = $(this),
+            type = that.attr('type'),
             name = that.attr('name'),
             value = that.val();
-        data[name] = value;
+
+        if (type == "radio") {
+            // For radio buttons, only include the value if it's checked
+            if (that.is(':checked')) {
+                data[name] = that.val();
+            }
+        } else {
+            // For other input types, include their values
+            data[name] = that.val();
+        }
+
     });
+
 
     console.log(data);
     //check if user is registered or not, runnig a query using AJAX-GET passing data object
-    // (validateInput(data)) ? insertUserSS(data) : console.log("complete los campos");
+    (validateInput(data)) ? insertUserSS(data) : console.log("complete los campos");
 
 });
 
@@ -127,7 +139,7 @@ function insertUserSS(data) {
                 });
             }
         },
-        error: (err) =>  alert('Hubo un error, intentelo mas tarde')
+        error: (err) => alert('Hubo un error, intentelo mas tarde')
     });
 }
 
@@ -283,13 +295,13 @@ function updateProgressBar() {
 
 
 //Este codigo es para cerrar el alertContainer NewUser
-$('#alertContainerCloseNU').click(function(){
+$('#alertContainerCloseNU').click(function () {
     $('.alertNewUser').css({ 'visibility': 'hidden' });
     window.location.replace("index.html");
 });
 
 //Este codigo es para cerrar el alertContainer RegisteredUser
-$('#alertContainerCloseRU').click(function(){
+$('#alertContainerCloseRU').click(function () {
     $('.alertRegisteredUser').css({ 'visibility': 'hidden' });
     window.location.replace("index.html");
 });
@@ -369,12 +381,12 @@ function validateInput(data) {
         $('#inputEmail').addClass('inputError');
         document.querySelector('#emailAlert').textContent = "Campo requerido";
         arrayCheck.push(false);
-    } else if (data.email.includes('@')==false){
+    } else if (data.email.includes('@') == false) {
         // $('.enterEmail').css({ 'visibility': 'visible' });
         $('#inputEmail').addClass('inputError');
         document.querySelector('#emailAlert').textContent = "Correo inválido";
         arrayCheck.push(false);
-    }else{ 
+    } else {
         // $('.enterEmail').css({ 'visibility': 'hidden' });
         $('#inputEmail').removeClass('inputError');
         document.querySelector('#emailAlert').textContent = "";
@@ -405,25 +417,25 @@ function validateInput(data) {
 }
 
 
-$('#inputFirstName').on('change', function(e){
+$('#inputFirstName').on('change', function (e) {
     $('#inputFirstName').removeClass('inputError');
     document.querySelector('#firstNameAlert').textContent = "";
     $('.warningMessage').css({ 'display': 'none' });
 })
 
-$('#inputLastName').on('change', function(e){
+$('#inputLastName').on('change', function (e) {
     $('#inputLastName').removeClass('inputError');
     document.querySelector('#lastNameAlert').textContent = "";
     $('.warningMessage').css({ 'display': 'none' });
 })
 
-$('#inputCell').on('change', function(e){
+$('#inputCell').on('change', function (e) {
     $('#inputCell').removeClass('inputError');
     document.querySelector('#cellAlert').textContent = "";
     $('.warningMessage').css({ 'display': 'none' });
 })
 
-$('#inputEmail').on('change', function(e){
+$('#inputEmail').on('change', function (e) {
     let email = document.querySelector('#inputEmail').value.toString();
     email = email.replace(' ', '')
     document.querySelector('#inputEmail').value = email;
@@ -432,7 +444,7 @@ $('#inputEmail').on('change', function(e){
     $('.warningMessage').css({ 'display': 'none' });
 })
 
-$('#formSelect').on('change', function(e){
+$('#formSelect').on('change', function (e) {
     $('#inputServicio').removeClass('inputError');
     document.querySelector('#servicioAlert').textContent = "";
     $('.warningMessage').css({ 'display': 'none' });
@@ -467,12 +479,50 @@ $('#formSelect').on('change', function(e){
 // );
 
 
-$("#survey-submit").click((e)=>{
+$("#survey-submit").click((e) => {
     e.preventDefault();
-console.log("survey submit");
-$("#form-view-1").toggleClass("hidden")
-$("#form-view-2").toggleClass("hidden")
+    console.log("survey submit");
+
+    let questionGroups = ["question-1", "question-2", "question-3", "question-4"];
+    let arrayValidation = [];
+
+    questionGroups.forEach((groupName) => {
+        var question = document.querySelectorAll(`input[name="${groupName}"]`);
+        arrayValidation.push(validateRadioGroup(question))
+    })
+
+    let arrayValidationCheck = arrayValidation.some((elemento) => {
+        return elemento === false
+    })
+
+    console.log(`Array validation checked is`, arrayValidationCheck)
+
+    if (arrayValidationCheck) {
+        $("#survey-validation").text("Debe responder todas las preguntas");
+        $('.warningMessage').css({ 'display': 'inline' });
+    } else {
+        $('.warningMessage').css({ 'display': 'none' });
+        $("#form-view-1").toggleClass("hidden")
+        $("#form-view-2").toggleClass("hidden")
+    }
 })
+
+
+
+validateRadioGroup = (radioButtons) => {
+
+    for (let i = 0; i < radioButtons.length; i++) {
+        if (radioButtons[i].checked) {
+            return true; // Al menos uno está seleccionado, la validación es exitosa
+        }
+    }
+
+    return false; // Ninguno está seleccionado, la validación falla
+}
+
+
+
+
 
 
 

@@ -121,6 +121,9 @@ body a {
     opacity: 0.5;
 }
 
+#form-view-2{
+    width: 100%;
+}
 
 /* Class w100 set a 100% width */
 .w100 {
@@ -250,6 +253,18 @@ body a {
     top: 0.5rem;
 }
 
+.btn-survey{
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    margin: 0.5rem 0;
+    padding: 0.5rem 2rem;
+    background-color: var(--btn-background-green);
+    color: #fff;
+    font-size: 1.3rem;
+
+}
+
 #formSubmit {
     text-align: center;
     margin: 0.5rem 0;
@@ -278,8 +293,16 @@ body a {
     background-color: rgba(18, 139, 99, 0.6);
 } */
 
+.btnArea  {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .btnArea .btnWidth {
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 /* https://www.youtube.com/watch?v=basf1lH1H-E */
