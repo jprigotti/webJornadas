@@ -35,7 +35,9 @@ body a {
 .formBackground {
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(13, 110, 139, 0.2), rgba(13, 110, 139, 0.2)), url("../img/backgroundRegistration.jpg");
+    background-image: linear-gradient(rgba(13, 110, 139, 0.2), rgba(13, 110, 139, 0.2)), url("../img/backgroundRegistration4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 5rem;
     padding-bottom: 3rem;
     position: relative;

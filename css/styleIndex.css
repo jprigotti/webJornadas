@@ -1,5 +1,6 @@
 :root {
     --primary-color: rgba(13, 110, 139, 0.75);
+    --showcase-color: rgba(13, 110, 139, 0.6);
     --seconday-color: rgba(13, 110, 139, 0.05);
     --secondary-color: rgba(13, 110, 139, 0.2);
     --overlay-color: rgba(24, 39, 51, 0.85);
@@ -22,15 +23,16 @@ body {
 
 
 .showcase {
-    background-color: var(--primary-color);
+    background: linear-gradient(to bottom, var(--footer-background), var(--showcase-color));
     color: rgba(255, 255, 255, 0.9);
+    min-height: 100vh;
     /* height: 100vh; */
     position: relative;
 }
 
 .showcase:before {
     content: '';
-    background: url('../img/showcase.jpg') no-repeat center center/cover;
+    background: url('../img/showcase2.jpg') no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -104,8 +106,9 @@ div>span {
 
 .eventQR {
     margin-top: 1rem;
-    background-color: var(--primary-color);
+    background-color: var(--showcase-color);
     border-radius: 5px;
+    padding: 0.2rem;
 }
 
 .eventQR img {
@@ -233,6 +236,7 @@ div>span {
 
 .showcase h3 {
     font-weight: 400;
+    font-size: calc(1rem + 1vw);
 }
 
 .showcase p {
