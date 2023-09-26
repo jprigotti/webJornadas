@@ -24,7 +24,7 @@ body {
 .showcase {
     background-color: var(--primary-color);
     color: rgba(255, 255, 255, 0.9);
-    height: 100vh;
+    /* height: 100vh; */
     position: relative;
 }
 
@@ -541,7 +541,7 @@ div>span {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
+        margin-bottom: 3rem;
     }
 
     .comite-container-cargo {
