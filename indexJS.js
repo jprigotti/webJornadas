@@ -60,3 +60,40 @@ var x = setInterval(function () {
 
 
 }, 1000);
+
+$("#card-2").mouseover(() => {
+    $("#card-overlay-2").css({ "height": "100%" });
+  
+})
+
+$("#card-2").mouseout(() => {
+    $("#card-overlay-2").css({ "height": "0" });
+})
+
+$("#card-3").mouseover(() => {
+    $("#card-overlay-3").css({ "height": "100%" });
+  
+})
+
+$("#card-3").mouseout(() => {
+    $("#card-overlay-3").css({ "height": "0" });
+})
+
+$("#card-4").mouseover(() => {
+    $("#card-overlay-4").css({ "height": "100%" });
+  
+})
+
+$("#card-4").mouseout(() => {
+    $("#card-overlay-4").css({ "height": "0" });
+})
+
+$("#card-5").mouseover(() => {
+    $("#card-overlay-5").css({ "height": "100%" });
+  
+})
+
+$("#card-5").mouseout(() => {
+    $("#card-overlay-5").css({ "height": "0" });
+})
+
