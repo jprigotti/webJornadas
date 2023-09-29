@@ -43,7 +43,7 @@ body {
 
 
 .container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
     overflow: hidden;
     padding: 0 1rem;
@@ -167,6 +167,8 @@ div>span {
     color: var(--primary-color)
 }
 
+
+
 .oradores {
     background-color: #f4f4f4;
     text-align: center;
@@ -180,7 +182,53 @@ div>span {
     flex-wrap: wrap;
 }
 
-.orador-card {
+.oradores-card {
+    width: 250px;
+    height: 300px;
+    padding: 2rem;
+    border: 1px solid #e2e2e2;
+    transition: 0.5s; 
+}
+
+.oradores-card:hover {
+    box-shadow: 2px 2px 5px 1px var(--primary-color);
+    /* border: 1px solid var(--overlay-color); */
+    /* transform: scale(1.02); */
+}
+
+
+.oradores-card .card-header {}
+
+
+.oradores-card .card-body {}
+
+
+.oradores-card .card-body img {
+    width: 150px;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+    /* box-shadow: 2px 2px 5px 1px var(--primary-color); */
+
+}
+
+
+.oradores-card .card-footer {}
+
+
+.conferencias {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.conferencias-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.conferencia-card {
     width: 35%;
     margin: 0 1rem 2rem 1rem;
     /* border: 1px solid var(--primary-color); */
@@ -189,9 +237,9 @@ div>span {
     box-shadow: 5px 5px 10px 1px rgba(24, 39, 51, 0.8);
 }
 
-.card-header {}
+.conferencia-card .card-header {}
 
-.card-body {
+.conferencia-card .card-body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -200,18 +248,18 @@ div>span {
     height: 150px;
 }
 
-.card-body .title {
+.conferencia-card .card-body .title {
     padding: 2rem 1rem 0.5rem 1rem;
 }
 
-.card-body .name {
+.conferencia-card .card-body .name {
     padding: 0 1rem 2rem 1rem;
     color: var(--footer-primary);
     font-size: 0.9rem;
     text-align: center;
 }
 
-.card-footer {
+.conferencia-card .card-footer {
     padding: 1rem;
     color: #f4f4f4;
     background-color: var(--primary-color);
@@ -552,7 +600,7 @@ div>span {
         width: 100%
     }
 
-    .orador-card {
+    .conferencia-card {
         width: 100%;
     }
 
