@@ -2,6 +2,8 @@
 
 :root {
     --primary-color: rgba(13, 110, 139, 0.75);
+    --primary-color_1: rgba(13, 110, 139, 0.50);
+    --primary-color_2: rgba(13, 110, 139, 0.25);
     --showcase-color: rgba(13, 110, 139, 0.6);
     --seconday-color: rgba(13, 110, 139, 0.05);
     --secondary-color: rgba(13, 110, 139, 0.2);

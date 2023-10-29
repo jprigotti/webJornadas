@@ -115,38 +115,44 @@
 
             <div class="agendaHeader">
                 <div class="title">
-
                     <div class="item5">
                         <h1>Hospital Santojanni</h1>
                         <p><b>Director: </b>Dr. Federico Charabora</p>
                         <p><b>Sub-Director: </b>Dr. Carlos Falco</p>
                     </div>
+                </div>
 
-                    <div class="item1">
-                        <!-- <span class="material-symbols-outlined">
-                            event_upcoming
-                        </span> -->
-                    </div>
+            </div>
+            <div class="agendaDates">
+                <ul>
+                    <li id="selectDay13" class="selectDay dateActive" onclick="handleChoseView(event)">Lunes 13</li>
+                    <li id="selectDay14" class="selectDay" onclick="handleChoseView(event)">Martes 14</li>
+                    <li id="selectDay15" class="selectDay" onclick="handleChoseView(event)">Miercoles 15</li>
+                    <li id="selectDay16" class="selectDay" onclick="handleChoseView(event)">Jueves 16</li>
+                    <li id="selectDay17" class="selectDay" onclick="handleChoseView(event)">Viernes 17</li>
+                </ul>
+            </div>
 
-                    <div class="item2">
-                        <h2>Programas de Jornadas</h2>
-                    </div>
 
-                    <!-- <div class="item3">
-                        <a href="index.html"><i class="fa-solid fa-door-open fa-xl"></i></a>
-                    </div> -->
-
-                    <div class="item4">
-                        <p>Selecciona para expandir</p>
-                    </div>
-
+            <div class="agendaBody">
+                <div id="viewDay13" class="viewDay">
+                    <p>En breves publicaremos el programa del lunes 13</p>
+                </div>
+                <div id="viewDay14" class="viewDay hide-container">
+                    <p>En breves publicaremos el programa del martes 14</p>
+                </div>
+                <div id="viewDay15" class="viewDay hide-container">
+                    <p>En breves publicaremos el programa del miercoles 15</p>
+                </div>
+                <div id="viewDay16" class="viewDay hide-container">
+                    <p>En breves publicaremos el programa del jueves 16</p>
+                </div>
+                <div id="viewDay17"  class="viewDay hide-container">
+                    <p>En breves publicaremos el programa del viernes 17</p>
                 </div>
             </div>
 
 
-            <div class="accordion" id="accordionExample">
-                <p style="text-align: center;">En breves será publicado</p>
-            </div>
 
             <div class="pie"></div>
         </div>
