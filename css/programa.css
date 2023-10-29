@@ -21,7 +21,8 @@
     font-size: 2rem;
 }
 
-html, body{
+html,
+body {
     scroll-behavior: smooth;
 }
 
@@ -81,13 +82,13 @@ body {
     color: #f4f4f4;
 }
 
-.title .item5 h1{
+.title .item5 h1 {
     font-size: 2rem;
     font-weight: 400;
     padding-bottom: 0.5rem;
 }
 
-.title .item5 p{
+.title .item5 p {
     font-size: 1.1rem;
     font-weight: 200;
 }
@@ -141,14 +142,14 @@ body {
     color: var(--form-background);
 }
 
-.agendaDates{
+.agendaDates {
     background-color: #f5f5f5;
 }
-.agendaDates ul{
-}
+
+.agendaDates ul {}
 
 
-.agendaDates li{
+.agendaDates li {
     list-style: none;
     text-align: center;
     padding: 1rem;
@@ -156,7 +157,7 @@ body {
     cursor: pointer;
 }
 
-.agendaDates li:hover{
+.agendaDates li:hover {
     background-color: #eaeaea;
 }
 
@@ -363,12 +364,44 @@ body {
 
 
 
-.hide-container{
+.hide-container {
     display: none;
 }
 
-.viewDay{
+.viewDay {
     padding: 1rem;
+}
+
+.programDay-container{
+    background-color: #efefef;
+    padding: 1rem;
+    border-left: 8px solid blueviolet;
+}
+
+.program-date {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.program-date p {
+    padding: 0;
+    line-height: 1.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+
+.program-time {
+    background-color: #dadada;
+    padding: 0.2rem;
 }
 
 /* **********************************************
