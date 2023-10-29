@@ -1,170 +1,119 @@
-const webApp_emailMessage = 'https://script.google.com/macros/s/AKfycbwIE1Q_VtCxh1SwqSCp4LjEFKDwx4qXDoirN1HsFYWrMvtE_MROPUsEW0ca126gLXa_/exec';
+const dataObjectArray = [
+    {
+        header: 'Autoridades',
+        paragraphs: [
+            '<b>Presidenta:</b> Dra. Rodriguez Brieschke Maria Teresa ',
+            '<b>Vice Presidenta:</b> Dra. Vivona Maria ',
+            '<b>Secretario General:</b> Dr. Cosso Daniel',
+            '<b>Secretario Adjunto:</b> Dr. Saldarini Fernando',
+            '<b>Tesorero:</b> Dr. Iturrieta Pablo',
+            '<b>Presidente AMM:</b> Dr. Struminger Marcelo'
+        ],
+    },
+    {
+        header: 'Comité científico',
+        paragraphs: [
+            '<b>Presidente:</b> Dr. Bottaro Edgardo',
+            '<b>Secretario:</b>  Dr. Katz Marcelo',
+            '<b>Vocales:</b> Dr. Leiguarda Fernando, Lic. Vicenzino Mariana, Rossi Pamela, Dra. Greco Alejandra, Lic. Gregorio Florencia, Guazzaroni Carla, Dra. Geronaso Veronica,  Dr. Ochoa Fabricio, Dr. Gastón Gomez , Daher Jose Barrera Valeria, Dr. Daher Jose, Antonio Pilipek, Dra. Monica Giacco, Dr. Cordoba Pablo, Lini Marina',
+        ],
+    },
+    {
+        header: 'Comité de mesas redondas',
+        paragraphs: [
+            '<b>Presidente:</b> Dr. Alvaro Otreras',
+            '<b>Secretario:</b> Dr. Scapellato Pablo',
+            '<b>Vocales:</b> Dr. Carodonti Matias, Dr. Mariani Luciano, Dr. Keller Guillermo, Farmaceùtica Vaccaro Roxana,  Dra. Arakaki Haydee, Dra. Cortes Andrea',
+        ],
+    },
+    {
+        header: 'Comité de conferencias',
+        paragraphs: [
+            '<b>Presidente:</b> Dr. Kevorkian Ruben',
+            '<b>Secretario:</b> Dr. Ariel Estevez',
+            '<b>Vocales:</b> Bioquímica Clauida Alfonso, Dra. Scibeta Flavia, Dra. Teodora Sahores, Dr. Pablo Manjarín',
+        ],
+    },
+    {
+        header: 'Comité de temas libres',
+        paragraphs: [
+            '<b>Presidente:</b> Dr. Retamozo Caceres José',
+            '<b>Secretaria:</b> Dra. Gil Daniela',
+            '<b>Vocales:</b> Dr. Joaquin Saldaño, Dra. Lopez Dafne, Bioquimica Ormazabal Cecilia, Dra. Agustina Vendramini',
+        ],
+    },
+    {
+        header: 'Comité de relaciones públicas',
+        paragraphs: [
+            '<b>Presidenta:</b> Dra. Pechini Silvia',
+            '<b>Secretaria:</b> Dra. Mazzeo Silvina',
+            '<b>Vocales:</b>  Dra. Orrigo Carolina',
+        ],
+    },
+    {
+        header: 'Comité de informàtica y redes sociales',
+        paragraphs: [
+            '<b>Presidente:</b> Dr. Santangelo Pablo ',
+            '<b>Secretario:</b> ',
+            '<b>Vocales:</b> Dra. Del Giudice Gabriela, Dr. Ruben Correa, Dra. Evelina Makara, Marcelo Corigliano, Juan Pablo Rigotti, Julian Nardi, Santiago Miguel Fiorino, Lic. Lerner Melisa, Lic. Dainana Cichello',
+        ],
+    },
+    {
+        header: 'Comité de recepción y actos públicos',
+        paragraphs: [
+            '<b>Presidente:</b> Dr. Ahemd Sabra ',
+            '<b>Secretaria:</b> Bioquímica Silvia Birnembaum',
+            '<b>Vocales:</b> Dra. De Biasi Nancy, Dr. Szwarcman Oscar,  Lic. Maria Ines Marquez ',
+        ],
+    },
+    {
+        header: 'Comité de cultura',
+        paragraphs: [
+            '<b>Presidente:</b> Gachy Suarez',
+            '<b>Secretaria:</b> Cecilia Ormazabal',
+            '<b>Vocales:</b>  German Conde,  Osvaldo Sinchicay, Teodora Sahores, Carrizo Maria Esther',
+        ],
+    },
+    {
+        header: 'Comité asesor',
+        paragraphs: [
+            'Dr. Ruben Luca',
+            'Dra. Guillermina Armestica',
+        ],
+    },
+    {
+        header: 'Comité de area programática',
+        paragraphs: [
+            '<b>Presidenta:</b> Dra. Florencia Visillac',
+            '<b>Secretaria:</b> Dra. Claudia Falotico',
+            '<b>Vocales:</b> Lic. Suban Cinthia,  Lic.Tiburi Daniela, Dra. Amalia Pasos'
+        ],
+    },
+    {
+        header: 'Comité residentes y concurrentes',
+        paragraphs: [
+            '<b>Presidenta:</b> Dra. Silvina Lucilli',
+            '<b>Secretario:</b> Dr. Javier Castillo',
+            '<b>Vocales:</b> Dr. Bruno Licandro, Dr. Martìn Garcia, Dra. Rocio Alba, Lic. Lourdes Laurens, Lic. Abigail Quiroga, Lic. Lourdes Belay, Dra. Maria Jose Butiler, Dra. Sofia Cribario, Dra. Julieta Carou, Dra. Daniela Araujo, Dra. Magali Vazquez, Dra. Victoria Di Siervi, Dr. Frank Garcia Mendoza, Lic. Moreira Del Corral Macarena, Lic. Arias Rocio, Socióloga Coullery Antonella, Lic. Ponce Sofia'
+        ],
+    },
+
+];
 
 
-$('#formContact').submit(function (evento) {
-    evento.preventDefault();  // avoid to execute the actual submit of the form.
-    if (inputValidate()) {
+function generateHTMLFromObject(dataArray) {
 
-        let that = $(this),
-            data = {}; //this is gonna be a JS object to store all input values
+    dataArray.forEach(data => {
+        const { header, paragraphs } = data;
 
-        that.find('[name]').each(function (index, value) {
-            var that = $(this),
-                name = that.attr('name'),
-                value = that.val();
-            data[name] = value;
-        });
+        const $outputContainer = $('#comisiones');
+        const $h1Element = $('<h3>').text(header);
+        const $pElements = paragraphs.map(paragraph => $('<p>').html(paragraph));
 
-        console.log(data);
-        processingRegistration()
-        sendMessage(data);
-    }
-});
-
-
-function processingRegistration() {
-    $(".btnArea").css({ 'display': 'none' });
-    $(".progressBar").css({ 'display': 'block' });
-    updateProgressBar()
-}
-
-
-
-function sendMessage(data) {
-
-    $.ajax({
-        method: "post",
-        redirect: "follow",
-        url: webApp_emailMessage,
-        dataType: 'json',
-        accepts: 'application/json',
-        data,
-        success: (status) => {
-            console.log('success');
-            clearInterval(myInterval); //Stop progress bar counter
-            document.querySelector("#formContact").reset(); //clear all input form
-            $(".btnArea").css({ 'display': 'block' }); //make btnArea visible
-            $(".progressBar").css({ 'display': 'none' }); //hide progress bar
-            $('.popupWindow').css({ 'visibility': 'visible' });
-        },
-        error: (err) => {
-            console.log(err);
-            alert('Su consulta no ha podido ser enviada, le pedimos que intente mas tarde.')
-        }
+        $outputContainer.append($h1Element);
+        $outputContainer.append($pElements);
     });
 }
 
 
-
-
-
-
-function inputValidate() {
-    let arrayCheck = [];
-
-    if (document.getElementsByName('firstName')[0].value == "") {
-        document.querySelector('#firstNameAlert').textContent = "Campo requerido";
-        document.querySelector('#inputFirstName').classList.add('inputFieldAlert');
-        $('#inputFirstName').removeClass('inputError');
-        arrayCheck.push('false');
-    } else {
-        document.querySelector('#firstNameAlert').textContent = ""
-        arrayCheck.push('true');
-    }
-
-    if (document.getElementsByName('lastName')[0].value == "") {
-        document.querySelector('#lastNameAlert').textContent = "Campo requerido";
-        document.querySelector('#inputLastName').classList.add('inputFieldAlert');
-        arrayCheck.push('false');
-    } else {
-
-        document.querySelector('#lastNameAlert').textContent = ""
-        arrayCheck.push('true');
-    }
-
-    if (document.getElementsByName('email')[0].value == "") {
-        document.querySelector('#emailAlert').textContent = "Campo requerido";
-        document.querySelector('#inputEmail').classList.add('inputFieldAlert');
-        arrayCheck.push('false');
-    } else {
-        if (document.getElementsByName('email')[0].value.includes('@')) {
-            document.querySelector('#emailAlert').textContent = ""
-            arrayCheck.push('true');
-        } else {
-            document.querySelector('#emailAlert').textContent = "Debe ingresar un correo válido";
-            document.querySelector('#inputMessage').classList.add('inputFieldAlert');
-            arrayCheck.push('false');
-        }
-
-    };
-
-    if (document.getElementsByName('message')[0].value == "") {
-        document.querySelector('#messageAlert').textContent = "Campo requerido";
-        document.querySelector('#inputMessage').classList.add('inputFieldAlert');
-        arrayCheck.push('false');
-    } else {
-        document.querySelector('#messageAlert').textContent = ""
-        arrayCheck.push('true');
-    };
-
-    console.log(arrayCheck);
-    if (arrayCheck.some((item) => item == 'false')) {
-        document.querySelector('.messageArea').setAttribute('style', 'display: inline');
-        return false;
-    } else {
-        document.querySelector('.messageArea').setAttribute('style', 'display: none');
-        return true;
-    }
-}
-
-
-
-
-$('.containerClose').click(function () {
-    $('.popupWindow').css({ 'visibility': 'hidden' });
-    window.location.replace("index.html");
-});
-
-
-$('#inputFirstName').on('change', function (e) {
-    document.querySelector('#firstNameAlert').textContent = "";
-    document.querySelector('#inputFirstName').classList.remove('inputFieldAlert');
-    $('.messageArea').css({ 'display': 'none' });
-});
-
-$('#inputLastName').on('change', function (e) {
-    document.querySelector('#lastNameAlert').textContent = "";
-    document.querySelector('#inputLastName').classList.remove('inputFieldAlert');
-    $('.messageArea').css({ 'display': 'none' });
-});
-
-$('#inputEmail').on('change', function (e) {
-    document.querySelector('#emailAlert').textContent = "";
-    document.querySelector('#inputEmail').classList.remove('inputFieldAlert');
-    $('.messageArea').css({ 'display': 'none' });
-});
-
-$('#inputMessage').on('change', function (e) {
-    document.querySelector('#messageAlert').textContent = "";
-    document.querySelector('#inputMessage').classList.remove('inputFieldAlert');
-    $('.messageArea').css({ 'display': 'none' });
-})
-
-
-
-//This function will update the progress bar
-function updateProgressBar() {
-    const progressBar = document.getElementsByClassName('progressBar')[0]
-    const loop = 3;
-    progressBar.style.setProperty('--width', 0)
-    myInterval = setInterval(() => {
-        const computedStyle = getComputedStyle(progressBar)
-        let width = parseFloat(computedStyle.getPropertyValue('--width')) || 0
-        progressBar.style.setProperty('--width', width + 1)
-        if (width == 95) {
-            progressBar.style.setProperty('--width', 0)
-            // clearInterval(myInterval);
-        }
-        console.log(width);
-    }, 30)
-}
+generateHTMLFromObject(dataObjectArray);
