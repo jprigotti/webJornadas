@@ -8,6 +8,13 @@
     --form-background: #f4f4f4;
     --grey-out: #a0a0a0;
     --time-background: #e0e0e0;
+
+    --program-color-1: #00A245;
+    --program-color-2: #00A272;
+    --program-color-3: #00A29D;
+    --program-color-4: #007AA2;
+    --program-color-5: #004EA2;
+    --program-color-5: #0026A2;
 }
 
 * {
@@ -262,7 +269,7 @@ body {
     padding-left: 1rem;
     padding-bottom: 0.5rem;
     color: var(--overlay-color);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 300;
     line-height: 1.2rem;
 }
@@ -388,6 +395,7 @@ body {
     align-items: center;
     margin-left: 0.5rem;
     margin-bottom: 1rem;
+    padding: 0.5rem;
 }
 
 .program-date p {
@@ -430,7 +438,7 @@ body {
     font-weight: 400 !important;
     padding-top: 0.5rem !important;
     padding-bottom: 1rem !important;
-    font-size: 0.9rem !important;
+    font-size: 1rem !important;
 }
 
 .material-symbols-outlined {
@@ -446,12 +454,15 @@ body {
     }
 }
 
-
 .program-streaming{
     background-color: var(--primary-color);
     color: #f4f4f4;
     margin-left: 0.5rem;
     padding: 0 0.5rem;
+}
+
+.colorDay-1{
+
 }
 
 /* **********************************************
