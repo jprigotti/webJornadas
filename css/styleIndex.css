@@ -381,7 +381,7 @@ div>span {
     cursor: pointer;
 }
 
-.material-symbols-outlined {
+.play-icon {
     padding: 0 !important;
     margin: 0 !important;
     font-size: 3rem !important;
@@ -785,6 +785,11 @@ div>span {
 
     .verComisiones a {
         font-size: 0.9rem;
+    }
+
+    .streaming-body {
+        width: 350px;
+        height: 200px;
     }
 
 }
