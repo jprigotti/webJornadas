@@ -23,8 +23,8 @@ $('#alertContainerCloseAranceles').click(function (e) {
 })
 
 $('#playStreaming').click(function (e) {
-    // $('.wrap-iframe').css({ 'display': 'block' })
-    // $('.streaming-play').css({ 'display': 'none' })
+    $('.wrap-iframe').css({ 'display': 'block' })
+    $('.streaming-play').css({ 'display': 'none' })
 })
 
 
