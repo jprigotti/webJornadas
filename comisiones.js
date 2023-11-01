@@ -102,6 +102,7 @@ const dataObjectArray = [
         paragraphs: [
             '<b>Jurado premio Santojanni:</b> Dr. Domingo Fenoglietto, Dra. Patricia Rey. Dra. Marcela Pelliza',
             '<b>Jurado premio Salaberry:</b> Dr. Mario Yarrouge, Dr. Jose Cascarino, Dr. Daniel Ballesta',
+            '<b>Jurado premio Senra Aguirre:</b> Lic. Silvia Terzzoli, Lic. Silvia Robiola, Lic. Angela Citrone',
             '<b>Jurado premio Dr. Mario Ripoli:</b> Dr. Alberto Valentini, Dra. Patricia Oreiro, Dr. Jorge Bermúdez'
         ],
     },
