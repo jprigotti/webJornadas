@@ -103,3 +103,23 @@ $("#card-5").mouseout(() => {
     $("#card-overlay-5").css({ "height": "0" });
 })
 
+/***********************************************************************
+        CAROUSEL-COLABORADORES
+************************************************************************/
+// import logos from './logos.js';
+
+const logosColaboradores = [
+    { name: 'institucional1', src: './img/logos_colaboradores/AMM.svg' },
+    { name: 'institucional2', src: './img/logos_colaboradores/FACU_MEDICINA.png' },
+    { name: 'institucional3', src: './img/logos_colaboradores/IDHS.jpg' },
+   
+];
+
+const carousel = document.querySelector('.colaboradores-carousel');
+
+logosColaboradores.forEach(logo => {
+    const logoElement = document.createElement('img');
+    logoElement.src = logo.src;
+    logoElement.alt = logo.name;
+    carousel.appendChild(logoElement);
+});

@@ -678,6 +678,54 @@ font-family: var(--sora);
 
 }
 
+/* ***************************************************
+                        COLABORADORES
+*******************************************************/
+.colaboradores {
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.colaboradores-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.colaboradores-header {
+    margin-bottom: 3rem;
+}
+
+
+.colaboradores-carousel-container {
+    width: 80%;
+    overflow: hidden;
+}
+
+.colaboradores-carousel {
+    display: flex;
+    animation: carousel-animation 20s infinite linear;
+}
+
+@keyframes carousel-animation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.colaboradores-carousel {
+    max-width: 200px;
+    max-height: 300px;
+    margin: 10px;
+}
+
+
 
 /* ***************************************************
                         FOOTER
