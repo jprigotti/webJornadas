@@ -45,23 +45,29 @@ const programaDataArray = [
         items: [
             {
                 type: "Temas libres",
-                time: "8:00 a 9:00 hs",
+                time: "8:00",
                 title: "",
                 auditorium: "",
                 description_tl: [
                     {
-                        auditorium: "Auditorio: Pendiente",
-                        presidente: "<b>Presidente</b>: Pendiente",
-                        secretario: "<b>Vicepresidente</b>: Pendiente",
-                        title: "Trabajos",
+                        auditorium: "Aula A 2do Piso",
+                        presidente: "<b>Discutidores</b>: Dra. Inés García, Dr. Carlos Daona",
+                        secretario: "<b>Secretaria</b>: Dra. Lila Blanco",
+                        title: "",
                         trabajos: [{
-                            description: "Descripción pendiente",
-                            abstract: "link pendiente"
+                            description: "Tumor phyllodes maligno a propósito de un caso",
+                            abstract: '<a href="./docs/abstracts/Tumor Phyllodes maligno a propósito de un caso.pdf" download="Tumor Phyllodes maligno a propósito de un caso.pdf">Descargar Abstract</a>'
+
                         },
                         {
-                            description: "Descripción pendiente",
-                            abstract: "link pendiente"
-                        }]
+                            description: "Tumor gástrico de presentación infrecuente: adenoma gigante de glándulas oxínticas",
+                            abstract: '<a href="./docs/abstracts/Tumor gástrico de presentación infrecuente adenoma gigante de glándulas oxínticas.pdf" download="Tumor gástrico de presentación infrecuente adenoma gigante de glándulas oxínticas.pdf">Descargar Abstract</a>'
+                        },
+                        {
+                            description: "Carcinoma papilar in situ en el hombre. A propósito de un caso.",
+                            abstract: '<a href="./docs/abstracts/Carcinoma papilar in situ en el hombre. A propósito de un caso.pdf" download="Carcinoma papilar in situ en el hombre. A propósito de un caso.pdf">Descargar Abstract</a>'
+                        },
+                    ]
                     },
                     {
                         auditorium: "Auditorio: Pendiente",
@@ -477,7 +483,7 @@ function generatePorgramFromObject(dataArray) {
                     $tl_title = $('<p>').html(`${description.title}`);
                     description.trabajos.forEach((trabajo) => {
                         $trabajo_description = $('<p>').text(`${trabajo.description}`);
-                        $trabajo_abstract = $('<p>').text(`${trabajo.abstract}`);
+                        $trabajo_abstract = $('<p>').html(`${trabajo.abstract}`);
                         $tl_trabajos.append($trabajo_description, $trabajo_abstract);
                     });
                     $description.append($tl_auditorio, $tl_president, $tl_secretario, $tl_title, $tl_trabajos);
