@@ -50,38 +50,117 @@ const programaDataArray = [
                 auditorium: "",
                 description_tl: [
                     {
-                        auditorium: "Aula A 2do Piso",
-                        presidente: "<b>Discutidores</b>: Dra. Inés García, Dr. Carlos Daona",
-                        secretario: "<b>Secretaria</b>: Dra. Lila Blanco",
-                        title: "",
+                        auditorium: "<b>AULA A 2do Piso</b>",
+                        presidente: "Discutidores: Dra. Inés García, Dr. Carlos Daona",
+                        secretario: "Secretaria: Dra. Lila Blanco",
+                        title: "<b>Trabajos</b>",
                         trabajos: [{
-                            description: "Tumor phyllodes maligno a propósito de un caso",
-                            abstract: '<a href="./docs/abstracts/Tumor Phyllodes maligno a propósito de un caso.pdf" download="Tumor Phyllodes maligno a propósito de un caso.pdf">Descargar Abstract</a>'
-
+                            description: `
+                            <span class="material-symbols-outlined">description</span>
+                            Tumor phyllodes maligno a propósito de un caso`,
+                            abstract: `
+                            <a class="ml-2" href="./docs/abstracts/Tumor Phyllodes maligno a propósito de un caso.pdf" 
+                            download="Tumor Phyllodes maligno a propósito de un caso.pdf">
+                            <span class="material-symbols-outlined">download</span></a>
+                            <span>Abstract</span>`
                         },
                         {
-                            description: "Tumor gástrico de presentación infrecuente: adenoma gigante de glándulas oxínticas",
-                            abstract: '<a href="./docs/abstracts/Tumor gástrico de presentación infrecuente adenoma gigante de glándulas oxínticas.pdf" download="Tumor gástrico de presentación infrecuente adenoma gigante de glándulas oxínticas.pdf">Descargar Abstract</a>'
+                            description: `
+                            <span class="material-symbols-outlined">description</span>
+                            Tumor gástrico de presentación infrecuente: adenoma gigante de glándulas oxínticas`,
+                            abstract: `
+                            <a href="./docs/abstracts/Tumor gástrico de presentación infrecuente adenoma gigante de glándulas oxínticas.pdf" 
+                            download="Tumor gástrico de presentación infrecuente adenoma gigante de glándulas oxínticas.pdf">
+                            <span class="material-symbols-outlined">download</span></a>
+                            <span>Abstract</span>`
                         },
                         {
-                            description: "Carcinoma papilar in situ en el hombre. A propósito de un caso.",
-                            abstract: '<a href="./docs/abstracts/Carcinoma papilar in situ en el hombre. A propósito de un caso.pdf" download="Carcinoma papilar in situ en el hombre. A propósito de un caso.pdf">Descargar Abstract</a>'
+                            description: `
+                            <span class="material-symbols-outlined">description</span>
+                            Carcinoma papilar in situ en el hombre. A propósito de un caso`,
+                            abstract: `
+                            <a href="./docs/abstracts/Carcinoma papilar in situ en el hombre. A propósito de un caso.pdf" 
+                            download="Carcinoma papilar in situ en el hombre. A propósito de un caso.pdf">
+                            <span class="material-symbols-outlined">download</span></a>
+                            <span>Abstract</span>`
+                        },
+                        {
+                            description: `
+                            <span class="material-symbols-outlined">description</span>
+                            Cáncer de ano. Regresión completa tras radioquimioterapia, presentación de un caso.`,
+                            abstract: `
+                            <a href="./docs/abstracts/Cáncer de ano. Regresión completa tras radioquimioterapia, presentación de un caso..pdf" 
+                            download="Cáncer de ano. Regresión completa tras radioquimioterapia, presentación de un caso..pdf">
+                            <span class="material-symbols-outlined">download</span></a>
+                            <span>Abstract</span>`
                         },
                     ]
                     },
                     {
-                        auditorium: "Auditorio: Pendiente",
-                        presidente: "<b>Presidente</b>: Pendientr",
-                        secretario: "<b>Vicepresidente</b>: Pendiente",
-                        title: "Trabajos",
+                        auditorium: "<b>AULA D 3er Piso</b>",
+                        presidente: "Discutidores: Dra. Silvia Pechini, Dra. Yanina Rodríguez",
+                        secretario: "Secreataria: Dra. Julieta Carou",
+                        title: "<b>Trabajos</b>",
                         trabajos: [{
-                            description: "Descripción pendiente",
-                            abstract: "link pendiente"
+                            description: `
+                            <span class="material-symbols-outlined">description</span>
+                            Medicina reproductiva la consulta desde un hospital público`,
+                            abstract: `
+                            <a href="./docs/abstracts/Medicina reproductiva la consulta desde un hospital público.pdf" 
+                            download="Medicina reproductiva la consulta desde un hospital público.pdf">
+                            <span class="material-symbols-outlined">download</span></a>
+                            <span>Abstract</span>`
                         },
                         {
-                            description: "Descripción pendiente",
-                            abstract: "link pendiente"
-                        }
+                            description: `
+                            <span class="material-symbols-outlined">description</span>
+                            A propósito de un caso: nefrocalcinosis y embarazo.`,
+                            abstract: `
+                            <a href="./docs/abstracts/A propósito de un caso: nefrocalcinosis y embarazo.pdf" 
+                            download="A propósito de un caso: nefrocalcinosis y embarazo.pdf">
+                            <span class="material-symbols-outlined">download</span></a>
+                            <span>Abstract</span>`
+                        },
+                        {
+                            description: `
+                            <span class="material-symbols-outlined">description</span>
+                            Consultorías de salud sexual integral (SSI) en el Centro de Salud y Acción Comunitaria (CeSAC) N°7`,
+                            abstract: `
+                            <a href="./docs/abstracts/Consultorías de salud sexual integral (SSI) en el Centro de Salud y Acción Comunitaria (CeSAC) N°7.pdf" 
+                            download="Consultorías de salud sexual integral (SSI) en el Centro de Salud y Acción Comunitaria (CeSAC) N°7.pdf">
+                            <span class="material-symbols-outlined">download</span></a>
+                            <span>Abstract</span>`
+                        },
+                        {
+                            description: `
+                            <span class="material-symbols-outlined">description</span>
+                            A propósito de un caso: embarazo y esclerosis múltiple`,
+                            abstract: `
+                            <a href="./docs/abstracts/A propósito de un caso: embarazo y esclerosis múltiple.pdf" 
+                            download="A propósito de un caso: embarazo y esclerosis múltiple.pdf">
+                            <span class="material-symbols-outlined">download</span></a>
+                            <span>Abstract</span>`
+                        },
+                        {
+                            description: `
+                            <span class="material-symbols-outlined">description</span>
+                            Educación terapéutica de mujeres con diabetes gestacional (Edugest): datos correspondientes al período de reclutamiento en el Hospital Santojanni`,
+                            abstract: `
+                            <a href="./docs/abstracts/Educación terapéutica de mujeres con diabetes gestacional.pdf" 
+                            download="Educación terapéutica de mujeres con diabetes gestacional.pdf">
+                            <span class="material-symbols-outlined">download</span></a>
+                            <span>Abstract</span>`
+                        },
+                        {
+                            description: `
+                            <span class="material-symbols-outlined">description</span>
+                            `,
+                            abstract: `
+                            <a href="./docs/abstracts/.pdf" 
+                            download=".pdf">
+                            <span class="material-symbols-outlined">download</span></a>
+                            <span>Abstract</span>`
+                        },
                         ]
                     },
                 ],
@@ -482,7 +561,7 @@ function generatePorgramFromObject(dataArray) {
                     $tl_secretario = $('<p>').html(`${description.secretario}`);
                     $tl_title = $('<p>').html(`${description.title}`);
                     description.trabajos.forEach((trabajo) => {
-                        $trabajo_description = $('<p>').text(`${trabajo.description}`);
+                        $trabajo_description = $('<p>').html(`${trabajo.description}`);
                         $trabajo_abstract = $('<p>').html(`${trabajo.abstract}`);
                         $tl_trabajos.append($trabajo_description, $trabajo_abstract);
                     });
