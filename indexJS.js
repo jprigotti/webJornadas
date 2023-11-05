@@ -1,3 +1,4 @@
+
 //Countdown code
 //Set the date we are counting down to
 
@@ -106,14 +107,6 @@ $("#card-5").mouseout(() => {
 /***********************************************************************
         CAROUSEL-COLABORADORES
 ************************************************************************/
-// import logosColaboradores from './logos.js';
-
-// const logosColaboradores = [
-//     { name: 'institucional1', src: './img/logos_colaboradores/AMM.svg' },
-//     { name: 'institucional2', src: './img/logos_colaboradores/FACU_MEDICINA.png' },
-//     { name: 'institucional3', src: './img/logos_colaboradores/IDHS.jpg' },
-   
-// ];
 
 const logosColaboradores = [
     { name: 'institucional1', src: './img/logosColaboradores/institucional_1.jpg' },
@@ -130,7 +123,8 @@ const logosColaboradores = [
    
 ];
 
-const carousel = document.querySelector('.colaboradores-carousel');
+
+const carousel = document.querySelector('.scroller__inner');
 
 logosColaboradores.forEach(logo => {
     const logoElement = document.createElement('img');
@@ -138,3 +132,31 @@ logosColaboradores.forEach(logo => {
     logoElement.alt = logo.name;
     carousel.appendChild(logoElement);
 });
+
+const scrollers = document.querySelectorAll(".scroller");
+
+function addAnimation() {
+  scrollers.forEach((scroller) => {
+    // add data-animated="true" to every `.scroller` on the page
+    scroller.setAttribute("data-animated", true);
+
+    // Make an array from the elements within `.scroller-inner`
+    const scrollerInner = scroller.querySelector(".scroller__inner");
+    const scrollerContent = Array.from(scrollerInner.children);
+
+    // For each item in the array, clone it
+    // add aria-hidden to it
+    // add it into the `.scroller-inner`
+    scrollerContent.forEach((item) => {
+      const duplicatedItem = item.cloneNode(true);
+      duplicatedItem.setAttribute("aria-hidden", true);
+      scrollerInner.appendChild(duplicatedItem);
+    });
+  });
+}
+
+
+// If a user hasn't opted in for recuded motion, then we add the animation
+if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  addAnimation();
+}

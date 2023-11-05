@@ -12,3 +12,5 @@ const logosColaboradores = [
     { name: 'institucional3', src: './img/logosColaboradores/laboratorio_8.jpg' },
    
 ];
+
+export default logosColaboradores;
