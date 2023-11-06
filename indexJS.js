@@ -123,7 +123,7 @@ const logosColaboradoresLaboratorios = [
     { name: 'laboratorio_6', src: './img/logosColaboradores/laboratorio_6.jpg' },
     { name: 'laboratorio_7', src: './img/logosColaboradores/laboratorio_7.jpg' },
     { name: 'laboratorio_8', src: './img/logosColaboradores/laboratorio_8.jpg' },
-   
+    { name: 'laboratorio_9', src: './img/logosColaboradores/laboratorio_9.jpg' }   
 ];
 
 const carouselInst = document.querySelector('.scroller-instituciones');
