@@ -952,7 +952,7 @@ const programaDataArray = [
                         {
                             description: `
                             <span class="material-symbols-outlined">description</span>
-                            4. Movilización prequirúrgica en sujetos con fractura medial de cadera en un hospital público de Ciudad Autónoma de Buenos Aires: estudio descriptivo retrospectivo`,
+                            5. Movilización prequirúrgica en sujetos con fractura medial de cadera en un hospital público de Ciudad Autónoma de Buenos Aires: estudio descriptivo retrospectivo`,
                             abstract: `
                             <a href="./docs/abstracts/Movilización prequirúrgica en sujetos con fractura medial de cadera en un hospital público.pdf" 
                             download="Movilización prequirúrgica en sujetos con fractura medial de cadera en un hospital público.pdf">
