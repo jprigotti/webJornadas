@@ -108,29 +108,42 @@ $("#card-5").mouseout(() => {
         CAROUSEL-COLABORADORES
 ************************************************************************/
 
-const logosColaboradores = [
-    { name: 'institucional1', src: './img/logosColaboradores/institucional_1.jpg' },
-    { name: 'institucional2', src: './img/logosColaboradores/institucional_2.jpg' },
-    { name: 'institucional3', src: './img/logosColaboradores/institucional_3.jpg' },
-    { name: 'institucional3', src: './img/logosColaboradores/laboratorio_1.jpg' },
-    { name: 'institucional3', src: './img/logosColaboradores/laboratorio_2.jpg' },
-    { name: 'institucional3', src: './img/logosColaboradores/laboratorio_3.jpg' },
-    { name: 'institucional3', src: './img/logosColaboradores/laboratorio_4.jpg' },
-    { name: 'institucional3', src: './img/logosColaboradores/laboratorio_5.jpg' },
-    { name: 'institucional3', src: './img/logosColaboradores/laboratorio_6.jpg' },
-    { name: 'institucional3', src: './img/logosColaboradores/laboratorio_7.jpg' },
-    { name: 'institucional3', src: './img/logosColaboradores/laboratorio_8.jpg' },
+const logosColaboradoresInstitucionales = [
+    { name: 'institucional_1', src: './img/logosColaboradores/institucional_1.jpg' },
+    { name: 'institucional_2', src: './img/logosColaboradores/institucional_2.jpg' },
+    { name: 'institucional_3', src: './img/logosColaboradores/institucional_3.jpg' },
+];
+
+const logosColaboradoresLaboratorios = [
+    { name: 'laboratorio_1', src: './img/logosColaboradores/laboratorio_1.jpg' },
+    { name: 'laboratorio_2', src: './img/logosColaboradores/laboratorio_2.jpg' },
+    { name: 'laboratorio_3', src: './img/logosColaboradores/laboratorio_3.jpg' },
+    { name: 'laboratorio_4', src: './img/logosColaboradores/laboratorio_4.jpg' },
+    { name: 'laboratorio_5', src: './img/logosColaboradores/laboratorio_5.jpg' },
+    { name: 'laboratorio_6', src: './img/logosColaboradores/laboratorio_6.jpg' },
+    { name: 'laboratorio_7', src: './img/logosColaboradores/laboratorio_7.jpg' },
+    { name: 'laboratorio_8', src: './img/logosColaboradores/laboratorio_8.jpg' },
    
 ];
 
+const carouselInst = document.querySelector('.scroller-instituciones');
 
-const carousel = document.querySelector('.scroller__inner');
-
-logosColaboradores.forEach(logo => {
+logosColaboradoresInstitucionales.forEach(logo => {
     const logoElement = document.createElement('img');
     logoElement.src = logo.src;
     logoElement.alt = logo.name;
-    carousel.appendChild(logoElement);
+    carouselInst.appendChild(logoElement);
+});
+
+
+
+const carouselLabo = document.querySelector('.scroller-laboratorios');
+
+logosColaboradoresLaboratorios.forEach(logo => {
+    const logoElement = document.createElement('img');
+    logoElement.src = logo.src;
+    logoElement.alt = logo.name;
+    carouselLabo.appendChild(logoElement);
 });
 
 const scrollers = document.querySelectorAll(".scroller");

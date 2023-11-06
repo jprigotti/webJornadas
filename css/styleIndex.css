@@ -692,7 +692,7 @@ div>span {
 
 .colaboradores-container {
     width: 100%;
-    /* height: 100%; */
+    height: 100%;
     margin-bottom: 5rem;
     display: flex;
     flex-direction: column;
@@ -701,12 +701,18 @@ div>span {
 }
 
 .colaboradores-header {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
-/* .colaboradores-header h1 {
+.colaboradores-header h1 {
     font-family: var(--sora);
-} */
+}
+
+.scroller-width {
+    margin: 0 auto;
+    width: 60% !important;
+}
 
 .scroller {
     width: 100%;
@@ -724,6 +730,7 @@ div>span {
     width: 250px;
     height: 250px;
 }
+
 
 .scroller[data-animated="true"] {
     overflow: hidden;
@@ -945,6 +952,11 @@ div>span {
         height: 220px;
     }
 
+    .scroller-width {
+        width: 100% !important;
+    }
+    
+
 }
 
 @media(max-width:576px) {
@@ -978,4 +990,7 @@ div>span {
         height: 200px;
     }
 
+    .scroller-width {
+        width: 100% !important;
+    }
 }
