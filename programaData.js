@@ -89,8 +89,8 @@ const programaDataArray = [
                             <span class="material-symbols-outlined">description</span>
                             Cáncer de ano. Regresión completa tras radioquimioterapia, presentación de un caso.`,
                             abstract: `
-                            <a href="./docs/abstracts/Cáncer de ano. Regresión completa tras radioquimioterapia, presentación de un caso..pdf" 
-                            download="Cáncer de ano. Regresión completa tras radioquimioterapia, presentación de un caso..pdf">
+                            <a href="./docs/abstracts/Cáncer de Ano. Regresión completa tras radioquimioterapia, presentación de un caso.pdf" 
+                            download="Cáncer de Ano. Regresión completa tras radioquimioterapia, presentación de un caso.pdf">
                             <span class="material-symbols-outlined">download</span></a>
                             <span>Abstract</span>`
                         },
@@ -114,10 +114,10 @@ const programaDataArray = [
                         {
                             description: `
                             <span class="material-symbols-outlined">description</span>
-                            A propósito de un caso: nefrocalcinosis y embarazo.`,
+                            A propósito de un caso: nefrocalcinosis y embarazo`,
                             abstract: `
-                            <a href="./docs/abstracts/A propósito de un caso: nefrocalcinosis y embarazo.pdf" 
-                            download="A propósito de un caso: nefrocalcinosis y embarazo.pdf">
+                            <a href="./docs/abstracts/A propósito de un caso nefrocalcinosis y embarazo.pdf" 
+                            download="A propósito de un caso nefrocalcinosis y embarazo.pdf">
                             <span class="material-symbols-outlined">download</span></a>
                             <span>Abstract</span>`
                         },
@@ -183,8 +183,8 @@ const programaDataArray = [
                             <span class="material-symbols-outlined">description</span>
                             3. Comparación de drenaje biliar percutáneo guiado con ﬂuoroscopía y con ecografía: nuestra experiencia`,
                             abstract: `
-                            <a href="./docs/abstracts/Comparación de drenaje biliar percutáneo guiado con ﬂuoroscopía y con ecografía: nuestra experiencia.pdf" 
-                            download="Comparación de drenaje biliar percutáneo guiado con ﬂuoroscopía y con ecografía: nuestra experiencia.pdf">
+                            <a href="./docs/abstracts/Comparación de drenaje biliar percutáneo guiado con ﬂuoroscopía y con ecografía nuestra experiencia.pdf" 
+                            download="Comparación de drenaje biliar percutáneo guiado con ﬂuoroscopía y con ecografía nuestra experiencia.pdf">
                             <span class="material-symbols-outlined">download</span></a>
                             <span>Abstract</span>`
                         },
@@ -193,8 +193,8 @@ const programaDataArray = [
                             <span class="material-symbols-outlined">description</span>
                             4. Neumoperitoneo espontáneo: presentación de un caso`,
                             abstract: `
-                            <a href="./docs/abstracts/Neumoperitoneo espontáneo: presentación de un caso.pdf" 
-                            download="Neumoperitoneo espontáneo: presentación de un caso.pdf">
+                            <a href="./docs/abstracts/Neumoperitoneo espontaneo presentación de un caso.pdf" 
+                            download="Neumoperitoneo espontaneo presentación de un caso.pdf">
                             <span class="material-symbols-outlined">download</span></a>
                             <span>Abstract</span>`
                         },
@@ -203,8 +203,8 @@ const programaDataArray = [
                             <span class="material-symbols-outlined">description</span>
                             5. Pseudoquiste pancreático gigante postoperatorio: un caso de resolución percutánea `,
                             abstract: `
-                            <a href="./docs/abstracts/Pseudoquiste pancreático gigante postoperatorio: un caso de resolución percutánea.pdf" 
-                            download="Pseudoquiste pancreático gigante postoperatorio: un caso de resolución percutánea.pdf">
+                            <a href="./docs/abstracts/Pseudoquiste pancreático gigante postoperatorio Un caso de resolución percutánea.pdf" 
+                            download="Pseudoquiste pancreático gigante postoperatorio Un caso de resolución percutánea.pdf">
                             <span class="material-symbols-outlined">download</span></a>
                             <span>Abstract</span>`
                         },
@@ -213,8 +213,8 @@ const programaDataArray = [
                             <span class="material-symbols-outlined">description</span>
                             6. Tratamiento percutáneo de absceso de psoas: nuestra experiencia `,
                             abstract: `
-                            <a href="./docs/abstracts/Tratamiento percutáneo de absceso de psoas: nuestra experiencia.pdf" 
-                            download="Tratamiento percutáneo de absceso de psoas: nuestra experiencia.pdf">
+                            <a href="./docs/abstracts/Tratamiento percutáneo de Absceso de psoas Nuestra experiencia.pdf" 
+                            download="Tratamiento percutáneo de Absceso de psoas Nuestra experiencia.pdf">
                             <span class="material-symbols-outlined">download</span></a>
                             <span>Abstract</span>`
                         },
@@ -240,8 +240,8 @@ const programaDataArray = [
                             <span class="material-symbols-outlined">description</span>
                             2. Dengue: situación del brote 2023 en el Hospital de Agudos Donación Francisco Santojanni`,
                             abstract: `
-                            <a href="./docs/abstracts/Dengue: situación del brote 2023 en el Hospital de Agudos Donación Francisco Santojanni.pdf" 
-                            download="Dengue: situación del brote 2023 en el Hospital de Agudos Donación Francisco Santojanni.pdf">
+                            <a href="./docs/abstracts/Dengue situación del brote 2023 en el Hospital de Agudos Donación Francisco Santojanni.pdf" 
+                            download="Dengue situación del brote 2023 en el Hospital de Agudos Donación Francisco Santojanni.pdf">
                             <span class="material-symbols-outlined">download</span></a>
                             <span>Abstract</span>`
                         },
@@ -270,8 +270,8 @@ const programaDataArray = [
                             <span class="material-symbols-outlined">description</span>
                             5. Test rápido dúo. Un análisis sobre los resultados alcanzados respecto a la detección de sífilis en población general `,
                             abstract: `
-                            <a href="./docs/abstracts/Test rápido dúo.pdf" 
-                            download="Test rápido dúo.pdf">
+                            <a href="./docs/abstracts/Test Rápido Dúo. Un análisis sobre los resultados alcanzados respecto a la detección de Sífilis en población general.pdf" 
+                            download="Test Rápido Dúo. Un análisis sobre los resultados alcanzados respecto a la detección de Sífilis en población general.pdf">
                             <span class="material-symbols-outlined">download</span></a>
                             <span>Abstract</span>`
                         },
@@ -465,8 +465,8 @@ const programaDataArray = [
                             <span class="material-symbols-outlined">description</span>
                             2. Evaluación del perfil sensorial en pacientes con sospecha de trastorno del desarrollo: a propósito de un caso`,
                             abstract: `
-                            <a href="./docs/abstracts/Evaluación del perfil sensorial en pacientes con sospecha de trastorno del desarrollo: a propósito de un caso.pdf" 
-                            download="Evaluación del perfil sensorial en pacientes con sospecha de trastorno del desarrollo: a propósito de un caso.pdf">
+                            <a href="./docs/abstracts/Evaluación del perfil sensorial en pacientes con sospecha de trastorno del desarrollo a propósito de un caso.pdf" 
+                            download="Evaluación del perfil sensorial en pacientes con sospecha de trastorno del desarrollo a propósito de un caso.pdf">
                             <span class="material-symbols-outlined">download</span></a>
                             <span>Abstract</span>`
                         },
@@ -475,8 +475,8 @@ const programaDataArray = [
                             <span class="material-symbols-outlined">description</span>
                             3. Salud escolar... ¿Sólo un screening?`,
                             abstract: `
-                            <a href="./docs/abstracts/Salud escolar... ¿Sólo un screening?.pdf" 
-                            download="Salud escolar.pdf">
+                            <a href="./docs/abstracts/Salud Escolar.pdf" 
+                            download="Salud Escolar.pdf">
                             <span class="material-symbols-outlined">download</span></a>
                             <span>Abstract</span>`
                         },
@@ -522,8 +522,8 @@ const programaDataArray = [
                             <span class="material-symbols-outlined">description</span>
                             1. Clasificación de Copeland para heridas de arma de fuego de extremidades: experiencia interdisciplinaria inicial`,
                             abstract: `
-                            <a href="./docs/abstracts/Clasificación de Copeland para heridas de arma de fuego de extremidades: experiencia interdisciplinaria inicial.pdf" 
-                            download="Clasificación de Copeland para heridas de arma de fuego de extremidades: experiencia interdisciplinaria iniciald.pdf">
+                            <a href="./docs/abstracts/Clasificación de Copeland para heridas de arma de fuego de extremidades experiencia interdisciplinaria inicial.pdf" 
+                            download="Clasificación de Copeland para heridas de arma de fuego de extremidades experiencia interdisciplinaria inicial.pdf">
                             <span class="material-symbols-outlined">download</span></a>
                             <span>Abstract</span>`
                         },
@@ -572,8 +572,8 @@ const programaDataArray = [
                             <span class="material-symbols-outlined">description</span>
                             6. Fístula perianal: Nuestra experiencia en su tratamiento con fistulotomía más sedal`,
                             abstract: `
-                            <a href="./docs/abstracts/Fístula perianal: Nuestra experiencia en su tratamiento con fistulotomía más sedal.pdf" 
-                            download="Fístula perianal: Nuestra experiencia en su tratamiento con fistulotomía más sedal.pdf">
+                            <a href="./docs/abstracts/Fístula perianal Nuestra experiencia en su tratamiento con fistulotomía más sedal.pdf" 
+                            download="Fístula perianal Nuestra experiencia en su tratamiento con fistulotomía más sedal.pdf">
                             <span class="material-symbols-outlined">download</span></a>
                             <span>Abstract</span>`
                         },
