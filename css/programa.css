@@ -434,7 +434,7 @@ body {
     padding-left: 0.2rem !important;
 }
 
-.program-title{
+.program-title {
     font-weight: 400 !important;
     padding-top: 0.5rem !important;
     padding-bottom: 1rem !important;
@@ -454,15 +454,18 @@ body {
     }
 }
 
-.program-streaming{
+.program-streaming {
     background-color: var(--primary-color);
     color: #f4f4f4;
     margin-left: 0.5rem;
     padding: 0 0.5rem;
 }
 
-.colorDay-1{
-
+.tl-header {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid rgba(000, 000, 000, 0.3);
+    border-radius: 5px;
 }
 
 /* **********************************************
