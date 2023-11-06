@@ -1,3 +1,4 @@
+
 //Countdown code
 //Set the date we are counting down to
 
@@ -103,3 +104,59 @@ $("#card-5").mouseout(() => {
     $("#card-overlay-5").css({ "height": "0" });
 })
 
+/***********************************************************************
+        CAROUSEL-COLABORADORES
+************************************************************************/
+
+const logosColaboradores = [
+    { name: 'institucional1', src: './img/logosColaboradores/institucional_1.jpg' },
+    { name: 'institucional2', src: './img/logosColaboradores/institucional_2.jpg' },
+    { name: 'institucional3', src: './img/logosColaboradores/institucional_3.jpg' },
+    { name: 'institucional3', src: './img/logosColaboradores/laboratorio_1.jpg' },
+    { name: 'institucional3', src: './img/logosColaboradores/laboratorio_2.jpg' },
+    { name: 'institucional3', src: './img/logosColaboradores/laboratorio_3.jpg' },
+    { name: 'institucional3', src: './img/logosColaboradores/laboratorio_4.jpg' },
+    { name: 'institucional3', src: './img/logosColaboradores/laboratorio_5.jpg' },
+    { name: 'institucional3', src: './img/logosColaboradores/laboratorio_6.jpg' },
+    { name: 'institucional3', src: './img/logosColaboradores/laboratorio_7.jpg' },
+    { name: 'institucional3', src: './img/logosColaboradores/laboratorio_8.jpg' },
+   
+];
+
+
+const carousel = document.querySelector('.scroller__inner');
+
+logosColaboradores.forEach(logo => {
+    const logoElement = document.createElement('img');
+    logoElement.src = logo.src;
+    logoElement.alt = logo.name;
+    carousel.appendChild(logoElement);
+});
+
+const scrollers = document.querySelectorAll(".scroller");
+
+function addAnimation() {
+  scrollers.forEach((scroller) => {
+    // add data-animated="true" to every `.scroller` on the page
+    scroller.setAttribute("data-animated", true);
+
+    // Make an array from the elements within `.scroller-inner`
+    const scrollerInner = scroller.querySelector(".scroller__inner");
+    const scrollerContent = Array.from(scrollerInner.children);
+
+    // For each item in the array, clone it
+    // add aria-hidden to it
+    // add it into the `.scroller-inner`
+    scrollerContent.forEach((item) => {
+      const duplicatedItem = item.cloneNode(true);
+      duplicatedItem.setAttribute("aria-hidden", true);
+      scrollerInner.appendChild(duplicatedItem);
+    });
+  });
+}
+
+
+// If a user hasn't opted in for recuded motion, then we add the animation
+if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  addAnimation();
+}
