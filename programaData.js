@@ -26,7 +26,7 @@ const programaDataArray = [
                 type: "Conferencia Central",
                 time: "10:30 hs",
                 title: "Equipos y Liderazgo. Nuevos paradigmas de conducción. Bioquímica Maria Inez Gonzalez",
-                auditorium: "Definir auditorium",
+                auditorium: "Aulas A-B 2do Piso",
                 description: "",
                 streaming: false,
             },
@@ -57,7 +57,7 @@ const programaDataArray = [
                         trabajos: [{
                             description: `
                             <span class="material-symbols-outlined">description</span>
-                            Tumor phyllodes maligno a propósito de un caso`,
+                            1. Tumor phyllodes maligno a propósito de un caso`,
                             abstract: `
                             <a href="./docs/abstracts/Tumor Phyllodes maligno a propósito de un caso.pdf" 
                             download="Tumor Phyllodes maligno a propósito de un caso.pdf">
@@ -67,7 +67,7 @@ const programaDataArray = [
                         {
                             description: `
                             <span class="material-symbols-outlined">description</span>
-                            Tumor gástrico de presentación infrecuente: adenoma gigante de glándulas oxínticas`,
+                            2. Tumor gástrico de presentación infrecuente: adenoma gigante de glándulas oxínticas`,
                             abstract: `
                             <a href="./docs/abstracts/Tumor gástrico de presentación infrecuente adenoma gigante de glándulas oxínticas.pdf" 
                             download="Tumor gástrico de presentación infrecuente adenoma gigante de glándulas oxínticas.pdf">
@@ -77,7 +77,7 @@ const programaDataArray = [
                         {
                             description: `
                             <span class="material-symbols-outlined">description</span>
-                            Carcinoma papilar in situ en el hombre. A propósito de un caso`,
+                            3. Carcinoma papilar in situ en el hombre. A propósito de un caso`,
                             abstract: `
                             <a href="./docs/abstracts/Carcinoma papilar in situ en el hombre. A propósito de un caso.pdf" 
                             download="Carcinoma papilar in situ en el hombre. A propósito de un caso.pdf">
@@ -87,7 +87,7 @@ const programaDataArray = [
                         {
                             description: `
                             <span class="material-symbols-outlined">description</span>
-                            Cáncer de ano. Regresión completa tras radioquimioterapia, presentación de un caso.`,
+                            4. Cáncer de ano. Regresión completa tras radioquimioterapia, presentación de un caso.`,
                             abstract: `
                             <a href="./docs/abstracts/Cáncer de Ano. Regresión completa tras radioquimioterapia, presentación de un caso.pdf" 
                             download="Cáncer de Ano. Regresión completa tras radioquimioterapia, presentación de un caso.pdf">
@@ -104,7 +104,7 @@ const programaDataArray = [
                         trabajos: [{
                             description: `
                             <span class="material-symbols-outlined">description</span>
-                            Medicina reproductiva la consulta desde un hospital público`,
+                            1. Medicina reproductiva la consulta desde un hospital público`,
                             abstract: `
                             <a href="./docs/abstracts/Medicina reproductiva la consulta desde un hospital público.pdf" 
                             download="Medicina reproductiva la consulta desde un hospital público.pdf">
@@ -114,7 +114,7 @@ const programaDataArray = [
                         {
                             description: `
                             <span class="material-symbols-outlined">description</span>
-                            A propósito de un caso: nefrocalcinosis y embarazo`,
+                            2. A propósito de un caso: nefrocalcinosis y embarazo`,
                             abstract: `
                             <a href="./docs/abstracts/A propósito de un caso nefrocalcinosis y embarazo.pdf" 
                             download="A propósito de un caso nefrocalcinosis y embarazo.pdf">
@@ -124,27 +124,27 @@ const programaDataArray = [
                         {
                             description: `
                             <span class="material-symbols-outlined">description</span>
-                            Consultorías de salud sexual integral (SSI) en el Centro de Salud y Acción Comunitaria (CeSAC) N°7`,
+                            3. Consultorías de salud sexual integral (SSI) en el Centro de Salud y Acción Comunitaria (CeSAC) N°7`,
                             abstract: `
-                            <a href="./docs/abstracts/Consultorías de salud sexual integral (SSI) en el Centro de Salud y Acción Comunitaria (CeSAC) N°7.pdf" 
-                            download="Consultorías de salud sexual integral (SSI) en el Centro de Salud y Acción Comunitaria (CeSAC) N°7.pdf">
+                            <a href="./docs/abstracts/Consultorías de Salud Sexual Integral.pdf" 
+                            download="Consultorías de Salud Sexual Integral.pdf">
                             <span class="material-symbols-outlined">download</span></a>
                             <span>Abstract</span>`
                         },
                         {
                             description: `
                             <span class="material-symbols-outlined">description</span>
-                            A propósito de un caso: embarazo y esclerosis múltiple`,
+                            4. A propósito de un caso: embarazo y esclerosis múltiple`,
                             abstract: `
-                            <a href="./docs/abstracts/A propósito de un caso: embarazo y esclerosis múltiple.pdf" 
-                            download="A propósito de un caso: embarazo y esclerosis múltiple.pdf">
+                            <a href="./docs/abstracts/A propósito de un caso Embarazo y Esclerosis Múltiple.pdf" 
+                            download="A propósito de un caso Embarazo y Esclerosis Múltiple.pdf">
                             <span class="material-symbols-outlined">download</span></a>
                             <span>Abstract</span>`
                         },
                         {
                             description: `
                             <span class="material-symbols-outlined">description</span>
-                            Educación terapéutica de mujeres con diabetes gestacional (Edugest): datos correspondientes al período de reclutamiento en el Hospital Santojanni`,
+                            5. Educación terapéutica de mujeres con diabetes gestacional (Edugest): datos correspondientes al período de reclutamiento en el Hospital Santojanni`,
                             abstract: `
                             <a href="./docs/abstracts/Educación terapéutica de mujeres con diabetes gestacional.pdf" 
                             download="Educación terapéutica de mujeres con diabetes gestacional.pdf">
@@ -371,8 +371,8 @@ const programaDataArray = [
                             <span class="material-symbols-outlined">description</span>
                             4. Compromiso del sistema nervioso central por enfermedad de Chagas en paciente con síndrome de inmunodeficiencia adquirida de reciente diagnóstico`,
                             abstract: `
-                            <a href="./docs/abstracts/Compromiso del sistema nervioso central por enfermedad de Chagas.pdf" 
-                            download="Compromiso del sistema nervioso central por enfermedad de Chagas.pdf">
+                            <a href="./docs/abstracts/Compromiso del sistema nervioso central por enfermedad de chagas.pdf" 
+                            download="Compromiso del sistema nervioso central por enfermedad de chagas.pdf">
                             <span class="material-symbols-outlined">download</span></a>
                             <span>Abstract</span>`
                         },
@@ -388,8 +388,8 @@ const programaDataArray = [
                             <span class="material-symbols-outlined">description</span>
                             1. Incontinencia pigmenti serie de casos`,
                             abstract: `
-                            <a href="./docs/abstracts/Incontinencia pigmenti serie de casos.pdf" 
-                            download="Incontinencia pigmenti serie de casos.pdf">
+                            <a href="./docs/abstracts/Incontinencia Pigmenti serie de casos.pdf" 
+                            download="Incontinencia Pigmenti serie de casospdf">
                             <span class="material-symbols-outlined">download</span></a>
                             <span>Abstract</span>`
                         },
@@ -455,8 +455,8 @@ const programaDataArray = [
                             <span class="material-symbols-outlined">description</span>
                             1. Acompañamiento a familias de niños, niñas y adolescentes con discapacidad`,
                             abstract: `
-                            <a href="./docs/abstracts/Acompañamiento a familias de niños, niñas y adolescentes con discapacidad.pdf" 
-                            download="Acompañamiento a familias de niños, niñas y adolescentes con discapacidad.pdf">
+                            <a href="./docs/abstracts/Acompañamiento a familias de Niños, Niñas y Adolescentes con discapacidad.pdf" 
+                            download="Acompañamiento a familias de Niños, Niñas y Adolescentes con discapacidad.pdf">
                             <span class="material-symbols-outlined">download</span></a>
                             <span>Abstract</span>`
                         },
@@ -532,8 +532,8 @@ const programaDataArray = [
                             <span class="material-symbols-outlined">description</span>
                             2. Ejercicio físico en una cohorte de pacientes que asisten a un consultorio de reumatología`,
                             abstract: `
-                            <a href="./docs/abstracts/Ejercicio físico en una cohorte de pacientes que asisten a un consultorio de reumatología.pdf" 
-                            download="Ejercicio físico en una cohorte de pacientes que asisten a un consultorio de reumatología.pdf">
+                            <a href="./docs/abstracts/Ejercicio físico en una cohorte de pacientes que asisten a un consultorio de Reumatología.pdf" 
+                            download="Ejercicio físico en una cohorte de pacientes que asisten a un consultorio de Reumatología.pdf">
                             <span class="material-symbols-outlined">download</span></a>
                             <span>Abstract</span>`
                         },
@@ -902,12 +902,12 @@ const programaDataArray = [
                 type: "Trabajos a Premio",
                 time: "8:00 hs",
                 title: "",
-                auditorium: "Aula D 3er Piso",
+                auditorium: "",
                 description_tl: [
                     {
-                        auditorium: "<b>AULA A 2do Piso</b>",
+                        auditorium: "<b>Aula D 3er Piso - Mesa 1</b>",
                         presidente: "Discutidores: Dr. Marcelo Katz, Dra. Jimena Figoni, Lic. Marcelo Orsini",
-                        secretario: "Secreataria: Dra. Daniela Araujo",
+                        secretario: "",
                         title: "<b>Trabajos</b>",
                         trabajos: [{
                             description: `
@@ -952,7 +952,7 @@ const programaDataArray = [
                         {
                             description: `
                             <span class="material-symbols-outlined">description</span>
-                            4. Movilización prequirúrgica en sujetos con fractura medial de cadera en un hospital público de Ciudad Autónoma de Buenos Aires: estudio descriptivo retrospectivo`,
+                            5. Movilización prequirúrgica en sujetos con fractura medial de cadera en un hospital público de Ciudad Autónoma de Buenos Aires: estudio descriptivo retrospectivo`,
                             abstract: `
                             <a href="./docs/abstracts/Movilización prequirúrgica en sujetos con fractura medial de cadera en un hospital público.pdf" 
                             download="Movilización prequirúrgica en sujetos con fractura medial de cadera en un hospital público.pdf">
@@ -962,7 +962,7 @@ const programaDataArray = [
                     ]
                     },
                     {
-                        auditorium: "<b>AULA E 4to Piso</b>",
+                        auditorium: "<b>AULA E 4to Piso - Mesa 2</b>",
                         presidente: "Discutidores: Dra. Daniela D’Alessandro, Dra. Elizabeth Sanguinetti, Dr. Eduardo Saravia",
                         secretario: "",
                         title: "<b>Trabajos</b>",
@@ -979,17 +979,27 @@ const programaDataArray = [
                         {
                             description: `
                             <span class="material-symbols-outlined">description</span>
-                            2. Respuesta al tratamiento de PTI, rituximab vs eltrombopag (la experiencia de nuestro hospital)`,
+                            2. Presentación atípica de una leucemia mieloide aguda: leucemia cutis, descripción de un caso`,
                             abstract: `
-                            <a href="./docs/abstracts/Respuesta al tratamiento de PTI, rituximab vs eltrombopag (la experiencia de nuestro hospital).pdf" 
-                            download="Respuesta al tratamiento de PTI, rituximab vs eltrombopag (la experiencia de nuestro hospital).pdf">
+                            <a href="./docs/abstracts/Presentación atípica de una leucemia mieloide aguda leucemia cutis, descripción de un caso.pdf" 
+                            download="Presentación atípica de una leucemia mieloide aguda leucemia cutis, descripción de un caso.pdf">
                             <span class="material-symbols-outlined">download</span></a>
                             <span>Abstract</span>`
                         },
                         {
                             description: `
                             <span class="material-symbols-outlined">description</span>
-                            3. Implementación de técnicas moleculares para la optimización del diagnóstico de virus respiratorios en pacientes pediátricos con criterio de internación`,
+                            3. Respuesta al tratamiento de PTI, rituximab vs eltrombopag (la experiencia de nuestro hospital)`,
+                            abstract: `
+                            <a href="./docs/abstracts/RESPUESTA AL TRATAMIENTO DE PTI, RITUXIMAB VS ELTROMBOPAG.pdf" 
+                            download="RESPUESTA AL TRATAMIENTO DE PTI, RITUXIMAB VS ELTROMBOPAG.pdf">
+                            <span class="material-symbols-outlined">download</span></a>
+                            <span>Abstract</span>`
+                        },
+                        {
+                            description: `
+                            <span class="material-symbols-outlined">description</span>
+                            4. Implementación de técnicas moleculares para la optimización del diagnóstico de virus respiratorios en pacientes pediátricos con criterio de internación`,
                             abstract: `
                             <a href="./docs/abstracts/Implementación de técnicas moleculares para la optimización del diagnóstico de virus respiratorios.pdf" 
                             download="Implementación de técnicas moleculares para la optimización del diagnóstico de virus respiratorios.pdf">
@@ -999,20 +1009,10 @@ const programaDataArray = [
                         {
                             description: `
                             <span class="material-symbols-outlined">description</span>
-                            4. Abordaje multidisciplinario de los melanomas de localizaciones especiales. desafío diagnóstico y terapéutico`,
+                            5. Abordaje multidisciplinario de los melanomas de localizaciones especiales. desafío diagnóstico y terapéutico`,
                             abstract: `
                             <a href="./docs/abstracts/Abordaje multidisciplinario de los melanomas de localizaciones especiales. desafío diagnóstico y terapéutico.pdf" 
                             download="Abordaje multidisciplinario de los melanomas de localizaciones especiales. desafío diagnóstico y terapéutico.pdf">
-                            <span class="material-symbols-outlined">download</span></a>
-                            <span>Abstract</span>`
-                        },
-                        {
-                            description: `
-                            <span class="material-symbols-outlined">description</span>
-                            5. Determinación de la velocidad de onda de pulso en individuos postpandemia`,
-                            abstract: `
-                            <a href="./docs/abstracts/Determinacion de la velocidad de onda de pulso en individuos pos pandemia.pdf" 
-                            download="Determinacion de la velocidad de onda de pulso en individuos pos pandemia.pdf">
                             <span class="material-symbols-outlined">download</span></a>
                             <span>Abstract</span>`
                         },
