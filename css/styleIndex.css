@@ -39,6 +39,7 @@ body {
 
 .header-font {
     font-family: var(--sora);
+    text-align: center;
 }
 
 
