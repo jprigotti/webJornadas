@@ -952,7 +952,7 @@ div>span {
     }
 
     .scroller-width {
-        width: 60% !important;
+        width: 100% !important;
     }
     
 
@@ -990,6 +990,6 @@ div>span {
     }
 
     .scroller-width {
-        width: 60% !important;
+        width: 100% !important;
     }
 }
