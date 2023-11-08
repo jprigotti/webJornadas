@@ -2,6 +2,20 @@
 //Countdown code
 //Set the date we are counting down to
 
+window.onload = function() {
+    // Define a function to open the popup window
+    function openWelcomePopup() {
+
+        $('.alertWelcome').css({ 'visibility': 'visible' })
+        window.scrollTo(0, 0);
+        $('body, html').css('overflow', 'hidden');
+
+    }
+
+    // Set a timeout to call the openPopup function after 10 seconds
+    setTimeout(openWelcomePopup, 2000); // 10000 milliseconds = 10 seconds
+};
+
 
 /***********************************************************************
         EVENTS
@@ -24,6 +38,7 @@ $('#alertContainerCloseAranceles').click(function (e) {
 })
 $('#alertContainerCloseWelcome').click(function (e) {
     $('.alertWelcome').css({ 'visibility': 'hidden' })
+    $('body, html').css('overflow', 'auto');
 })
 
 $('#playStreaming').click(function (e) {

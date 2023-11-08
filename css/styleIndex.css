@@ -71,6 +71,14 @@ body {
     width: 95%;
 }
 
+.video-container {
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 1rem;
+    width: 95%;
+}
+
 
 .showcase .showcase-inner {
     display: flex;
@@ -149,7 +157,6 @@ div>span {
 
 .video-institucional {
     background-color: #f4f4f4;
-
 }
 
 .wrap-video-institucional{
@@ -679,7 +686,12 @@ div>span {
 }
 
 .miniContainer {
+    width: 100;
     padding: 1rem;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center !important;
+
 }
 
 .deadline {
@@ -918,8 +930,9 @@ div>span {
         min-height: 100vh;
     }
 
-    .alertAranceles .alertContainer {
+    .alertContainer {
         width: 90%;
+        padding: 0.5rem;
     }
 
     .showcase .btnArea {
@@ -993,6 +1006,19 @@ div>span {
 }
 
 @media(max-width:576px) {
+
+    .video-container {
+        max-width: 1000px;
+        margin: auto;
+        padding: 0;
+        width: 95%;
+    }
+
+    .wrap-video-institucional{
+        margin: 0 auto;
+        width: 350px !important;
+        height: 200PX !important;
+    }
 
     .footerContainer {
         margin-bottom: 4rem;
