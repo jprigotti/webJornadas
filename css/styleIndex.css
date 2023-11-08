@@ -146,6 +146,18 @@ div>span {
     font-weight: 200;
 }
 
+
+.video-institucional {
+    background-color: #f4f4f4;
+
+}
+
+.wrap-video-institucional{
+    margin: 0 auto;
+    width: 720px;
+    height: 480px;
+}
+
 .directivos-container {
     width: 100%;
     padding: 2rem 1rem;
@@ -955,7 +967,7 @@ div>span {
     .scroller-width {
         width: 100% !important;
     }
-    
+
 
 }
 
