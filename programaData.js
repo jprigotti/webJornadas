@@ -447,7 +447,7 @@ const programaDataArray = [
                     },
                     {
                         auditorium: "<b>AULA E 4to Piso</b>",
-                        presidente: "Discutidores: Dra. Sandra Eidner, Dra. Silvina Pasarin",
+                        presidente: "Discutidores: Dra. Sandra Eidner, Dra. Silvina Pasarin, Dr. Carlos Mangone",
                         secretario: "Secreataria: Lic. Nadia Roussilian",
                         title: "<b>Trabajos</b>",
                         trabajos: [{

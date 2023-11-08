@@ -441,7 +441,11 @@ body {
 }
 
 .pt-5 {
-    padding-top: 4rem;
+    padding-top: 5rem;
+}
+
+.pt-10{
+    padding-top: 10rem;
 }
 
 .pb-1 {
@@ -462,6 +466,10 @@ body {
 
 .pb-5 {
     padding-bottom: 4rem;
+}
+
+.align-center{
+    text-align: center;
 }
 
 /* **********************************************
