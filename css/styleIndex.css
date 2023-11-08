@@ -624,8 +624,7 @@ div>span {
     z-index: 1;
     position: absolute;
     top: 0;
-    visibility: hidden;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }

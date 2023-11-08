@@ -6,7 +6,7 @@ window.onload = function() {
     // Define a function to open the popup window
     function openWelcomePopup() {
 
-        $('.alertWelcome').css({ 'visibility': 'visible' })
+        $('.alertWelcome').css({ 'display': 'flex' })
         window.scrollTo(0, 0);
         $('body, html').css('overflow', 'hidden');
 
@@ -37,7 +37,7 @@ $('#alertContainerCloseAranceles').click(function (e) {
     $('.alertAranceles').css({ 'visibility': 'hidden' })
 })
 $('#alertContainerCloseWelcome').click(function (e) {
-    $('.alertWelcome').css({ 'visibility': 'hidden' })
+    $('.alertWelcome').css({ 'display': 'none' })
     $('body, html').css('overflow', 'auto');
 })
 
