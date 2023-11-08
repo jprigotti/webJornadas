@@ -624,7 +624,7 @@ div>span {
     z-index: 1;
     position: absolute;
     top: 0;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
@@ -1015,8 +1015,8 @@ div>span {
 
     .wrap-video-institucional{
         margin: 0 auto;
-        width: 350px !important;
-        height: 200PX !important;
+        width: 350px;
+        height: 200px;
     }
 
     .footerContainer {
