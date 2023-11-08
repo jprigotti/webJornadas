@@ -155,7 +155,7 @@ const programaDataArray = [
                     },
                     {
                         auditorium: "<b>AULA E 4to Piso</b>",
-                        presidente: "Discutidores: Dra. Verónica Leyenda, Dra. Paula Ceriana",
+                        presidente: "Discutidores: Dra. Verónica Leyenda, Dra. Paula Ceriana, Dr. Carlos Mangone",
                         secretario: "Secreataria: Dra. Nadia De Cárdenas",
                         title: "<b>Trabajos</b>",
                         trabajos: [{
@@ -1047,6 +1047,7 @@ const programaDataArray = [
                 auditorium: "Aula 1er Piso (Aula de obstetricia)",
                 description_mr: [
                     "<b>Presidente:</b> Dr. Martin Garcia",
+                    "<b>Coordinadora:</b> Dra. Sofia Moss",
                     "<b>Panelistas:</b> Trivisonno Leonel (UCO), Sarthes Aldana (SRS), Barbieri Gonzalo (Clínica), Herbas Pablo (Nefrologia)",
                 ],
                 streaming: false,
