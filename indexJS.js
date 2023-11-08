@@ -22,6 +22,9 @@ $('#verAranceles').click(function (e) {
 $('#alertContainerCloseAranceles').click(function (e) {
     $('.alertAranceles').css({ 'visibility': 'hidden' })
 })
+$('#alertContainerCloseWelcome').click(function (e) {
+    $('.alertWelcome').css({ 'visibility': 'hidden' })
+})
 
 $('#playStreaming').click(function (e) {
     $('.wrap-iframe').css({ 'display': 'block' })
