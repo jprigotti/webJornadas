@@ -292,7 +292,7 @@ const programaDataArray = [
             {
                 type: "Apertura",
                 time: "9:15 hs",
-                title: "Dr. Fernan Gonzalez Bernaldo de Quiros",
+                title: "Dr. Fernán González Bernaldo de Quirós",
                 auditorium: "Aulas A-B 2do Piso",
                 description: "Ministro de Salud del GCABA",
                 streaming: false,
