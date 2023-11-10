@@ -1043,7 +1043,7 @@ const programaDataArray = [
             {
                 type: "Taller",
                 time: "11:00 a 12:00 hs",
-                title: "De la teoría a la práctica: Resolviendo dudas sobre aislmaiendos de gérmenes multirresistentes",
+                title: "De la teoría a la práctica: Resolviendo dudas sobre aislamientos de gérmenes multirresistentes",
                 auditorium: "Aula 1er Piso (Aula de obstetricia)",
                 description_mr: [
                     "<b>Presidente:</b> Dr. Martin Garcia",
@@ -1117,7 +1117,7 @@ const programaDataArray = [
                 type: "",
                 time: "12:30 hs",
                 title: "Entrega de premios, homenajes y cierre de jornadas",
-                auditorium: "Auditorium a definir",
+                auditorium: "Aulas A-B 2do Piso",
                 description: "",
                 streaming: false,
             },
@@ -1125,7 +1125,7 @@ const programaDataArray = [
                 type: "Agape",
                 time: "13:00 hs",
                 title: "",
-                auditorium: "Auditorium a definir",
+                auditorium: "Aulas 4to Piso",
                 description: "",
                 streaming: false,
             },
