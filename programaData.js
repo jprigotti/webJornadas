@@ -290,6 +290,14 @@ const programaDataArray = [
                 ],
             },
             {
+                type: "Apertura",
+                time: "9:15 hs",
+                title: "Dr Fernan Gonzalez Bernaldo de Quiros",
+                auditorium: "Aulas A-B 2do Piso",
+                description: "Ministro de Salud del GCABA",
+                streaming: false,
+            },
+            {
                 type: "Conferencia",
                 time: "9:30 a 10:30 hs",
                 title: "Volviendo al futuro. La gestión de un servicio aplicando tecnología de vanguardia.",
