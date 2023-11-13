@@ -155,7 +155,7 @@ const programaDataArray = [
                     },
                     {
                         auditorium: "<b>AULA E 4to Piso</b>",
-                        presidente: "Discutidores: Dra. Verónica Leyenda, Dra. Paula Ceriana, Dr. Carlos Mangone",
+                        presidente: "Discutidores: Dra. Gabriela Molina, Dra. Paula Ceriana",
                         secretario: "Secreataria: Dra. Nadia De Cárdenas",
                         title: "<b>Trabajos</b>",
                         trabajos: [{
@@ -522,7 +522,7 @@ const programaDataArray = [
                     },
                     {
                         auditorium: "<b>AULA F 4to Piso</b>",
-                        presidente: "Discutidores: Dr. Matías Landi, Dr. Sebastián Lima",
+                        presidente: "Discutidores: Dr. Luis Parada, Dr. Sebastián Lima",
                         secretario: "Secreatario: Dr. Lucas Sánchez",
                         title: "<b>Trabajos</b>",
                         trabajos: [{
