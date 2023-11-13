@@ -91,6 +91,7 @@ body {
 
 
 .countdownContainer {
+    display: none !important;
     /* border: 1px solid #f4f4f4; */
     margin: 2rem 0;
     display: flex;
@@ -137,7 +138,10 @@ div>span {
     margin-top: 1rem;
     background-color: var(--showcase-color);
     border-radius: 5px;
-    padding: 0.2rem;
+    padding: 0.5rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+
 }
 
 .eventQR img {
