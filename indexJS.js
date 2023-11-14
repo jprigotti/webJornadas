@@ -2,6 +2,7 @@
 //Countdown code
 //Set the date we are counting down to
 
+/*
 window.onload = function() {
     // Define a function to open the popup window
     function openWelcomePopup() {
@@ -15,7 +16,7 @@ window.onload = function() {
     // Set a timeout to call the openPopup function after 10 seconds
     setTimeout(openWelcomePopup, 2000); // 10000 milliseconds = 10 seconds
 };
-
+*/
 
 
 /***********************************************************************
@@ -196,6 +197,16 @@ if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
 
 // Code for streaming
 $('#playCard1').click(function (e) {
+    // $('.streaming-body').css({ 'display': 'flex' })
+    // $('.streaming-cards-carousel').css({ 'display': 'none' })
+
+    // var iframe = $("#youtube-iframe");
+    // iframe.attr("src", "https://www.youtube.com/embed/loax026yELg");
+
+    window.open('https://www.youtube.com/watch?v=' + 'LQlajWbCc6Q', '_blank');
+})
+
+$('#playCard2').click(function (e) {
     // $('.streaming-body').css({ 'display': 'flex' })
     // $('.streaming-cards-carousel').css({ 'display': 'none' })
 
