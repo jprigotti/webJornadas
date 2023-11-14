@@ -2,7 +2,6 @@
 //Countdown code
 //Set the date we are counting down to
 
-/*
 window.onload = function() {
     // Define a function to open the popup window
     function openWelcomePopup() {
@@ -16,7 +15,7 @@ window.onload = function() {
     // Set a timeout to call the openPopup function after 10 seconds
     setTimeout(openWelcomePopup, 2000); // 10000 milliseconds = 10 seconds
 };
-*/
+
 
 
 /***********************************************************************
