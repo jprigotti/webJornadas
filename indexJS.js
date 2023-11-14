@@ -197,13 +197,13 @@ if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
 
 // Code for streaming
 $('#playCard1').click(function (e) {
-    // $('.streaming-body').css({ 'display': 'flex' })
-    // $('.streaming-cards-carousel').css({ 'display': 'none' })
+    $('.streaming-body').css({ 'display': 'flex' })
+    $('.streaming-cards-carousel').css({ 'display': 'none' })
 
-    // var iframe = $("#youtube-iframe");
-    // iframe.attr("src", "https://www.youtube.com/embed/loax026yELg");
+    var iframe = $("#youtube-iframe");
+    iframe.attr("src", "https://www.youtube.com/embed/Ryuk47JHnV4");
 
-    window.open('https://www.youtube.com/watch?v=' + 'LQlajWbCc6Q', '_blank');
+    // window.open('https://www.youtube.com/watch?v=' + 'Ryuk47JHnV4&t=1s', '_blank');
 })
 
 $('#playCard2').click(function (e) {
