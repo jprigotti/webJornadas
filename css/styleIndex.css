@@ -163,11 +163,35 @@ div>span {
     background-color: #f4f4f4;
 }
 
-.wrap-video-institucional{
+.wrap-video-institucional {
     margin: 0 auto;
     width: 720px;
     height: 480px;
 }
+
+
+.palabras-bienvenida {
+    background-color: #f4f4f4;
+}
+
+.palabras-bienvenida-container {
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 1px rgba(24, 39, 51, 0.2);
+}
+
+.palabras-bienvenida p {
+    text-indent: 50px;
+    line-height: 1.5em;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: justify !important;
+    padding-bottom: 1rem;
+}
+
+
 
 .directivos-container {
     width: 100%;
@@ -400,13 +424,15 @@ div>span {
 .streaming-body {
     background-color: rgba(000, 000, 000, 0.4);
     width: 720px;
-    /* height: 20px; */
+    height: 400px;
 
     box-shadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.3);
     margin-bottom: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    display: none;
 }
 
 .streaming-play {
@@ -442,6 +468,7 @@ div>span {
     overflow-x: auto;
     margin-bottom: 1rem;
     padding: 5rem 0;
+    display: block;
 }
 
 .streaming-cards-container {
@@ -455,19 +482,54 @@ div>span {
     overflow: hidden;
 }
 
+
 .streaming-card {
     width: 24%;
     height: 300px;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     cursor: pointer;
     padding: 1rem;
     color: var(--footer-background);
+    position: relative;
 }
 
-.streaming-card:hover {
+.play-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+}
 
-    background-color: rgba(255, 255, 255, 0.8);
+.play-card-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.play-card-container:hover {
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.material-symbols-outlined.play-icon {
+    color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.play-card-container:hover>.material-symbols-outlined.play-icon {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+
+.streaming-card:hover {
+    background-color: rgba(255, 255, 255, 0.4);
     transition: 0.2s ease-in;
     transform: scale(1.02);
 }
@@ -1011,6 +1073,22 @@ div>span {
 
 @media(max-width:576px) {
 
+    .palabras-bienvenida-container {
+        margin: 0;
+        padding: 1rem;
+        box-shadow: none
+    }
+
+    .palabras-bienvenida p {
+        text-indent: 25px;
+        line-height: 1.5em;
+        font-family: "Roboto", sans-serif;
+        font-size: 0.95rem;
+        font-weight: 300;
+        padding-bottom: 1rem;
+    }
+
+
     .video-container {
         max-width: 1000px;
         margin: auto;
@@ -1018,7 +1096,7 @@ div>span {
         width: 95%;
     }
 
-    .wrap-video-institucional{
+    .wrap-video-institucional {
         margin: 0 auto;
         width: 350px;
         height: 200px;
