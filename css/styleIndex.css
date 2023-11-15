@@ -1108,6 +1108,7 @@ div>span {
     }
 
     .streaming-body {
+        top: 200px;
         width: 400px;
         height: 220px;
     }
@@ -1117,7 +1118,7 @@ div>span {
     }
 
     .streaming-container {
-        height: 400px;
+        height: 600px;
     }
 
 }
