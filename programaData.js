@@ -897,7 +897,7 @@ const programaDataArray = [
                     "<b>Temas:</b>",
                     "-Sobrecrecimiento bacteriano intestinal (SIBO): qué sabemos y cómo impacta en la salud humana.  Dra. Roxana Roatta. (Gastroenterología HDFS)",
                     "-Resistencia a antimicrobianos y programas de optimización de su uso.  Dra. Ana Kunst (Infectología HDFS)",
-                    "-Salud ambiental y bioseguridad en el hospital.   Lic. Claudia Pereyra (Seguridad e Higiene HDFS)",
+                    "-Salud ambiental y bioseguridad en el hospital. Lic. Claudia Reynoso (Seguridad e Higiene HDFS)",
                 ],
                 streaming: true,
             },
