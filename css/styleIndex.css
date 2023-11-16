@@ -31,7 +31,7 @@
     padding: 0;
 }
 
-html{
+html {
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
 }
@@ -189,7 +189,7 @@ div>span {
     background-color: rgba(255, 255, 255, 0.35);
 }
 
-.view-streaming a{
+.view-streaming a {
     text-decoration: none;
     color: #fff;
 }
@@ -459,7 +459,7 @@ div>span {
     background-color: var(--overlay-color);
 }
 
-#streamingID{
+#streamingID {
     cursor: pointer;
 }
 
@@ -512,32 +512,30 @@ div>span {
 
 .streaming-cards-carousel {
     width: 100%;
+    height: 100%;
     max-width: 1024px;
     overflow-x: auto;
-    margin-bottom: 1rem;
-    padding: 5rem 0;
-    display: block;
+    margin-bottom: 5rem;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+
 }
 
 .streaming-cards-container {
-    /* width: 100%;
-    max-width: 1024px; */
-    width: 1024px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     padding: 1rem;
-    overflow: hidden;
+    display: flex;
 }
 
 
 .streaming-card {
-    width: 24%;
+    min-width: 250px;
     height: 300px;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     cursor: pointer;
     padding: 1rem;
+    margin: 0 0.5rem;
     color: var(--footer-background);
     position: relative;
 }

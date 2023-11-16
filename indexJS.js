@@ -226,3 +226,33 @@ $('#playCard2').click(function (e) {
 
     // window.open('https://www.youtube.com/watch?v=' + 'LQlajWbCc6Q', '_blank');
 })
+
+$('#playCard3').click(function (e) {
+    var iframe = $("#youtube-iframe");
+    iframe.attr("src", "https://www.youtube.com/embed/XOuDH4Rizj4");
+
+    $('.streaming-body').addClass("streaming-body-expand")
+    $('.streaming-cards-carousel').css({ 'display': 'none' })
+
+    // window.open('https://www.youtube.com/watch?v=' + 'LQlajWbCc6Q', '_blank');
+})
+
+$('#playCard4').click(function (e) {
+    var iframe = $("#youtube-iframe");
+    iframe.attr("src", "https://www.youtube.com/embed/W3eck3vUEng");
+
+    $('.streaming-body').addClass("streaming-body-expand")
+    $('.streaming-cards-carousel').css({ 'display': 'none' })
+
+    // window.open('https://www.youtube.com/watch?v=' + 'LQlajWbCc6Q', '_blank');
+})
+
+$('#playCard5').click(function (e) {
+    var iframe = $("#youtube-iframe");
+    iframe.attr("src", "https://www.youtube.com/embed/jReb0E1YpRM");
+
+    $('.streaming-body').addClass("streaming-body-expand")
+    $('.streaming-cards-carousel').css({ 'display': 'none' })
+
+    // window.open('https://www.youtube.com/watch?v=' + 'LQlajWbCc6Q', '_blank');
+})

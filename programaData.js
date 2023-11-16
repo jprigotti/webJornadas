@@ -861,7 +861,7 @@ const programaDataArray = [
                 title: "Biotecnología y su aplicación en salud",
                 auditorium: "Aulas A-B 2 Piso",
                 description: "Profesora Tamara Rubilar",
-                streaming: false,
+                streaming: true,
             },
             {
                 type: "Break",
