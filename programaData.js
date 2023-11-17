@@ -914,7 +914,7 @@ const programaDataArray = [
                 description_tl: [
                     {
                         auditorium: "<b>Aula D 3er Piso - Mesa 1</b>",
-                        presidente: "Discutidores: Dr. Marcelo Katz, Dra. Jimena Figoni, Lic. Marcelo Orsini",
+                        presidente: "Discutidores: Dr. Marcelo Katz, Dra. Jimena Figoni, Lic. Esteban Orsini",
                         secretario: "",
                         title: "<b>Trabajos</b>",
                         trabajos: [{
