@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería</title>
+    <title>Galería 2022</title>
 
     <!-- Link Favicon -->
     <link rel="icon" type="image/x-icon" href="./img/android-icon-72x72.png">
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./css/utilities.css">
     <link rel="stylesheet" href="./css/menuIndex.css">
     <link rel="stylesheet" href="./css/styleIndex.css">
-    <link rel="stylesheet" href="./css/galeria.css">
+    <link rel="stylesheet" href="./css/galeria_2022.css">
     <link rel="stylesheet" href="./css/programa.css">
 
 
@@ -119,26 +119,141 @@
 
         <div class="container galeria-inner">
 
-            <h1 class="header-font mt-5">Tour Virtual Jornadas 2023</h1>
-            <div class="wrap-video">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/U3UP9GNJC6c"
-                    title="Tour Virtual Jornadas Científicas 2023 (Plus Backstage)" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+            <div class="videoInstitucional">
+                <video width="100%" height="auto" autoplay loop muted playsinline>
+                    <source src="./img/videoInstitucional.mp4" type="video/mp4">
+                </video>
+                <div class="videoFooter">
+
+                    <audio class="audioRosana" autoplay controls>
+                        <source src="./img/audioRosana.mp3">
+                    </audio>
+
+                    <h3>Las jornadas en imágenes</h3>
+                </div>
+
             </div>
 
-            <h1 class="header-font mt-5">Muestra de Arte</h1>
-            <div class="wrap-pdf">
-                <iframe src="http://127.0.0.1:5501/docs/pdf/muestra_arte_2023.pdf"
-                    style="width:100%; height:100%;" frameborder="0"></iframe>
+            <!-- <div class="titleContainer">
+                <h3>Las jornadas en imágenes</h3>
+            </div> -->
+
+            <div class="testHTML">
+
             </div>
 
+            <div class="imageContainer jc_day2">
+                <div class="description">
+                    <h1>Jornadas Científicas <b>Día 2</b></h1>
+                </div>
+                <div class="viewGalery">
+                    <p id="jcDay2Galery">Ver galería</p>
+                </div>
+            </div>
 
-            <h1 class="header-font mt-5"><a href="./galeria_2022.html">Ver Galería Jornadas 2022</a></h1>
+            <div class="imageContainer jc_day1">
+                <div class="description">
+                    <h1>Jornadas Científicas <b>Día 1</b></h1>
+                </div>
+                <div class="viewGalery">
+                    <p id="jcDay1Galery">Ver galería</p>
+                </div>
+            </div>
+
+            <div class="imageContainer iq">
+                <div class="description">
+                    <h1>Jornadas <b>IQ</b></h1>
+                </div>
+                <div class="viewGalery">
+                    <p id="IQGalery">Ver galería</p>
+                </div>
+            </div>
+
+            <div class="imageContainer obstetricia">
+                <div class="description">
+                    <h1>Jornadas <b>Obstetricia</b></h1>
+                </div>
+                <div class="viewGalery">
+                    <p id="obstetriciaGalery">Ver galería</p>
+                </div>
+            </div>
+
         </div>
     </div>
 
 
+    <!-- Galeria Popup -->
+    <div class="popup">
+        <div class="popupContainer">
+            <div class="popupContainerHeader">
+                <i class="fa-solid fa-circle-xmark fa-xl popupContainerClose"></i>
+            </div>
+            <div class="popupContainerBody">
+
+                <!-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                            aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                            aria-label="Slide 7"></button>
+
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/jornadaIQ/jornadaIQ_1.jpeg"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/jornadaIQ/jornadaIQ_2.jpeg" class="d-block w-100"
+                                alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/jornadaIQ/jornadaIQ_3.jpeg" class="d-block w-100"
+                                alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/jornadaIQ/jornadaIQ_4.jpeg" class="d-block w-100"
+                                alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/jornadaIQ/jornadaIQ_5.jpeg" class="d-block w-100"
+                                alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/jornadaIQ/jornadaIQ_6.jpeg" class="d-block w-100"
+                                alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/jornadaIQ/jornadaIQ_7.jpeg" class="d-block w-100"
+                                alt="...">
+                        </div>
+                     </div>
+ 
+                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div> -->
+
+            </div>
+        </div>
+    </div>
 
     <!-- BOTTOM NAVBAR -->
     <nav class="bottomNav">
@@ -215,7 +330,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Loading local JS -->
-    <script src="galeria.js"></script>
+    <script src="galeria_2022.js"></script>
 
     <!-- Bootstrap CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"

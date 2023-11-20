@@ -53,25 +53,6 @@ body {
 
 }
 
-.header-font {
-    font-family: var(--sora);
-    text-align: center;
-}
-
-
-.wrap-video {
-    margin: 0 auto;
-    width: 720px;
-    height: 480px;
-}
-
-.wrap-pdf {
-    margin: 0 auto;
-    width: 720px;
-    height: 900px;
-}
-
-
 .videoInstitucional {
     width: 100%;
     /* background-color: var(--primary-color); */
