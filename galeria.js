@@ -5,9 +5,9 @@ const arte_iframe = $('#arte_iframe'); // Replace 'yourIframeId' with the actual
 function updateIframe() {
 
 if (window.innerWidth<778){
-    arte_iframe.attr("src", "http://127.0.0.1:5501/docs/pdf/muestra_arte_2023.pdf#page=1&zoom=50");
+    arte_iframe.attr("src", "https://jornadascientificassantojanni.com/docs/pdf/muestra_arte_2023.pdf#page=1&zoom=50");
 }else{
-    arte_iframe.attr("src", "http://127.0.0.1:5501/docs/pdf/muestra_arte_2023.pdf#page=1&zoom=100");
+    arte_iframe.attr("src", "https://jornadascientificassantojanni.com/docs/pdf/muestra_arte_2023.pdf#page=1&zoom=100");
 }
 }
 
