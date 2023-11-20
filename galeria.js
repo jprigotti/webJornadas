@@ -1,4 +1,22 @@
 
+const arte_iframe = $('#arte_iframe'); // Replace 'yourIframeId' with the actual ID of your iframe
+
+// Function to update iframe properties based on window size
+function updateIframe() {
+
+if (window.innerWidth<778){
+    arte_iframe.attr("src", "http://127.0.0.1:5501/docs/pdf/muestra_arte_2023.pdf#page=1&zoom=50");
+}else{
+    arte_iframe.attr("src", "http://127.0.0.1:5501/docs/pdf/muestra_arte_2023.pdf#page=1&zoom=100");
+}
+}
+
+// Call the updateIframe function when the window is resized
+window.addEventListener('resize', updateIframe);
+
+// Call the updateIframe function initially to set the initial size
+updateIframe();
+
 $('.obstetricia').hover(function () {
     $('.obstetricia .description').css({ 'height': '80%' })
     $('.obstetricia .viewGalery').css({ 'height': '20%' })
