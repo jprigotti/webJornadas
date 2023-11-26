@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registracion</title>
+
+    <!-- Link Favicon -->
+    <link rel="icon" type="image/x-icon" href="./img/android-icon-72x72.png">
+
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/628afeffd4.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+Khmer:wght@500&family=PT+Serif:ital,wght@1,700&family=Roboto:wght@100;300;400&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet">
+
+    <!-- Google icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <!-- Link CSS local -->
+    <link rel="stylesheet" href="./css/download_certificate.css">
+    <link rel="stylesheet" href="./css/menuIndex.css">
+    <link rel="stylesheet" href="./css/styleIndex.css">
+
+
+</head>
+
+<body>
+
+
+    <!-- HEADER SECTION     -->
+
+    <div class="menu-wrap">
+        <div class="loginIcon">
+            <a href="https://www.instagram.com/jornadassantojanni/" target="_blank" rel="noopener">
+                <i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCl2b98kxT48N2pthV3djMtA" target="_blank" rel="noopener">
+                <i class="fa-brands fa-youtube"></i></a>
+            <a href="login.html" target="_blank"><i class="fa-solid fa-user" data-content="Ingresar"></i></a>
+        </div>
+        <input type="checkbox" class="toggler">
+        <div class="hamburguer">
+            <div></div>
+        </div>
+
+        <div class="menu">
+            <div class="menuContainer">
+                <div class="ulContainer">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="programa.html">Programas
+                                <!-- <span><i class="fa-solid fa-caret-down"></i></span></a>
+                            <ul class="dropDownMenu">
+                                <li><a href="programa.html">Jornadas Científicas</a></li>
+                                <li><a href="./img/muestraArtistica.pdf" download="Muestra Artistica.png">Muestra
+                                        Artística</a></li>
+                            </ul> -->
+                        </li>
+                        <li><a href="#">Inscripción</a></li>
+                        <li><a href="contacto.html">Consultas</a></li>
+                        <li><a href="comisiones.html">Comisiones</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- https://www.cevagraf.coop/blog/menu-desplegable-css/ -->
+
+        <div class="menuDesktop">
+            <div class="menuDesktopContainer">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="programa.html">Programas </a>
+                        <!-- <span><i class="fa-solid fa-caret-down"></i></span></a>
+                        <ul id="subMenuPrograma">
+                            <li><a href="programa.html">Jornadas Científicas</a></li>
+                            <li><a href="./img/muestraArtistica.pdf" download="Muestra Artistica.png">Muestra
+                                    Artística</a></li>
+                        </ul> -->
+                    </li>
+                    <li><a href="#">Inscripción</a></li>
+                    <li><a href="contacto.html">Consultas</a></li>
+                    <li><a href="comisiones.html">Comisiones</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Main Section -->
+    <main>
+        <div class="formBackground">
+            <form class="ajax" id="form-ajax">
+
+                <div class="formContainer">
+                    <div class="formHeader">
+
+                        <div class="item1">
+                            <span class="material-symbols-outlined">
+                                app_registration
+                            </span>
+                        </div>
+
+                        <div class="item2">
+                            <h2>Encuesta Post Jornadas</h2>
+                        </div>
+
+                        <div class="item3">
+                            <a href="index.html"><i class="fa-solid fa-door-open fa-xl"></i></a>
+                        </div>
+
+                        <h3 class="password">Por favor completá la siguiente información</h2>
+
+                    </div>
+
+                    <div id="form-view-1" class="w100">
+                        <div class="w100 mb-2">
+                            <p class="mb-1">1. Te gustaron las jornadas?</p>
+                            <input type="radio" id="q1-1" name="question-1" value="si" class="mb-1">
+                            <label for="q1-1">Si</label><br>
+                            <input type="radio" id="q1-2" name="question-1" value="no">
+                            <label for="q1-2">No</label>
+                        </div>
+
+                        <div class="w100 mb-2">
+                            <p class="mb-1">2. Recomendarías a colegas que se inscriban el próximo año?</p>
+                            <input type="radio" id="q2-1" name="question-2" value="si" class="mb-1">
+                            <label for="q2-1">Si</label><br>
+                            <input type="radio" id="q2-2" name="question-2" value="no">
+                            <label for="q2-2">No</label><br><br>
+                        </div>
+
+                        <!-- <div class="w100 mb-2">
+                            <p class="mb-1">3. Tus expectativas para las jornadas son?</p>
+                            <input type="radio" id="q3-1" name="question-3" value="altas" class="mb-1">
+                            <label for="q3-1">Altas</label><br>
+                            <input type="radio" id="q3-2" name="question-3" value="medias" class="mb-1">
+                            <label for="q3-2">Medias</label><br>
+                            <input type="radio" id="q3-3" name="question-3" value="bajas" class="mb-1">
+                            <label for="q3-3">Bajas</label><br>
+                            <input type="radio" id="q3-4" name="question-3" value="indiferente">
+                            <label for="q3-4">Indiferente</label>
+                        </div>
+
+                        <div class="w100 mb-2">
+                            <p class="mb-1">4. Pensas que las jornadas te aportan nuevos conocimientos?</p>
+                            <input type="radio" id="q4-1" name="question-4" value="si" class="mb-1">
+                            <label for="q4-1">Si</label><br>
+                            <input type="radio" id="q4-2" name="question-4" value="no">
+                            <label for="q4-2">No</label><br>
+                        </div> -->
+                        <div class="warningMessage">
+                            <p id="survey-validation"></p>
+                        </div>
+
+                        <div class="btnArea w100 mb-2">
+                            <button id="survey-submit" class="btn-survey btn">Siguiente</button>
+                        </div>
+                    </div>
+
+                    <div id="form-view-2" class="hidden">
+                        <input id="inputFirstName" class="input w100" type="text" name="firstName" placeholder="Nombre">
+                        <span id="firstNameAlert" class="inputAlert"></span>
+
+                        <input id="inputLastName" class="input w100" type="text" name="lastName" placeholder="Apellido">
+                        <span id="lastNameAlert" class="inputAlert"></span>
+
+                        <!-- <input id="inputCell" class="input w100" type="text" name="cell" placeholder="Celular">
+                        <span id="cellAlert" class="inputAlert"></span>
+
+                        <input id="inputEmail" class="input w100" type="text" name="email" placeholder="E-mail">
+                        <span id="emailAlert" class="inputAlert"></span> -->
+
+                        <!-- <select class="input w100" type="text" name="servicio" id="formSelect">
+                            <option value="Elegir" selected>Elegir Servicio...</option>
+                        </select> -->
+
+                        <span id="servicioAlert" class="inputAlert"></span>
+
+                        <div class="warningMessage">
+                            <p>Hay errores que corregir</p>
+                        </div>
+
+                        <div class="btnProgressArea">
+
+                            <div class="btnArea">
+                                <a class="btnWidth btn" href="" id="downloadCertificate">Descargar</a>
+                            </div>
+
+                            <div class="progressBar" data-label="Procesando..." data-label1="Enviado"></div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="registrationHelp">
+                        <a href="contacto.html">
+                            <p><span><i class="fa-solid fa-circle-question"></i></span> Si necesitas ayuda con la
+                                inscripción hace click aquí </p>
+                        </a>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+
+        <!-- NewUser Alert popup -->
+        <div class="alertNewUser">
+            <div class="alertContainer">
+                <div class="alertContainerHeader">
+                    <i class="fa-solid fa-circle-xmark fa-xl alertContainerClose" id="alertContainerCloseNU"></i>
+                    <!-- <span><i class="fa-solid fa-user-doctor fa-xl"></i></span> -->
+                    <span class="material-symbols-outlined">
+                        check_circle
+                    </span>
+                    <h1>Registración exitosa</h1>
+                </div>
+
+                <p>Para completar la inscripción deberás abonar en AMM 1er piso, de Lunes a Viernes en el horario de
+                    09:00 a 12:00 hs:
+                </p>
+                <div class="miniContainer">
+                    <ul>
+                        <li>
+                            <p> <span><i class="fa-solid fa-user-doctor"></i></span>Profesionales $4000</p>
+                        </li>
+                        <li>
+                            <p> <span><i class="fa-solid fa-user-doctor"></i></span>Residentes y concurrentes $1000</p>
+                        </li>
+                        <li>
+                            <p> <span><i class="fa-solid fa-user-doctor"></i></span>Alumnos no
+                                arancelados
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <p class="deadline">Tenes tiempo hasta el 31 de octubre</p>
+
+                <div class="sepLine"></div>
+
+                <p>Revisá tu correo, te enviamos:</p>
+                <div class="miniContainer">
+                    <ul>
+                        <li><span><i class="fa-regular fa-envelope"></i></span> un e-mail de confirmación (recordá
+                            revisar
+                            la carpeta de Spam)</li>
+                        <li><span><i class="fa-regular fa-calendar"></i></span> un evento de Google Calendar (para que
+                            lo
+                            agregues a tu calendario)</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Registered User Alert popup -->
+        <div class="alertRegisteredUser">
+            <div class="alertContainer">
+                <div class="alertContainerHeader">
+                    <i class="fa-solid fa-circle-xmark fa-xl alertContainerClose" id="alertContainerCloseRU"></i>
+                    <span class="material-symbols-outlined">
+                        error
+                    </span>
+                    <h1>Usuario registrado</h1>
+                </div>
+
+                <p>Revisa por favor:</p>
+
+                <div class="miniContainer">
+                    <ul>
+                        <li><span><i class="fa-regular fa-envelope"></i></span> tu casilla de correo con el e-mail de
+                            confirmación que te enviamos (recordá mirar la carpeta de Spam)</li>
+                        <li><span><i class="fa-regular fa-calendar"></i></span> tu casilla de correo con el evento de
+                            Google
+                            Calendar para que lo agregues a tu calendario</li>
+                    </ul>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </main>
+
+
+    <!-- BOTTOM NAVBAR -->
+    <nav class="bottomNav">
+        <div class="navContainer">
+            <div class="navHome">
+                <a href="index.html"><span class="material-symbols-outlined">
+                        home
+                    </span></a>
+                <p>Inicio</p>
+            </div>
+            <div class="navAgenda">
+                <a href="programa.html"><span class="material-symbols-outlined">
+                        event_upcoming
+                    </span></a>
+                <p>Programas</p>
+            </div>
+            <div class="navRegistration">
+                <a href="registration_survey.html"><span class="material-symbols-outlined">
+                        app_registration
+                    </span></a>
+                <p>Inscripción</p>
+            </div>
+            <div class="navContacto">
+                <a href="contacto.html"><span class="material-symbols-outlined">
+                        contact_support
+                    </span></a>
+                <p>Consultas</p>
+            </div>
+
+        </div>
+        </div>
+    </nav>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <div class="footerContainer">
+            <div class="footerInnerContainer">
+                <div class="item1">
+                    <div class="logo">
+                        <img src="./img/logo-hospi.png" alt="">
+                    </div>
+                    <div>
+                        <h4>Hospital F. Santojanni</h4>
+                        <p>Pilar 950 CABA</p>
+                    </div>
+                </div>
+
+                <div class="item2">
+                    <div class="item2Container">
+                        <div>
+                            <p>Las Jornadas en las redes sociales:</p>
+                        </div>
+                        <div class="icons">
+                            <a href="https://www.instagram.com/jornadassantojanni/" target="_blank" rel="noopener">
+                                <i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/channel/UCl2b98kxT48N2pthV3djMtA" target="_blank"
+                                rel="noopener">
+                                <i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="credits">
+                <p>Diseño: Sistemas Hospital Santojanni </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Local JS -->
+    <script src="download_certificate.js"></script>
+
+</body>
+
+</html>
