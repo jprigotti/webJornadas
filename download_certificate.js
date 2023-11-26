@@ -195,12 +195,13 @@ name, lastname and pdf url
 ************************************************************************
 */
 
-function retrieveCertificate(email) {
+function retrieveCertificate(data) {
     processingRegistration(); //update the submit button to show progress
-    const data = {
-        email: email
-    }
+    // const data = {
+    //     email: email
+    // }
 
+    console.log(data);
     $.ajax({
         method: "get",
         redirect: "follow",
@@ -210,6 +211,7 @@ function retrieveCertificate(email) {
         data,
         success: (result) => {
             console.log(result);
+            $('#download-title').text("Gracias por completar la encuesta! Estos son tus datos, si son correctos, hace click en el Descargar para obtener tu certificado");
             $('#inputFirstName').val(result.name);
             $('#inputLastName').val(result.lastname);
             $('#downloadCertificate').attr('href', result.pdfUrl);
@@ -488,9 +490,29 @@ $("#survey-submit").click((e) => {
         $("#survey-validation").text("Debe responder todas las preguntas");
         $('.warningMessage').css({ 'display': 'inline' });
     } else {
+        //armamos el objeto con el cuestionario
+        let that = $(this);
+        data = {}; //this is gonna be a JS object to store all input values
+        that.find('[name]').each(function (index, value) {
+            var that = $(this),
+                type = that.attr('type'),
+                name = that.attr('name'),
+                value = that.val();
 
+            if (type == "radio") {
+                // For radio buttons, only include the value if it's checked
+                if (that.is(':checked')) {
+                    data[name] = that.val();
+                }
+            }
+
+        });
         const userEmail = getParameterByName("email");
-        retrieveCertificate(userEmail);
+        data["userEmail"] = userEmail;
+        retrieveCertificate(data);
+        $('#inputFirstName').val("");
+        $('#inputLastName').val("");
+        $('#download-title').text("");
         $('.warningMessage').css({ 'display': 'none' });
         $("#form-view-1").toggleClass("hidden")
         $("#form-view-2").toggleClass("hidden")

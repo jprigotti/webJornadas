@@ -266,7 +266,7 @@ body a {
 
 }
 
-#formSubmit {
+#downloadCertificate {
     text-align: center;
     margin: 0.5rem 0;
     padding: 0.5rem 0.2rem;
@@ -282,7 +282,7 @@ body a {
     transition: 0.25s ease;
 }
 
-#formSubmit:hover {
+#downloadCertificate:hover {
     cursor: pointer;
     text-align: center;
     /* border: 3px solid rgba(137, 190, 109, .8); */
