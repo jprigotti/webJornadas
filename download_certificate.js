@@ -469,7 +469,7 @@ function getParameterByName(name) {
 
 $("#survey-submit").click((e) => {
     e.preventDefault();
-    const test = 0;
+
     let questionGroups = ["question-1", "question-2"];
     let arrayValidation = [];
 
