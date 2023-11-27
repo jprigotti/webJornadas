@@ -29,38 +29,59 @@ true: then we call insertUsersSS(url, method, data)
 false: nothing
 ***********************************************************************/
 
+
 $('#form-ajax').submit(function (evento) {
 
     evento.preventDefault();  // avoid to execute the actual submit of the form.
 
-    let that = $(this),
-        // url = that.attr('action'),
-        // method = that.attr('method'),
-        data = {}; //this is gonna be a JS object to store all input values
-
-    //loop through all the "name" items in the Form to load the data object
+    //armamos el objeto con el cuestionario
+    let that = $(this);
+    data = {}; //this is gonna be a JS object to store all input values
     that.find('[name]').each(function (index, value) {
         var that = $(this),
             type = that.attr('type'),
-            name = that.attr('name'),
-            value = that.val();
+            name = that.attr('name');
 
         if (type == "radio") {
             // For radio buttons, only include the value if it's checked
             if (that.is(':checked')) {
                 data[name] = that.val();
             }
-        } else {
-            // For other input types, include their values
-            data[name] = that.val();
         }
 
     });
 
+    let questionGroups = ["question-1", "question-2"];
+    let arrayValidation = [];
 
-    console.log(data);
-    //check if user is registered or not, runnig a query using AJAX-GET passing data object
-    (validateInput(data)) ? insertUserSS(data) : console.log("complete los campos");
+    questionGroups.forEach((groupName) => {
+        var question = document.querySelectorAll(`input[name="${groupName}"]`);
+        arrayValidation.push(validateRadioGroup(question))
+    })
+
+    let arrayValidationCheck = arrayValidation.some((elemento) => {
+        return elemento === false
+    })
+
+
+    console.log(`Array validation checked is`, arrayValidationCheck);
+
+
+    if (arrayValidationCheck) {
+        $("#survey-validation").text("Debe responder todas las preguntas");
+        $('.warningMessage').css({ 'display': 'inline' });
+    } else {
+
+        const userToken = getParameterByName("token");
+        data["userToken"] = userToken;
+        retrieveCertificate(data);
+        $('#inputFirstName').val("");
+        $('#inputLastName').val("");
+        $('#download-title').text("");
+        $('.warningMessage').css({ 'display': 'none' });
+        $("#form-view-1").toggleClass("hidden")
+        $("#form-view-2").toggleClass("hidden")
+    }
 
 });
 
@@ -77,42 +98,42 @@ This function receives the data object to insert in the SS
 We use the WebApp for webFormSS
 ***********************************************************************/
 
-function insertUserSS(data) {
-    processingRegistration(); //update the submit button to show progress
-    //Primero validamos que el usuario no este previamente registrado con el metodo GET
-    $.ajax({
-        method: "get",
-        redirect: "follow",
-        url: webAppDailu_userRegistrationDB,
-        dataType: 'json',
-        accepts: 'application/json',
-        data,
-        success: (status) => {
-            console.log("Usuario registrado? " + status['vlookupResult']);
-            if (status['vlookupResult'] === true) {
-                //User already registered
-                rejectRegistration();
-            } else {
-                // User Not registered   
-                // Proceed to submit using AJAX-POST
-                $.ajax({
-                    method: 'post',
-                    redirect: "follow",
-                    url: webAppDailu_userRegistrationDB,
-                    dataType: 'json',
-                    accepts: 'application/json',
-                    data: data,
-                    success: (result) => {
-                        console.log(result);
-                        confirmRegistration(data);
-                    },
-                    error: (err) => alert('Hubo un error, intentelo mas tarde')
-                });
-            }
-        },
-        error: (err) => alert('Hubo un error, intentelo mas tarde')
-    });
-}
+// function insertUserSS(data) {
+//     processingRegistration(); //update the submit button to show progress
+//     //Primero validamos que el usuario no este previamente registrado con el metodo GET
+//     $.ajax({
+//         method: "get",
+//         redirect: "follow",
+//         url: webAppDailu_userRegistrationDB,
+//         dataType: 'json',
+//         accepts: 'application/json',
+//         data,
+//         success: (status) => {
+//             console.log("Usuario registrado? " + status['vlookupResult']);
+//             if (status['vlookupResult'] === true) {
+//                 //User already registered
+//                 rejectRegistration();
+//             } else {
+//                 // User Not registered   
+//                 // Proceed to submit using AJAX-POST
+//                 $.ajax({
+//                     method: 'post',
+//                     redirect: "follow",
+//                     url: webAppDailu_userRegistrationDB,
+//                     dataType: 'json',
+//                     accepts: 'application/json',
+//                     data: data,
+//                     success: (result) => {
+//                         console.log(result);
+//                         confirmRegistration(data);
+//                     },
+//                     error: (err) => alert('Hubo un error, intentelo mas tarde')
+//                 });
+//             }
+//         },
+//         error: (err) => alert('Hubo un error, intentelo mas tarde')
+//     });
+// }
 
 
 /***********************************************************************
@@ -138,32 +159,32 @@ This code shows a pop-up with a confirmation message
 ************************************************************************
 */
 
-function confirmRegistration(data) {
+// function confirmRegistration(data) {
 
-    $.ajax({
-        method: "post",
-        redirect: "follow",
-        url: webAppJS2022_sendEmailCalendar,
-        dataType: 'json',
-        accepts: 'application/json',
-        data,
-        success: (status) => {
-            clearInterval(myInterval); //Stop progress bar counter
-            document.querySelector(".ajax").reset(); //clear all input form
-            $(".btn").css({ 'visibility': 'visible' }); //make btnArea visible
-            $(".progressBar").css({ 'visibility': 'hidden' }); //hide progress bar
-            $('.alertNewUser').css({ 'visibility': 'visible' }); //make alrt new user pop-up visible
-        },
-        error: (err) => {
-            clearInterval(myInterval); //Stop progress bar counter
-            document.querySelector(".ajax").reset(); //clear all input form
-            $(".btn").css({ 'visibility': 'visible' }); //make btnArea visible
-            $(".progressBar").css({ 'visibility': 'hidden' }); //hide progress bar
-            alert('Hubo un problema, por favor intenta mas tardes.')
-        }
-    });
+//     $.ajax({
+//         method: "post",
+//         redirect: "follow",
+//         url: webAppJS2022_sendEmailCalendar,
+//         dataType: 'json',
+//         accepts: 'application/json',
+//         data,
+//         success: (status) => {
+//             clearInterval(myInterval); //Stop progress bar counter
+//             document.querySelector(".ajax").reset(); //clear all input form
+//             $(".btn").css({ 'visibility': 'visible' }); //make btnArea visible
+//             $(".progressBar").css({ 'visibility': 'hidden' }); //hide progress bar
+//             $('.alertNewUser').css({ 'visibility': 'visible' }); //make alrt new user pop-up visible
+//         },
+//         error: (err) => {
+//             clearInterval(myInterval); //Stop progress bar counter
+//             document.querySelector(".ajax").reset(); //clear all input form
+//             $(".btn").css({ 'visibility': 'visible' }); //make btnArea visible
+//             $(".progressBar").css({ 'visibility': 'hidden' }); //hide progress bar
+//             alert('Hubo un problema, por favor intenta mas tardes.')
+//         }
+//     });
 
-}
+// }
 
 
 /*
@@ -176,14 +197,14 @@ already registered
 ************************************************************************
 */
 
-function rejectRegistration() {
-    clearInterval(myInterval); //Stop progress bar counter
-    document.querySelector(".ajax").reset(); //clear all input form
-    $('.alertRegisteredUser').css({ 'visibility': 'visible' }); //make alrt registered user pop-up visible
+// function rejectRegistration() {
+//     clearInterval(myInterval); //Stop progress bar counter
+//     document.querySelector(".ajax").reset(); //clear all input form
+//     $('.alertRegisteredUser').css({ 'visibility': 'visible' }); //make alrt registered user pop-up visible
 
-    $(".btn").css({ 'visibility': 'visible' });
-    $(".progressBar").css({ 'visibility': 'hidden' });
-}
+//     $(".btn").css({ 'visibility': 'visible' });
+//     $(".progressBar").css({ 'visibility': 'hidden' });
+// }
 
 
 
@@ -239,13 +260,13 @@ function retrieveCertificate(data) {
 
 
 //This functions will show/hide the password
-const showPassword = document.querySelector("#showPassword");
-const passwordField = document.querySelector("#passwordField");
-$('#showPassword').on('mousedown', function () {
-    $(this).toggleClass("fa-eye");
-    const type = passwordField.getAttribute("type") === "password" ? "text" : "password";
-    passwordField.setAttribute("type", type);
-});
+// const showPassword = document.querySelector("#showPassword");
+// const passwordField = document.querySelector("#passwordField");
+// $('#showPassword').on('mousedown', function () {
+//     $(this).toggleClass("fa-eye");
+//     const type = passwordField.getAttribute("type") === "password" ? "text" : "password";
+//     passwordField.setAttribute("type", type);
+// });
 
 // $('#showPassword').on('mouseleave', function(){
 //     $(this).toggleClass("fa-eye");
@@ -430,32 +451,6 @@ $('#formSelect').on('change', function (e) {
 
 
 
-
-
-// let optionClass = document.querySelector('#formSelect');
-// optionClass.addEventListener('mouseover', funcion1);
-
-// function funcion1(){
-// var option = document.querySelector(".optionClass")
-// option.setAttribute("style","background-color:blue")
-// console.log("OK")
-// }
-
-// $('optionClass').hover(function() {
-//         $(this).addClass('highlight');
-//     }, function() {
-//         $(this).removeClass('highlight');
-//     }
-// );
-
-// $('select[name="servicios"] option ').hover(
-//     function() {
-//         $(this).addClass('highlight');
-//     }, function() {
-//         $(this).removeClass('highlight');
-//     }
-// );
-
 //Esta funcion extrae el Param email del url
 function getParameterByName(name) {
     const url = window.location.href;
@@ -467,57 +462,57 @@ function getParameterByName(name) {
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
 
-$("#survey-submit").click((e) => {
-    e.preventDefault();
+// $("#survey-submit").click((e) => {
+//     e.preventDefault();
 
-    let questionGroups = ["question-1", "question-2"];
-    let arrayValidation = [];
+//     let questionGroups = ["question-1", "question-2"];
+//     let arrayValidation = [];
 
-    questionGroups.forEach((groupName) => {
-        var question = document.querySelectorAll(`input[name="${groupName}"]`);
-        arrayValidation.push(validateRadioGroup(question))
-    })
+//     questionGroups.forEach((groupName) => {
+//         var question = document.querySelectorAll(`input[name="${groupName}"]`);
+//         arrayValidation.push(validateRadioGroup(question))
+//     })
 
-    let arrayValidationCheck = arrayValidation.some((elemento) => {
-        return elemento === false
-    })
-
-
-    console.log(`Array validation checked is`, arrayValidationCheck);
+//     let arrayValidationCheck = arrayValidation.some((elemento) => {
+//         return elemento === false
+//     })
 
 
-    if (arrayValidationCheck) {
-        $("#survey-validation").text("Debe responder todas las preguntas");
-        $('.warningMessage').css({ 'display': 'inline' });
-    } else {
-        //armamos el objeto con el cuestionario
-        let that = $(this);
-        data = {}; //this is gonna be a JS object to store all input values
-        that.find('[name]').each(function (index, value) {
-            var that = $(this),
-                type = that.attr('type'),
-                name = that.attr('name'),
-                value = that.val();
+//     console.log(`Array validation checked is`, arrayValidationCheck);
 
-            if (type == "radio") {
-                // For radio buttons, only include the value if it's checked
-                if (that.is(':checked')) {
-                    data[name] = that.val();
-                }
-            }
 
-        });
-        const userEmail = getParameterByName("email");
-        data["userEmail"] = userEmail;
-        retrieveCertificate(data);
-        $('#inputFirstName').val("");
-        $('#inputLastName').val("");
-        $('#download-title').text("");
-        $('.warningMessage').css({ 'display': 'none' });
-        $("#form-view-1").toggleClass("hidden")
-        $("#form-view-2").toggleClass("hidden")
-    }
-})
+//     if (arrayValidationCheck) {
+//         $("#survey-validation").text("Debe responder todas las preguntas");
+//         $('.warningMessage').css({ 'display': 'inline' });
+//     } else {
+//         //armamos el objeto con el cuestionario
+//         let that = $(this);
+//         data = {}; //this is gonna be a JS object to store all input values
+//         that.find('[name]').each(function (index, value) {
+//             var that = $(this),
+//                 type = that.attr('type'),
+//                 name = that.attr('name'),
+//                 value = that.val();
+
+//             if (type == "radio") {
+//                 // For radio buttons, only include the value if it's checked
+//                 if (that.is(':checked')) {
+//                     data[name] = that.val();
+//                 }
+//             }
+
+//         });
+//         const userEmail = getParameterByName("email");
+//         data["userEmail"] = userEmail;
+//         retrieveCertificate(data);
+//         $('#inputFirstName').val("");
+//         $('#inputLastName').val("");
+//         $('#download-title').text("");
+//         $('.warningMessage').css({ 'display': 'none' });
+//         $("#form-view-1").toggleClass("hidden")
+//         $("#form-view-2").toggleClass("hidden")
+//     }
+// })
 
 
 
