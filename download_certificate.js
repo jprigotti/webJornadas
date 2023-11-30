@@ -235,7 +235,7 @@ function retrieveCertificate(data) {
         data,
         success: (result) => {
             console.log(result);
-            $('#download-title').text("Gracias por completar la encuesta! Estos son tus datos, si son correctos, hace click en el Descargar para obtener tu certificado");
+            $('#download-title').text("Gracias por completar la encuesta! Estos son tus datos, si son correctos, hace click en Descargar para obtener tu certificado");
             $('#inputFirstName').val(result.name);
             $('#inputLastName').val(result.lastname);
             $('#downloadCertificate').attr('href', result.pdfUrl);
