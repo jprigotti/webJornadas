@@ -35,6 +35,8 @@ $('#verAranceles').click(function (e) {
     $('.alertAranceles').css({ 'visibility': 'visible' })
 })
 
+
+
 $('#alertContainerCloseAranceles').click(function (e) {
     $('.alertAranceles').css({ 'visibility': 'hidden' })
 })
