@@ -10,9 +10,16 @@
     --time-background: #e0e0e0;
 }
 
-.comisionesBackground{
+.encuesta{
     padding: 5rem 0;
+    overflow-x: scroll;
 }
+
+.encuestas-inner{
+width: 920px;
+}
+
+
 .flyerMaximize {
     padding: 0.5rem;
     color: white;
